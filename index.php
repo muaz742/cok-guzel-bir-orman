@@ -7,7 +7,7 @@
 
 session_start();
 ob_start();
-//include "ayar/baglanti.php";
+include "ayar/baglanti.php";
 include "ayar/fonksiyon.php";
 
 $mEkranKodu = "0a";

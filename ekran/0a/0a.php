@@ -44,25 +44,26 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="0a.php#header2-1">
+                    <a href="#header2-1">
                          <img src="ekran/0a/assets/images/walking.svg" alt="WALK ON THE FOREST" title="EXPLORER" style="height: 3.8rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="0a.php#header2-1">WALK ON THE JUNGLE</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="#header2-1">WALK ON THE JUNGLE</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://www.youtube.com/watch?v=aqJciupunWQ" target="_blank"><span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>ORMANDAN ÇIK</a>
+                    <a class="nav-link link text-white display-4" onclick="secim(10)" target="_blank">
+                        <span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>ORMANDAN ÇIK</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="0a.php#header2-1">
+                <li class="nav-item"><a class="nav-link link text-white display-4" onclick="secim(11)">
                     <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> BAŞA DÖN</a></li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="fikrimvar.php#info3-b"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
+                    <a class="nav-link link text-white display-4" onclick="secim(12)"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
                 </li>
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="0a.php">PAYLAŞ</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" onclick="secim(13)">PAYLAŞ</a></div>
         </div>
     </nav>
 </section>
@@ -72,10 +73,11 @@
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(118, 118, 118);"></div>
     <div class="container align-center">
         <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">ÇOK GÜZEL BİR ORMANDASIN</h1>
-                <p class="mbr-text pb-3 mbr-fonts-style display-5">ORMANDA DOLAŞIRKEN<br>KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br></p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#top">ORMANA GİR</a></div>
+            <div class="mbr-white col-md-10" id="mEkran">
+                <div id="mNo" hidden>0</div>
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" id="mBaslik">ÇOK GÜZEL BİR ORMANDASIN</h1>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5" id="mYazi">ORMANDA DOLAŞIRKEN<br>KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br></p>
+                <div class="mbr-section-btn" id="mButonluk"><a class="btn btn-md btn-primary display-4" id="mBtn0" onclick="secim(0)">ORMANA GİR</a></div>
             </div>
         </div>
     </div>
