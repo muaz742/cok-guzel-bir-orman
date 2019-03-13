@@ -5,7 +5,7 @@
  * Geliştirici: muaz
  */
 
-require_once "0a/index.html";
+require_once "0a/0a.php";
 /*
 echo "<!doctype html>
 <html lang='tr'>

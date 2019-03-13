@@ -44,11 +44,11 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="index.html#header2-1">
+                    <a href="0a.php#header2-1">
                          <img src="ekran/0a/assets/images/walking.svg" alt="WALK ON THE FOREST" title="EXPLORER" style="height: 3.8rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html#header2-1">WALK ON THE JUNGLE</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="0a.php#header2-1">WALK ON THE JUNGLE</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,13 +56,13 @@
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://www.youtube.com/watch?v=aqJciupunWQ" target="_blank"><span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>ORMANDAN ÇIK</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#header2-1">
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="0a.php#header2-1">
                     <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> BAŞA DÖN</a></li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="fikrimvar.html#info3-b"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
+                    <a class="nav-link link text-white display-4" href="fikrimvar.php#info3-b"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
                 </li>
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="index.html">PAYLAŞ</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="0a.php">PAYLAŞ</a></div>
         </div>
     </nav>
 </section>
@@ -99,5 +99,6 @@
 <script src="ekran/0a/assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
 <script src="ekran/0a/assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
 <script src="ekran/0a/assets/theme/js/script.js"></script>
+<script src="index.js?v=<?php echo time();?>"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ LOGS
 - FIXME sql bağlantısı yapılmadı. sayfa başlangıcındaki bağlantı denemesi pasifleştirildi.
 - süreçten tasarruf için arayüz mobirise ile tasarlandı. - 190313-163800-muaz
 - arayüzü yükle - mobirise arayüzü yüklendi - 190313-171800-muaz
+- index.js eklendi, arayüz dosyaları php dosyasına dönüştürüldü - 190213-190200-muaz
 
 TODOLIST
 - TODO elementlere id leri tanımla
