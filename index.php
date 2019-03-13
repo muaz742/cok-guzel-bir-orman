@@ -11,7 +11,6 @@ ob_start();
 include "ayar/fonksiyon.php";
 
 $mEkranKodu = "0a";
-$_SESSION['oturum'] = 1;
 
 if (mOturumAcikMi()) {
     if (mErisimYetkisiVarMi($mEkranKodu,s('kullanicikodu'))) {
