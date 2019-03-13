@@ -2,7 +2,15 @@ LOGS
 - logs dosyası olıuşturuldu ve ilk girdi yapıldı. - 190313-1429-muaz
 - sistem712 altyapısı uygulandı. - 199313-144400-muaz
 - FIXME sql bağlantısı yapılmadı. sayfa başlangıcındaki bağlantı denemesi pasifleştirildi.
+- süreçten tasarruf için arayüz mobirise ile tasarlandı. - 190313-163800-muaz
+- arayüzü yükle - mobirise arayüzü yüklendi - 190313-171800-muaz
 
 TODOLIST
-- TODO arayüzü yükle
+- TODO elementlere id leri tanımla
+- TODO seçim-element ilişkisini tanımla
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
+
+YAYINLANMADAN ÖNCE YAPILACAKLAR
+- sql yapısı oluşturulacak
+- sql bağlantısı tanımlanacak
+- sayfalardaki notlar kaldırılacak

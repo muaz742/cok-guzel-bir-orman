@@ -4,6 +4,9 @@
  * Zaman Konumu: 20190313-144004
  * Geliştirici: muaz
  */
+
+require_once "0a/index.html";
+/*
 echo "<!doctype html>
 <html lang='tr'>
 <head>
@@ -26,3 +29,4 @@ echo "<!doctype html>
 <section class='footer' hidden></section>
 </body>
 </html>";
+*/
