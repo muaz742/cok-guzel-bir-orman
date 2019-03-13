@@ -8,9 +8,13 @@ LOGS
 - elementlere id leri tanımla - yapıldı-190313-234600-muaz
 - islem.php dosyası eklendi, fonksiyonlar tanımlandı. index.js geliştirildi - 190313-234700-muaz
 - seçim-element ilişkisini tanımla - yapıldı sayılır - seçim-ekran ilişkisi tanımlandı - 190313-234900-muaz
-- sonuç ekranı tanımlanacak
+- sonuç ekranı tanımlanacak - yapıldı - 190314-003500-muaz
+- docs klasörü oluşturuldu ve içerisine adobe xd ile oluşturulan arayüz tasarım dosyası eklendi - 190314-004400-muaz
 
 TODOLIST
+- footer a github linki ekle ikonlu falan
+- TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
+- bunun için sisteme gereken yetenekler; link oluşturma, seçim kayıtlarını saklama, linke göre kayıt görüntüleme
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
 
 YAYINLANMADAN ÖNCE YAPILACAKLAR
