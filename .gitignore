@@ -93,3 +93,7 @@ fabric.properties
 .history
 
 # End of https://www.gitignore.io/api/phpstorm,visualstudiocode
+.idea/cok-guzel-bir-orman.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
