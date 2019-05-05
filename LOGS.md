@@ -13,18 +13,28 @@
 - *LOG* dosya yapısı geliştirildi. - 190505-142500-muaz
 
 # YAPILIYORLAR
+- yapı işleyişi diyagrama tanımlanıyor.
+    - yapı geliştiriliyor
 - 
 
 ## çalışmaya başlamadan önce
-- 
+- görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)
+- hata gösterimini aktifleştir
+    - *ayar/baglanti.php:19* satırını pasif et
+- bağlantıları yap - **ftp, sql**
 
 ## çalışma bittikten sonra
-- 
+- işlemleri *LOGS.md* üzerine kayıtla
+- kayıtları *github* üzerine işle
+- dosyaları *google.drive* üzerine yedekle
 
 ## yayınlamadan önce
 - sql yapısı oluşturulacak
 - sql bağlantısı tanımlanacak
 - sayfalardaki notlar kaldırılacak
+- hata gösterimini pasifleştir
+    - *ayar/baglanti.php:19* satırını aktif et
+- geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
 - footer a github linki ekle ikonlu falan
