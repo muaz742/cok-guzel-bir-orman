@@ -12,6 +12,7 @@
 - docs klasörü oluşturuldu ve içerisine adobe xd ile oluşturulan arayüz tasarım dosyası eklendi - 190314-004400-muaz
 - *LOG* dosya yapısı geliştirildi. - 190505-142500-muaz
 - tüm yapı index.php üzerinde toparlandı - 190505-190500-muaz
+    - gelen talepler .htaccess ve index.php ile index.php ana dizine toplandı
 - akış diyagrama işlendi - 190505-190501-muaz
 
 # YAPILIYORLAR
