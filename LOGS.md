@@ -11,10 +11,10 @@
 - sonuç ekranı tanımlanacak - yapıldı - 190314-003500-muaz
 - docs klasörü oluşturuldu ve içerisine adobe xd ile oluşturulan arayüz tasarım dosyası eklendi - 190314-004400-muaz
 - *LOG* dosya yapısı geliştirildi. - 190505-142500-muaz
+- tüm yapı index.php üzerinde toparlandı - 190505-190500-muaz
+- akış diyagrama işlendi - 190505-190501-muaz
 
 # YAPILIYORLAR
-- yapı işleyişi diyagrama tanımlanıyor.
-    - yapı geliştiriliyor
 - 
 
 ## çalışmaya başlamadan önce
@@ -37,6 +37,10 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
+- ekran içeriklrei
+    - ekran varsayılan içerikleri tanımlanacak
+    - ekran içerikleri veritabanından çekilecek şekilde yapılandırılacak
+- oturum ve yetki sorgusu tanımlanacak index.php:187
 - footer a github linki ekle ikonlu falan
 - TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
 - bunun için sisteme gereken yetenekler; link oluşturma, seçim kayıtlarını saklama, linke göre kayıt görüntüleme
