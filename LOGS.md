@@ -1,4 +1,4 @@
-LOGS
+# YAPILANLAR
 - logs dosyası olıuşturuldu ve ilk girdi yapıldı. - 190313-1429-muaz
 - sistem712 altyapısı uygulandı. - 199313-144400-muaz
 - FIXME sql bağlantısı yapılmadı. sayfa başlangıcındaki bağlantı denemesi pasifleştirildi.
@@ -11,13 +11,22 @@ LOGS
 - sonuç ekranı tanımlanacak - yapıldı - 190314-003500-muaz
 - docs klasörü oluşturuldu ve içerisine adobe xd ile oluşturulan arayüz tasarım dosyası eklendi - 190314-004400-muaz
 
-TODOLIST
+# YAPILIYORLAR
+- 
+
+## çalışmaya başlamadan önce
+- 
+
+## çalışma bittikten sonra
+- 
+
+## yayınlamadan önce
+- sql yapısı oluşturulacak
+- sql bağlantısı tanımlanacak
+- sayfalardaki notlar kaldırılacak
+
+# YAPILACAKLAR
 - footer a github linki ekle ikonlu falan
 - TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
 - bunun için sisteme gereken yetenekler; link oluşturma, seçim kayıtlarını saklama, linke göre kayıt görüntüleme
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
-
-YAYINLANMADAN ÖNCE YAPILACAKLAR
-- sql yapısı oluşturulacak
-- sql bağlantısı tanımlanacak
-- sayfalardaki notlar kaldırılacak
