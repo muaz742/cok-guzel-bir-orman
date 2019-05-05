@@ -10,6 +10,7 @@
 - seçim-element ilişkisini tanımla - yapıldı sayılır - seçim-ekran ilişkisi tanımlandı - 190313-234900-muaz
 - sonuç ekranı tanımlanacak - yapıldı - 190314-003500-muaz
 - docs klasörü oluşturuldu ve içerisine adobe xd ile oluşturulan arayüz tasarım dosyası eklendi - 190314-004400-muaz
+- *LOG* dosya yapısı geliştirildi. - 190505-142500-muaz
 
 # YAPILIYORLAR
 - 
