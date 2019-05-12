@@ -13,7 +13,9 @@ function isle(aksiyon, veri) {
             console.log('aksiyon yok');
             break;
         case 1: //yönlendir - open
-            alert('yönlendiriliyor');
+            if (veri.mesaj){
+                alert(veri.mesaj);
+            }
             window.open(veri.url, veri.target);
             break;
         case 2: //yönlendir - location
