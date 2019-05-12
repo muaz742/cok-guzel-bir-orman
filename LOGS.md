@@ -17,8 +17,20 @@
 - ekran içerikleri - yapıldı - 190512-022200-muaz
     - ekran varsayılan içerikleri tanımlanacak - yapıldı - 190512-022201-muaz
     - ekran içerikleri veritabanından çekilecek şekilde yapılandırılacak - yapıldı - 190512-022202-muaz
+- *ekran, seçim, sonuç* içeriklerini bir tablo üzerinde toparlamayı denedim. *orman.xlsx:içeriklik* tablosunu oluşturdum. - 199512-142800 - muaz
+- tablo yapısı veritabanına işleniyor - 190512-145900 - muaz
+    - veritabanı oluşturuldu.
+    - sonuç ekranı ilişkilendirmesi deneniyor.
+    - ilişkilendirme başarılı. sonuç ekranları güzel çalışıyor - 190512-161900 - muaz
+- sonuç hesaplamaları tanımlanmalı
+    - sonuç yazıları, veritabanından çekilecek şekilde tasarlanmalı
+    - birden fazla dilde ve birden fazla tipte sonuç verebilecek esneklikte yapı tasarlandı.
+    - içerik düzenlemesi pratik hale getirildi. #:24 - yapıldı - 190512-162400 - muaz
+- footer a github linki ekle ikonlu falan - yapıldı - 199512-182600 - muaz
+- *fikrimvar* butonunu *fikrimvar.php* sayfası yerine proje dosyasının *issues* sayfasına yönlendirildi - yapıldı - 190512-185000 - muaz
 
 # YAPILIYORLAR
+
 - 
 
 ## çalışmaya başlamadan önce
@@ -41,14 +53,14 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- sonuç hesaplamaları tanımlanmalı
-    - sonuç yazıları, veritabanından çekilecek şekilde tasarlanmalı
 - sayfalar tanımlanmalı
     - fikrimvar.php
     - paylas.php
+    - katkılar.php
 - mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli
 - oturum ve yetki sorgusu tanımlanacak index.php:203
-- footer a github linki ekle ikonlu falan
-- TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
-- bunun için sisteme gereken yetenekler; link oluşturma, seçim kayıtlarını saklama, linke göre kayıt görüntüleme
+- kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
+    - sonuçlar kayıt edilmeli
+    - kayıtlar link ile paylaşılmalı
+    - link ile gelenlere sonuç görüntülenmeli
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
