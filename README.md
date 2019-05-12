@@ -1,5 +1,6 @@
 # Çok Güzel Bir Orman
 deneysel kişilik testi uygulaması
+[http://orman.muaz712.com](http://orman.muaz712.com)
 
 kullanıcının cevaplarına göre çıktı veren test programı
 
@@ -17,3 +18,15 @@ kullanıcının cevaplarına göre çıktı veren test programı
 - test çözme ekranı
 - test oluşturma ekranı
 - test sonuç ekranı
+
+kullanıcı
+- genel
+- kayıtlı
+- yetkili
+
+|ekran\kullanıcı|genel|kayıtlı|yetkili|
+|---|---|---|---|
+|giriş|1|1|1|
+|test oluşturma|0|0|1|
+|test çözme|1|1|1|
+|sonuç görüntüleme|1|1|1|
