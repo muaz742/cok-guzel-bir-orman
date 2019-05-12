@@ -30,8 +30,9 @@
 - *fikrimvar* butonunu *fikrimvar.php* sayfası yerine proje dosyasının *issues* sayfasına yönlendirildi - yapıldı - 190512-185000 - muaz
 
 # YAPILIYORLAR
-
-- 
+- coder tanımlanıyor
+    - kodlayıcı geliştirildi - 190513-023100 - muaz
+    - çözümleyici geliştirilmeli
 
 ## çalışmaya başlamadan önce
 - görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)
