@@ -44,6 +44,9 @@
 - sonuç hesaplamaları tanımlanmalı
     - sonuç yazıları, veritabanından çekilecek şekilde tasarlanmalı
 - sayfalar tanımlanmalı
+    - fikrimvar.php
+    - paylas.php
+- mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli
 - oturum ve yetki sorgusu tanımlanacak index.php:203
 - footer a github linki ekle ikonlu falan
 - TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
