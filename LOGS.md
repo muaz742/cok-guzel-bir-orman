@@ -14,6 +14,9 @@
 - tüm yapı index.php üzerinde toparlandı - 190505-190500-muaz
     - gelen talepler .htaccess ve index.php ile index.php ana dizine toplandı
 - akış diyagrama işlendi - 190505-190501-muaz
+- ekran içerikleri - yapıldı - 190512-022200-muaz
+    - ekran varsayılan içerikleri tanımlanacak - yapıldı - 190512-022201-muaz
+    - ekran içerikleri veritabanından çekilecek şekilde yapılandırılacak - yapıldı - 190512-022202-muaz
 
 # YAPILIYORLAR
 - 
@@ -38,10 +41,10 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- ekran içeriklrei
-    - ekran varsayılan içerikleri tanımlanacak
-    - ekran içerikleri veritabanından çekilecek şekilde yapılandırılacak
-- oturum ve yetki sorgusu tanımlanacak index.php:187
+- sonuç hesaplamaları tanımlanmalı
+    - sonuç yazıları, veritabanından çekilecek şekilde tasarlanmalı
+- sayfalar tanımlanmalı
+- oturum ve yetki sorgusu tanımlanacak index.php:203
 - footer a github linki ekle ikonlu falan
 - TODO kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
 - bunun için sisteme gereken yetenekler; link oluşturma, seçim kayıtlarını saklama, linke göre kayıt görüntüleme
