@@ -63,8 +63,9 @@ if (g('func') == 'secim') {
                 $sonuc['veri']['url'] = '/index.php';
                 break;
             case 12: //fikrim var
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/fikrimvar';
+                $sonuc['aksiyon'] = 1;
+                $sonuc['veri']['mesaj'] = '"new issue" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin';
+                $sonuc['veri']['url'] = 'https://github.com/muaz742/cok-guzel-bir-orman/issues';
                 // TODO fikrim var sayfasını tanımla
                 break;
             case 13: //siteyi paylaş
@@ -158,12 +159,12 @@ if (g('func') == 'secim') {
 
 
     /** seçim ekranı aksiyonlarını tanımla */
-    if ($ekranNo >= 0 && $ekranNo < 30) {
+    if ($ekranNo >= 0 && $ekranNo < 29) {
         /** özel koşullar */
         if ($ekranNo == 17 && $secim == 1) {
             $ekranNo = 19;
         } elseif ($ekranNo == 20 && $secim == 1) {
-            $ekranNo = 29;
+            $ekranNo = 30;
         } elseif ($ekranNo == 26 && $_SESSION['secimler'][17]==1) {
             /** kutu açılmamışsa ekran atla */
             $ekranNo = 28;
@@ -233,60 +234,96 @@ if (g('func') == 'secim') {
     exit;
 }
 
+if (g('secimler') == 712) {
+    //echo json_encode($_SESSION['secimler'],JSON_PRETTY_PRINT);
+    print_r($_SESSION['secimler']);
+    exit;
+}
 
 function sonucYazAgac(){
-    //TODO buradan devam edilecek
-    global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ ağaç';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ ağaç';
-    /*
-    global $vt;
     global $sonuc;
     if (!isset($_SESSION['secimler']['2'])||!isset($_SESSION['secimler']['3'])||!isset($_SESSION['secimler']['4'])){
         $sonuc['yazi']="ağaç seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $veri = $vt->query("SELECT * FROM iceriksonuc WHERE ekran='2' AND secim='".$_SESSION['secimler']['2']."'", PDO::FETCH_ASSOC);
-    $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
-    print_r($sorgu['yazi']);
     $sonuc['veri']['baslik']=' ';
-    //$sonuc['veri']['yazi']="<i>Ulu çınar diyor ki; gördüğün ağaçlar arkadaşlıklarını temsil ediyor. Ağaçları " . $mYaziAgacBoyu . " ve " . $mYaziAgacSikligi . " gördün. Bu arkadaşlık bağlarının " . $mYaziArkadaslikBagi . ", arkadaşlıklarının " . $mYaziAgacBoyu . " olduğunu gösterir.</i>";
-*/
+    $sonuc['veri']['yazi']= sonucGetir(2,1).sonucGetir(3,1).sonucGetir(4,1);
     }
 function sonucYazHayvan(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ hayvan';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ hayvan';
+    if (!isset($_SESSION['secimler']['6'])||!isset($_SESSION['secimler']['7'])){
+        $sonuc['yazi']="hayvan seçimleri eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(6,1).sonucGetir(7,1);
 }
 function sonucYazBeyazKapi(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ beyaz kapı';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ beyaz kapı';
+    if (!isset($_SESSION['secimler']['8'])||!isset($_SESSION['secimler']['9'])||!isset($_SESSION['secimler']['10'])){
+        $sonuc['yazi']="beyaz kapı seçimleri eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(8,1).sonucGetir(9,1).sonucGetir(10,1);
 }
 function sonucYazKirmiziKapi(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ kırmızı kapı';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ kırmızı kapı';
+    if (!isset($_SESSION['secimler']['11'])||!isset($_SESSION['secimler']['12'])||!isset($_SESSION['secimler']['13'])){
+        $sonuc['yazi']="kırmızı seçimleri eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(11,1).sonucGetir(12,1).sonucGetir(13,1);
 }
 function sonucYazSiyahKapi(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ siyah kapı';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ siyah kapı';
+    if (!isset($_SESSION['secimler']['14'])||!isset($_SESSION['secimler']['15'])||!isset($_SESSION['secimler']['16'])){
+        $sonuc['yazi']="ağaç seçimleri eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(14,1).sonucGetir(15,1).sonucGetir(16,1);
 }
 function sonucYazKutu(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ kutu';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ kutu';
+    if (!isset($_SESSION['secimler']['17'])){
+        $sonuc['yazi']="kutu seçimi eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(17,1);
 }
 function sonucYazParca(){
     global $sonuc;
-    $sonuc['veri']['baslik']='sonuç ekranı ~ parça';
-    $sonuc['veri']['yazi']='sonuç yazısı ~ parça';
+    if (!isset($_SESSION['secimler']['18'])){
+        $sonuc['yazi']="parça seçimi eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik']=' ';
+    $sonuc['veri']['yazi']= sonucGetir(18,1);
 }
 function sonuclariYaz(){
     global $sonuc;
-    $sonuc['veri']['yazi']='sonuç yazısı ~ tüm sonuçlar';
+    if ($_SESSION['secimler'][17]==0){
+        $parcaYazi = sonucGetir(18,1);
+    }else{
+        $parcaYazi = " ";
+    }
+    $sonuc['veri']['yazi']=
+        sonucGetir(2,1).sonucGetir(3,1).sonucGetir(4,1)."<br>".
+        sonucGetir(6,1).sonucGetir(7,1)."<br>".
+        sonucGetir(8,1).sonucGetir(9,1).sonucGetir(10,1)."<br>".
+        sonucGetir(11,1).sonucGetir(12,1).sonucGetir(13,1)."<br>".
+        sonucGetir(14,1).sonucGetir(15,1).sonucGetir(16,1)."<br>".
+        sonucGetir(17,1)."<br>".$parcaYazi;
 }
 function icerigiSonucaTanimla($ekranNo)
 {
@@ -307,10 +344,19 @@ function secimleriSifirla(){
     unset($_SESSION['secimler']);
 }
 
-if (g('secimler') == 712) {
-    echo json_encode($_SESSION['secimler'],JSON_PRETTY_PRINT);
-    //print_r($_SESSION['secimler']);
-    exit;
+function sonucGetir($ekranNo,$sonucTipi = 0){
+    global $vt;
+    switch ($sonucTipi){
+        case 1:
+            $tip = 'sonucYaziDedde';
+            break;
+        default:
+            $tip = 'sonucYaziDuru';
+    }
+    $veri = $vt->query("SELECT ".$tip." FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$_SESSION['secimler'][$ekranNo]."'", PDO::FETCH_ASSOC);
+    $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
+    return $sorgu[$tip];
 }
+
 
 header("Location: /index.php");
