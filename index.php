@@ -122,9 +122,16 @@ $ekran = ('<!DOCTYPE html>
     <div class="container">
         <div class="media-container-row align-center mbr-white">
             <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">© COPYRIGHT 2018 <a
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">© COPYRIGHT '.date(Y).' <a
                         href="http://www.muaz712.com" class="text-white" target="_blank">MUAZ712.COM</a>- TÜM HAKLARI
                     SAKLIDIR</p>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                <a href="https://github.com/muaz742/cok-guzel-bir-orman" target="_blank">
+                <img src="' .$yol. 'assets/images/github.svg" alt="" style="height: 2.0rem;">
+                </a>
+                </p>
             </div>
         </div>
     </div>
