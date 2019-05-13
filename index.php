@@ -92,7 +92,7 @@ $ekran = ('<!DOCTYPE html>
                             class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
                 </li>
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4"
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="#"
                                                            onclick="secim(0,13)">PAYLAŞ</a></div>
         </div>
     </nav>
@@ -122,7 +122,7 @@ $ekran = ('<!DOCTYPE html>
     <div class="container">
         <div class="media-container-row align-center mbr-white">
             <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">© COPYRIGHT '.date(Y).' <a
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">© COPYRIGHT ' .date(Y). ' <a
                         href="http://www.muaz712.com" class="text-white" target="_blank">MUAZ712.COM</a>- TÜM HAKLARI
                     SAKLIDIR</p>
             </div>
@@ -146,6 +146,8 @@ $ekran = ('<!DOCTYPE html>
 <script src="' .$yol. 'assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
 <script src="' .$yol. 'assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
 <script src="' .$yol. 'assets/theme/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
 <script src="index.js?v=' .time(). '"></script>
 </body>
 </html>');
