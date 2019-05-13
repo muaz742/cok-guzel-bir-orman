@@ -166,18 +166,20 @@ if (g('func') == 'secim') {
             $ekranNo = 19;
         } elseif ($ekranNo == 20 && $secim == 1) {
             $ekranNo = 30;
-        } elseif ($ekranNo == 26 && $_SESSION['secimler'][17]==1) {
+        } elseif ($ekranNo == 26 && $_SESSION['secimler'][17] == 1) {
             /** kutu açılmamışsa ekran atla */
             $ekranNo = 28;
         } else {
             $ekranNo++;
         }
+        /** seçimleri veritabanına işle */
         if ($ekranNo == 19) {
             secimleriKaydet();
         }
+
         icerigiSonucaTanimla($ekranNo);
         /** sonuç ekranı aksiyonlarını tanımla */
-        switch ($ekranNo){
+        switch ($ekranNo) {
             case 21:
                 sonucYazAgac();
                 break;
@@ -240,95 +242,112 @@ if (g('func') == 'secim') {
 
 if (g('secimler') == 712) {
     //echo json_encode($_SESSION['secimler'],JSON_PRETTY_PRINT);
-    print_r($_SESSION['secimler']);
+    var_dump($_SESSION['secimler']);
+    var_dump($_SESSION['kisaUrl']);
     exit;
 }
 
-function sonucYazAgac(){
+function sonucYazAgac()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['2'])||!isset($_SESSION['secimler']['3'])||!isset($_SESSION['secimler']['4'])){
-        $sonuc['yazi']="ağaç seçimleri eksik";
+    if (!isset($_SESSION['secimler']['2']) || !isset($_SESSION['secimler']['3']) || !isset($_SESSION['secimler']['4'])) {
+        $sonuc['yazi'] = "ağaç seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(2,1).sonucGetir(3,1).sonucGetir(4,1);
-    }
-function sonucYazHayvan(){
-    global $sonuc;
-    if (!isset($_SESSION['secimler']['6'])||!isset($_SESSION['secimler']['7'])){
-        $sonuc['yazi']="hayvan seçimleri eksik";
-        echo json_encode($sonuc, JSON_PRETTY_PRINT);
-        exit;
-    }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(6,1).sonucGetir(7,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(2, 1) . sonucGetir(3, 1) . sonucGetir(4, 1);
 }
-function sonucYazBeyazKapi(){
+
+function sonucYazHayvan()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['8'])||!isset($_SESSION['secimler']['9'])||!isset($_SESSION['secimler']['10'])){
-        $sonuc['yazi']="beyaz kapı seçimleri eksik";
+    if (!isset($_SESSION['secimler']['6']) || !isset($_SESSION['secimler']['7'])) {
+        $sonuc['yazi'] = "hayvan seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(8,1).sonucGetir(9,1).sonucGetir(10,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(6, 1) . sonucGetir(7, 1);
 }
-function sonucYazKirmiziKapi(){
+
+function sonucYazBeyazKapi()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['11'])||!isset($_SESSION['secimler']['12'])||!isset($_SESSION['secimler']['13'])){
-        $sonuc['yazi']="kırmızı seçimleri eksik";
+    if (!isset($_SESSION['secimler']['8']) || !isset($_SESSION['secimler']['9']) || !isset($_SESSION['secimler']['10'])) {
+        $sonuc['yazi'] = "beyaz kapı seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(11,1).sonucGetir(12,1).sonucGetir(13,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(8, 1) . sonucGetir(9, 1) . sonucGetir(10, 1);
 }
-function sonucYazSiyahKapi(){
+
+function sonucYazKirmiziKapi()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['14'])||!isset($_SESSION['secimler']['15'])||!isset($_SESSION['secimler']['16'])){
-        $sonuc['yazi']="ağaç seçimleri eksik";
+    if (!isset($_SESSION['secimler']['11']) || !isset($_SESSION['secimler']['12']) || !isset($_SESSION['secimler']['13'])) {
+        $sonuc['yazi'] = "kırmızı seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(14,1).sonucGetir(15,1).sonucGetir(16,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(11, 1) . sonucGetir(12, 1) . sonucGetir(13, 1);
 }
-function sonucYazKutu(){
+
+function sonucYazSiyahKapi()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['17'])){
-        $sonuc['yazi']="kutu seçimi eksik";
+    if (!isset($_SESSION['secimler']['14']) || !isset($_SESSION['secimler']['15']) || !isset($_SESSION['secimler']['16'])) {
+        $sonuc['yazi'] = "ağaç seçimleri eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(17,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(14, 1) . sonucGetir(15, 1) . sonucGetir(16, 1);
 }
-function sonucYazParca(){
+
+function sonucYazKutu()
+{
     global $sonuc;
-    if (!isset($_SESSION['secimler']['18'])){
-        $sonuc['yazi']="parça seçimi eksik";
+    if (!isset($_SESSION['secimler']['17'])) {
+        $sonuc['yazi'] = "kutu seçimi eksik";
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-    $sonuc['veri']['baslik']=' ';
-    $sonuc['veri']['yazi']= sonucGetir(18,1);
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(17, 1);
 }
-function sonuclariYaz(){
+
+function sonucYazParca()
+{
     global $sonuc;
-    if ($_SESSION['secimler'][17]==0){
-        $parcaYazi = sonucGetir(18,1);
-    }else{
+    if (!isset($_SESSION['secimler']['18'])) {
+        $sonuc['yazi'] = "parça seçimi eksik";
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        exit;
+    }
+    $sonuc['veri']['baslik'] = ' ';
+    $sonuc['veri']['yazi'] = sonucGetir(18, 1);
+}
+
+function sonuclariYaz()
+{
+    global $sonuc;
+    if ($_SESSION['secimler'][17] == 0) {
+        $parcaYazi = sonucGetir(18, 1);
+    } else {
         $parcaYazi = " ";
     }
-    $sonuc['veri']['yazi']=
-        sonucGetir(2,1).sonucGetir(3,1).sonucGetir(4,1)."<br>".
-        sonucGetir(6,1).sonucGetir(7,1)."<br>".
-        sonucGetir(8,1).sonucGetir(9,1).sonucGetir(10,1)."<br>".
-        sonucGetir(11,1).sonucGetir(12,1).sonucGetir(13,1)."<br>".
-        sonucGetir(14,1).sonucGetir(15,1).sonucGetir(16,1)."<br>".
-        sonucGetir(17,1)."<br>".$parcaYazi;
+    $sonuc['veri']['yazi'] =
+        sonucGetir(2, 1) . sonucGetir(3, 1) . sonucGetir(4, 1) . "<br>" .
+        sonucGetir(6, 1) . sonucGetir(7, 1) . "<br>" .
+        sonucGetir(8, 1) . sonucGetir(9, 1) . sonucGetir(10, 1) . "<br>" .
+        sonucGetir(11, 1) . sonucGetir(12, 1) . sonucGetir(13, 1) . "<br>" .
+        sonucGetir(14, 1) . sonucGetir(15, 1) . sonucGetir(16, 1) . "<br>" .
+        sonucGetir(17, 1) . "<br>" . $parcaYazi;
 }
+
 function icerigiSonucaTanimla($ekranNo)
 {
     global $vt;
@@ -344,11 +363,12 @@ function icerigiSonucaTanimla($ekranNo)
     $sonuc['aksiyon'] = 3;
     $sonuc['veri']['butonluk'] = $butonlar;
 }
-function secimleriSifirla(){
+
+function secimleriSifirla()
+{
     unset($_SESSION['secimler']);
 }
 
-function sonucGetir($ekranNo,$sonucTipi = 0){
 function secimleriKaydet()
 {
     /** işlem verilerini tanımla */
@@ -384,6 +404,7 @@ function secimleriKaydet()
     /** işlem sonucunu çıktı ver */
     if ($durum) {
         global $cikti;
+        /** kısa url kodunu oturum kayıtarına kaydet */
         $_SESSION['kisaUrl'] = mod62_encode($milliseconds);
         $cikti = 1;
     } else {
@@ -396,67 +417,71 @@ function secimleriKaydet()
 function sonucGetir($ekranNo, $sonucTipi = 0)
 {
     global $vt;
-    switch ($sonucTipi){
+    switch ($sonucTipi) {
         case 1:
             $tip = 'sonucYaziDedde';
             break;
         default:
             $tip = 'sonucYaziDuru';
     }
-    $veri = $vt->query("SELECT ".$tip." FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$_SESSION['secimler'][$ekranNo]."'", PDO::FETCH_ASSOC);
+    $veri = $vt->query("SELECT " . $tip . " FROM iceriklik WHERE ekranNo='" . $ekranNo . "' AND secimNo='" . $_SESSION['secimler'][$ekranNo] . "'", PDO::FETCH_ASSOC);
     $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
     return $sorgu[$tip];
 }
 
-function mod62_encode($girdi){
-    $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
+function mod62_encode($girdi)
+{
+    $anahtar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     $i = 0;
-    $kalanlar=[];
-    $bolen = count($anahtar)+1;
-    if($girdi<$bolen){
-        array_push($kalanlar,$girdi);
+    $kalanlar = [];
+    $bolen = count($anahtar) + 1;
+    if ($girdi < $bolen) {
+        array_push($kalanlar, $girdi);
     }
-    while ($girdi>$bolen){
-        $kalan = $girdi%$bolen;
+    while ($girdi > $bolen) {
+        $kalan = $girdi % $bolen;
         $girdi = $girdi - $kalan;
-        $girdi = $girdi/$bolen;
-        array_push($kalanlar,$kalan);
-        if ($girdi<$bolen){
-            array_push($kalanlar,$girdi);
+        $girdi = $girdi / $bolen;
+        array_push($kalanlar, $kalan);
+        if ($girdi < $bolen) {
+            array_push($kalanlar, $girdi);
         }
         $i++;
     }
-    $i=0;
-    while ($i<count($kalanlar)){
-        if (!isset($cikti)){
-            $cikti = $anahtar[$kalanlar[$i]-1];
-        }else{
-            $cikti = $cikti.$anahtar[$kalanlar[$i]-1];
+    $i = 0;
+    while ($i < count($kalanlar)) {
+        if (!isset($cikti)) {
+            $cikti = $anahtar[$kalanlar[$i] - 1];
+        } else {
+            $cikti = $cikti . $anahtar[$kalanlar[$i] - 1];
         }
         $i++;
     }
     return $cikti;
 }
-function mod62_decode($girdi){
-    $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
+
+function mod62_decode($girdi)
+{
+    $anahtar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     $girdi = str_split($girdi);
     $anahtar = array_flip($anahtar);
     $i = 0;
-    $kalanlar =[];
-    while($i<count($girdi)){
-        array_push($kalanlar,$anahtar[$girdi[$i]]+1);
+    $kalanlar = [];
+    while ($i < count($girdi)) {
+        array_push($kalanlar, $anahtar[$girdi[$i]] + 1);
         $i++;
     }
-    $carpan = count($anahtar)+1;
+    $carpan = count($anahtar) + 1;
     $i = 0;
-    while($i<count($kalanlar)){
-        $degerA = pow($carpan,$i);
+    while ($i < count($kalanlar)) {
+        $degerA = pow($carpan, $i);
         $degerB = $kalanlar[$i];
-        $islem =  $degerA * $degerB;
-        (empty($cikti))?$cikti=$islem:$cikti = $cikti + $islem;
+        $islem = $degerA * $degerB;
+        (empty($cikti)) ? $cikti = $islem : $cikti = $cikti + $islem;
         $i++;
     }
     return $cikti;
 }
+
 
 header("Location: /index.php");
