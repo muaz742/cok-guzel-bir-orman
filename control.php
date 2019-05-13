@@ -129,10 +129,11 @@ if (g('func') == 'secim') {
 
         switch ($secim) {
             case 0: //maceranı paylaş
-                secimleriKaydet();
+                //secimleriKaydet();
                 //TODO benzersiz paylaşım linki oluştur
-                icerigiSonucaTanimla(30);
-                sonuclariYaz();
+                $sonuc['aksiyon']= 5;
+                $sonuc['veri']['baslik']= "MACERANI PAYLAŞ !";
+                $sonuc['veri']['url']= "http://orman.muaz712.com/e/".$_SESSION['kisaUrl'];
                 break;
             case 1: //gülümse ve git
                 $sonuc['aksiyon'] = 4;

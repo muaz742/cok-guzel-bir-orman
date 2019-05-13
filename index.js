@@ -28,6 +28,15 @@ function isle(aksiyon, veri) {
         case 4: //alert
             alert(veri);
             break;
+        case 5: //swal
+            Swal.fire({
+                title: veri.baslik,
+                input: 'text',
+                inputValue: veri.url,
+                showCancelButton: false,
+                showConfirmButton: false
+            });
+            break;
         default:
             alert("aksiyon algılanamadı");
     }
