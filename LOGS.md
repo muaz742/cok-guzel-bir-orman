@@ -28,13 +28,15 @@
     - içerik düzenlemesi pratik hale getirildi. #:24 - yapıldı - 190512-162400 - muaz
 - footer a github linki ekle ikonlu falan - yapıldı - 199512-182600 - muaz
 - *fikrimvar* butonunu *fikrimvar.php* sayfası yerine proje dosyasının *issues* sayfasına yönlendirildi - yapıldı - 190512-185000 - muaz
-
-# YAPILIYORLAR
-- coder tanımlanıyor
+- coder tanımlanıyor - yapıldı - 190513-160400 - muaz
     - kodlayıcı geliştirildi - 190513-023100 - muaz
     - çözümleyici geliştirildi - 190513-043500 - muaz
     - *urlKodla* ve *urlCoz* olan fonksiyon isimleri *mod62_encode* ve *mod62_decode* olarak güncellendi - 199513-160200 - muaz
 - 63 ten küçük değerlerin encode işlemi yapılmıyor - onar - yapıldı - 190513-051000 - muaz
+
+# YAPILIYORLAR
+
+-
 
 ## çalışmaya başlamadan önce
 - görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)
