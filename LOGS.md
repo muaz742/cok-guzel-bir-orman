@@ -32,7 +32,7 @@
 # YAPILIYORLAR
 - coder tanımlanıyor
     - kodlayıcı geliştirildi - 190513-023100 - muaz
-    - çözümleyici geliştirilmeli
+    - çözümleyici geliştirildi - 190513-043500 - muaz
 
 ## çalışmaya başlamadan önce
 - görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)

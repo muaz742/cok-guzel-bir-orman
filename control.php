@@ -358,11 +358,6 @@ function sonucGetir($ekranNo,$sonucTipi = 0){
     return $sorgu[$tip];
 }
 
-/*
- * TODO url coder geliştir
- * https://stackoverflow.com/questions/742013/how-do-i-create-a-url-shortener
- * adresindeki anlatımdan ilham alınıyor
- */
 function urlKodla($girdi){
     $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
     $i = 0;
@@ -390,9 +385,24 @@ function urlKodla($girdi){
     return $cikti;
 }
 function urlCoz($girdi){
-    //TODO çözümleyiciyi geliştir
     $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
-    $cikti = 'gelistiriliyor';
+    $girdi = str_split($girdi);
+    $anahtar = array_flip($anahtar);
+    $i = 0;
+    $kalanlar =[];
+    while($i<count($girdi)){
+        array_push($kalanlar,$anahtar[$girdi[$i]]+1);
+        $i++;
+    }
+    $carpan = count($anahtar)+1;
+    $i = 0;
+    while($i<count($kalanlar)){
+        $degerA = pow($carpan,$i);
+        $degerB = $kalanlar[$i];
+        $islem =  $degerA * $degerB;
+        (empty($cikti))?$cikti=$islem:$cikti = $cikti + $islem;
+        $i++;
+    }
     return $cikti;
 }
 
