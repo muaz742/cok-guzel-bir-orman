@@ -129,6 +129,7 @@ if (g('func') == 'secim') {
 
         switch ($secim) {
             case 0: //maceranı paylaş
+                secimleriKaydet();
                 //TODO benzersiz paylaşım linki oluştur
                 icerigiSonucaTanimla(30);
                 sonuclariYaz();
@@ -170,6 +171,9 @@ if (g('func') == 'secim') {
             $ekranNo = 28;
         } else {
             $ekranNo++;
+        }
+        if ($ekranNo == 19) {
+            secimleriKaydet();
         }
         icerigiSonucaTanimla($ekranNo);
         /** sonuç ekranı aksiyonlarını tanımla */
@@ -345,6 +349,52 @@ function secimleriSifirla(){
 }
 
 function sonucGetir($ekranNo,$sonucTipi = 0){
+function secimleriKaydet()
+{
+    /** işlem verilerini tanımla */
+    $dizi0['sessionId'] = session_id();
+    $milliseconds = round(microtime(true) * 1000);
+    $dizi0['time'] = $milliseconds;
+    (isset($_SESSION['kullanici'])) ? $dizi0['user'] = $_SESSION['kullanici'] : "";
+    $dizi0deger = implode("','", $dizi0);
+    $dizi0anahtar = array_keys($dizi0);
+    $dizi0anahtar = implode("`,`", $dizi0anahtar);
+
+    /** seçimleri tanımla */
+    $dizi1 = (isset($_SESSION['secimler'])) ? $_SESSION['secimler'] : [0, 1];
+    $dizi1deger = implode("','", $dizi1);
+    $dizi1anahtar = array_keys($dizi1);
+    $dizi1anahtar = implode("`,`", $dizi1anahtar);
+
+    /** verileri birleştir */
+    $deger = $dizi0deger . "','" . $dizi1deger;
+    $anahtar = $dizi0anahtar . "`,`" . $dizi1anahtar;
+
+    /** veritabanına işle */
+    $sorgu = "INSERT INTO secimler (`" . $anahtar . "`) VALUES ('" . $deger . "')";
+    global $vt;
+    try {
+        $islem = $vt->prepare($sorgu);
+        $durum = $islem->execute();
+        $vt->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        $e->getMessage();
+    }
+
+    /** işlem sonucunu çıktı ver */
+    if ($durum) {
+        global $cikti;
+        $_SESSION['kisaUrl'] = mod62_encode($milliseconds);
+        $cikti = 1;
+    } else {
+        global $cikti;
+        $cikti = 0;
+    }
+    return $cikti;
+}
+
+function sonucGetir($ekranNo, $sonucTipi = 0)
+{
     global $vt;
     switch ($sonucTipi){
         case 1:
