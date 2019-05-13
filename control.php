@@ -7,9 +7,9 @@
 session_start();
 /** veritabanı bağlantı bilgilerini tanımla */
 $sunucu = "localhost";
-$vtisim = "u8748904_sistem";
-$vtkullaniciisim = "u8748904_sistem";
-$vtkullaniciparola = "}lYc-%#2M-!=";
+$vtisim = "";
+$vtkullaniciisim = "";
+$vtkullaniciparola = "";
 
 /** veritabanı bağlantısı yap */
 try {
@@ -358,7 +358,7 @@ function sonucGetir($ekranNo,$sonucTipi = 0){
     return $sorgu[$tip];
 }
 
-function urlKodla($girdi){
+function mod62_encode($girdi){
     $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
     $i = 0;
     $kalanlar=[];
@@ -387,7 +387,7 @@ function urlKodla($girdi){
     }
     return $cikti;
 }
-function urlCoz($girdi){
+function mod62_decode($girdi){
     $anahtar=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
     $girdi = str_split($girdi);
     $anahtar = array_flip($anahtar);
