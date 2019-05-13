@@ -33,6 +33,7 @@
 - coder tanımlanıyor
     - kodlayıcı geliştirildi - 190513-023100 - muaz
     - çözümleyici geliştirildi - 190513-043500 - muaz
+- 63 ten küçük değerlerin encode işlemi yapılmıyor - onar - yapıldı - 190513-051000 - muaz
 
 ## çalışmaya başlamadan önce
 - görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)

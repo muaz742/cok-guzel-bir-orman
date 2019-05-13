@@ -7,9 +7,9 @@
 session_start();
 /** veritabanı bağlantı bilgilerini tanımla */
 $sunucu = "localhost";
-$vtisim = "";
-$vtkullaniciisim = "";
-$vtkullaniciparola = "";
+$vtisim = "u8748904_sistem";
+$vtkullaniciisim = "u8748904_sistem";
+$vtkullaniciparola = "}lYc-%#2M-!=";
 
 /** veritabanı bağlantısı yap */
 try {
@@ -363,6 +363,9 @@ function urlKodla($girdi){
     $i = 0;
     $kalanlar=[];
     $bolen = count($anahtar)+1;
+    if($girdi<$bolen){
+        array_push($kalanlar,$girdi);
+    }
     while ($girdi>$bolen){
         $kalan = $girdi%$bolen;
         $girdi = $girdi - $kalan;
