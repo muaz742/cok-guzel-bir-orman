@@ -18,9 +18,167 @@ $vtkullaniciparola = "";
 /** yapı bilgilerini tanımla */
 $httpHost = "sistem.site"; //alan adı
 $gui['lang']='tr'; //varsayılan dil
-$icerik['baslik'] = 'ORMANA HOŞGELDİN';
+$icerik['mNo'] = '0';
+$icerik['title'] = 'ORMANA HOŞGELDİN';
+$icerik['baslik'] = 'ÇOK GÜZEL BİR ORMANDASIN';
+$icerik['yazi'] = 'ORMANDA DOLAŞIRKEN<br>KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br>';
+$icerik['secim'] = $icerik['mNo'].',0';
+$icerik['btnYazi'] = 'ORMANA GİR';
 $logoyazi = 'WALK ON THE JUNGLE';
 $yol = 'view/';
+
+
+
+/** veritabanı bağlantısı yap */
+try{
+    $vt = new PDO("mysql:host=$sunucu;dbname=$vtisim;charset=utf8", "$vtkullaniciisim", "$vtkullaniciparola");
+}catch (PDOException $e){
+    print $e->getMessage();
+}
+
+/** kullanıcıya hata gösterimini pasifleştir */
+error_reporting(0);
+
+/** fonksiyonları tanımla */
+function g($par){
+    isset($_GET[$par]) ? $par = $_GET[$par] : $par = "0";
+    return $par;
+}
+
+function p($par) {
+    isset($_POST[$par])? $par = htmlspecialchars(addslashes(trim($_POST[$par]))) : $par = 0;
+    return $par;
+}
+
+function s($par){
+    isset($_SESSION[$par])? $session = $_SESSION[$par] : $session = 0;
+    return $session;
+}
+
+function mOturumAcikMi(){
+    return (s("oturum")==1)? 1: 0;
+}
+
+function mErisimYetkisiVarMi($obje, $kullanici){
+    global $vt;
+    if ($kullanici!=0){
+        $sorgu = $vt->query("SELECT `".$obje."` FROM `kullanici` WHERE `kod`=".$kullanici."")->fetch(PDO::FETCH_ASSOC);
+        if ($sorgu){
+            return $sorgu[$obje];
+        }else{
+            echo 0;
+        }
+    }else{
+        return 0;
+    }
+}
+
+function mEkranYukle ($ekranKodu){
+    require_once "ekran/".$ekranKodu.".php";
+}
+
+function mod62_decode($girdi)
+{
+    $anahtar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    $girdi = str_split($girdi);
+    $anahtar = array_flip($anahtar);
+    $i = 0;
+    $kalanlar = [];
+    while ($i < count($girdi)) {
+        array_push($kalanlar, $anahtar[$girdi[$i]] + 1);
+        $i++;
+    }
+    $carpan = count($anahtar) + 1;
+    $i = 0;
+    while ($i < count($kalanlar)) {
+        $degerA = pow($carpan, $i);
+        $degerB = $kalanlar[$i];
+        $islem = $degerA * $degerB;
+        (empty($cikti)) ? $cikti = $islem : $cikti = $cikti + $islem;
+        $i++;
+    }
+    return $cikti;
+}
+
+/** sonuç yazdırma fonksiyonlarını tanımla */
+function sonucGetir($ekranNo, $sonucTipi = 0)
+{
+    global $vt;
+    switch ($sonucTipi) {
+        case 1:
+            $tip = 'sonucYaziDedde';
+            break;
+        default:
+            $tip = 'sonucYaziDuru';
+    }
+    $veri = $vt->query("SELECT " . $tip . " FROM iceriklik WHERE ekranNo='" . $ekranNo . "' AND secimNo='" . $_SESSION['secimler'][$ekranNo] . "'", PDO::FETCH_ASSOC);
+    $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
+    return $sorgu[$tip];
+}
+function sonuclariYaz()
+{
+    global $sonuc;
+    if ($_SESSION['secimler'][17] == 0) {
+        $parcaYazi = sonucGetir(18, 1);
+    } else {
+        $parcaYazi = " ";
+    }
+    $sonuc['veri']['yazi'] =
+        sonucGetir(2, 1) . sonucGetir(3, 1) . sonucGetir(4, 1) . "<br>" .
+        sonucGetir(6, 1) . sonucGetir(7, 1) . "<br>" .
+        sonucGetir(8, 1) . sonucGetir(9, 1) . sonucGetir(10, 1) . "<br>" .
+        sonucGetir(11, 1) . sonucGetir(12, 1) . sonucGetir(13, 1) . "<br>" .
+        sonucGetir(14, 1) . sonucGetir(15, 1) . sonucGetir(16, 1) . "<br>" .
+        sonucGetir(17, 1) . "<br>" . $parcaYazi;
+}
+
+function koddanIcerikGetir($girdi){
+    $no = mod62_decode($girdi);
+    global $vt;
+    $veri = $vt->query("SELECT * FROM secimler WHERE time='".$no."'");
+    $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
+    unset($sorgu['id']);
+    unset($sorgu['sessionId']);
+    unset($sorgu['time']);
+    unset($sorgu['user']);
+    $_SESSION['secimler']=$sorgu;
+    sonuclariYaz();
+    //return $cikti;
+}
+
+/** http taleplerini index.php ye topla*/
+$talep = explode('/',$_SERVER['REQUEST_URI']);
+//dil talebi yokla - yoksa tr
+if (!empty($talep[1])){
+    if ($talep[1]=="e"&&!empty($talep[2])){
+        koddanIcerikGetir($talep['2']);
+        $icerik['mNo'] = '30';
+        $icerik['title'] = 'ORMANA HOŞGELDİN';
+        $icerik['baslik'] = 'ORMANDAN';
+        $icerik['yazi'] = $sonuc['veri']['yazi'];
+        $icerik['secim'] = $icerik['mNo'].',0';
+        $icerik['btnYazi'] = 'ORMANA GİR';
+        $yol = '../view/';
+        //echo $ekran;
+        //exit;
+    }else{
+        header('Location: /');
+        exit;
+    }
+}
+
+/** oturum ve erişim yokla */
+// TODO oturum ve yetki sorgusu yapılacak
+if (s('oturum')==1&&s('erisim')==1){
+    // oturum ve erişim var
+}elseif (s('oturum')==1&&s('erisim')==0){
+    //oturum açık erişim yok
+}else{
+    //oturum yok
+}
+
+/** dil seçimi yokla */
+
 $ekran = ('<!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -31,7 +189,7 @@ $ekran = ('<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="' .$yol. 'assets/images/walking.svg" type="image/x-icon">
     <meta name="description" content="ORMANDA DOLAŞIRKEN KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA HAZIR MISIN?">
-    <title>' .$icerik['baslik']. '</title>
+    <title>' .$icerik['title']. '</title>
     <link rel="stylesheet" href="' .$yol. 'assets/web/assets/mobirise-icons/mobirise-icons.css">
     <link rel="stylesheet" href="' .$yol. 'assets/tether/tether.min.css">
     <link rel="stylesheet" href="' .$yol. 'assets/soundcloud-plugin/style.css">
@@ -105,14 +263,11 @@ $ekran = ('<!DOCTYPE html>
     <div class="container align-center">
         <div class="row justify-content-md-center">
             <div class="mbr-white col-md-10" id="mEkran">
-                <div id="mNo" hidden>0</div>
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" id="mBaslik">ÇOK GÜZEL BİR
-                    ORMANDASIN</h1>
-                <p class="mbr-text pb-3 mbr-fonts-style display-5" id="mYazi">ORMANDA DOLAŞIRKEN<br>KENDİNİ
-                    KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br>
-                </p>
+                <div id="mNo" hidden>'.$icerik['mNo'].'</div>
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" id="mBaslik">'.$icerik['baslik'].'</h1>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5" id="mYazi">'.$icerik['yazi'].'</p>
                 <div class="mbr-section-btn" id="mButonluk">
-                    <a class="btn btn-md btn-primary display-4 butonamk" id="mBtn0" onclick="secim(0,0)">ORMANA GİR</a>
+                    <a class="btn btn-md btn-primary display-4 butonamk" id="mBtn0" onclick="secim('.$icerik['secim'].')">'.$icerik['btnYazi'].'</a>
                 </div>
             </div>
         </div>
@@ -151,75 +306,6 @@ $ekran = ('<!DOCTYPE html>
 <script src="index.js?v=' .time(). '"></script>
 </body>
 </html>');
-
-
-/** veritabanı bağlantısı yap */
-try{
-    $vt = new PDO("mysql:host=$sunucu;dbname=$vtisim;charset=utf8", "$vtkullaniciisim", "$vtkullaniciparola");
-}catch (PDOException $e){
-    print $e->getMessage();
-}
-
-/** kullanıcıya hata gösterimini pasifleştir */
-error_reporting(0);
-
-/** fonksiyonları tanımla */
-function g($par){
-    isset($_GET[$par]) ? $par = $_GET[$par] : $par = "0";
-    return $par;
-}
-
-function p($par) {
-    isset($_POST[$par])? $par = htmlspecialchars(addslashes(trim($_POST[$par]))) : $par = 0;
-    return $par;
-}
-
-function s($par){
-    isset($_SESSION[$par])? $session = $_SESSION[$par] : $session = 0;
-    return $session;
-}
-
-function mOturumAcikMi(){
-    return (s("oturum")==1)? 1: 0;
-}
-
-function mErisimYetkisiVarMi($obje, $kullanici){
-    global $vt;
-    if ($kullanici!=0){
-        $sorgu = $vt->query("SELECT `".$obje."` FROM `kullanici` WHERE `kod`=".$kullanici."")->fetch(PDO::FETCH_ASSOC);
-        if ($sorgu){
-            return $sorgu[$obje];
-        }else{
-            echo 0;
-        }
-    }else{
-        return 0;
-    }
-}
-
-function mEkranYukle ($ekranKodu){
-    require_once "ekran/".$ekranKodu.".php";
-}
-
-/** http taleplerini index.php ye topla*/
-$talep = explode('/',$_SERVER['REQUEST_URI']);
-//dil talebi yokla - yoksa tr
-if (!empty($talep[1])){
-    header('Location: /');
-    exit;
-}
-
-/** oturum ve erişim yokla */
-// TODO oturum ve yetki sorgusu yapılacak
-if (s('oturum')==1&&s('erisim')==1){
-    // oturum ve erişim var
-}elseif (s('oturum')==1&&s('erisim')==0){
-    //oturum açık erişim yok
-}else{
-    //oturum yok
-}
-
-/** dil seçimi yokla */
 
 /** ekran yükle */
 echo $ekran;
