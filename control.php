@@ -266,6 +266,16 @@ if (g('dev') == '712') {
         echo json_encode($cikti, JSON_PRETTY_PRINT);
         exit;
     }
+    if (g('mod62')=='decode'){
+        $girdi = g('v');
+        if (!empty($girdi)){
+            $cikti['sonuc'] = mod62_decode($girdi);
+        }else{
+            $cikti['hata']='değer algılanamadı';
+        }
+        echo json_encode($cikti, JSON_PRETTY_PRINT);
+        exit;
+    }
     echo json_encode($cikti, JSON_PRETTY_PRINT);
     exit;
 }
