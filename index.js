@@ -79,6 +79,16 @@ function isle(aksiyon, veri) {
                 }
             });
             break;
+        case 6: //toast göster
+            Toast.fire({
+                type: veri.tip,
+                title: veri.yazi,
+                animation: false,
+                customClass: {
+                    popup: 'animated '+veri.animasyon
+                }
+            });
+            break;
         default:
             alert("aksiyon algılanamadı");
     }
