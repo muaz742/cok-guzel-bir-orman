@@ -67,6 +67,7 @@
     - *index.php* içerisinde kullanılmayan tanımlar kaldırıldı - yapıldı - 20190514-222626-muaz
     - eski sistem dosyaları kaldırılıyor - yapıldı - 20190514-224503-muaz
     - *control.php* içerikleri gruplandırılıyor - yapıldı - 20190514-225403-muaz
+- sonuç ekranı aksiyonları geliştirilmeli - yapıldı - 20190513-234641-muaz
 
 # YAPILIYORLAR
 
@@ -93,7 +94,6 @@
 
 # YAPILACAKLAR
 ## Bugün
-- sonuç ekranı aksiyonları geliştirilmeli
 ## Yarın
 - ekran güncellemeleri *docs/orman.xd* işlenmeli
 - yapılan geliştirmeleri diyagrama işle
