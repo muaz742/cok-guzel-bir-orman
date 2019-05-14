@@ -80,7 +80,12 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- eski yapı dosyalarının gerekliliğini değerlendir
+- eski yapı dosyalarının gerekliliğini değerlendir - gerekli değil
+    - *test.php* kaldırılıyor - yapıldı - 20190514-223032-muaz
+    - *ayar/baglanti.php* kaldırılıyor - yapıldı - 20190514-223048-muaz
+    - *ayar/fonksiyon.php* kaldırılıyor - yapıldı - 20190514-223137-muaz
+    - *ayar/islem.php* kaldırılıyor - yapıldı - 20190514-223319-muaz
+    - *view* klasörü içerisindeki ekran yapıları siliniyor - yapıldı - 20190514-223808-muaz
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir
     - kullanıcı girişi olayı gündemden kaldırılıyor - yapıldı - 20190514-221546-muaz
