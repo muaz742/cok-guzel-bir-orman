@@ -49,6 +49,7 @@
     - 29:0 - maceranı paylaş - - yapıldı - 20190514-155446-muaz
 - *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır. - yönlendirme kaldırıldı - - yapıldı - 20190514-160602-muaz
 - mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli - yapıldı - 20190514-165640-muaz
+- *README.md* dosyası güncellendi - yapıldı - 20190514-171441-muaz
 
 # YAPILIYORLAR
 
