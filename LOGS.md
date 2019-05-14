@@ -84,5 +84,6 @@
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir
     - kullanıcı girişi olayı gündemden kaldırılıyor - yapıldı - 20190514-221546-muaz
+    - *index.php* içerisinde kullanılmayan tanımlar kaldırıldı - yapıldı - 20190514-222626-muaz
 - veritabanı yapılarını deopya ekle
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...

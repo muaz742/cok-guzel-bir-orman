@@ -57,25 +57,6 @@ try{
 error_reporting(0);
 
 /** fonksiyonları tanımla */
-function g($par){
-    isset($_GET[$par]) ? $par = $_GET[$par] : $par = "0";
-    return $par;
-}
-
-function p($par) {
-    isset($_POST[$par])? $par = htmlspecialchars(addslashes(trim($_POST[$par]))) : $par = 0;
-    return $par;
-}
-
-function s($par){
-    isset($_SESSION[$par])? $session = $_SESSION[$par] : $session = 0;
-    return $session;
-}
-
-function mEkranYukle ($ekranKodu){
-    require_once "ekran/".$ekranKodu.".php";
-}
-
 function mod62_decode($girdi)
 {
     $anahtar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
