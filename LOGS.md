@@ -40,6 +40,9 @@
 - macerayı paylaş butonu geliştirildi - 190514-045100 - muaz
     - input içerisinde kısa link seçilebilir şekilde görüntülendi
     - kopyala butonu eklendi
+- sorun - butonlara tıklandığında anasayfaya yeniden yönlendiriliyor. akış geri sarıyor
+    - href etiketlerinin boşaltılmasının sebep olduğu tespit edildi
+    - *index.php* içindeki element tanımları iyileştirilmeli - yapıldı - 190514-142300-muaz
 
 # YAPILIYORLAR
 
@@ -66,13 +69,6 @@
 
 # YAPILACAKLAR
 - *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır.
-- sorunlar
-    - sonuç görüntüleme ekranı
-        - ormandan çık butonu
-            - yeni sekmede tek bir sayfa açmalı
-            - yeni sekmede önce kendini sonra sayfayı açıyor
-        - yazı altındaki ormana gir butonu
-            - tıklandığında başa sarması gerekirken aynı sayfayı yeniliyor
 - paylaşım butonlarını geliştir
     - 0:11 - paylaş - yapıldı - 190514-060100-muaz
     - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
