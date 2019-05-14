@@ -211,6 +211,7 @@ $ekran = ('<!DOCTYPE html>
     <link rel="stylesheet" href="' .$yol. 'assets/socicon/css/styles.css">
     <link rel="stylesheet" href="' .$yol. 'assets/theme/css/style.css">
     <link rel="stylesheet" href="' .$yol. 'assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
 <!-- Google Analytics -->
