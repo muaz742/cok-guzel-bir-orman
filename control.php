@@ -69,8 +69,9 @@ if (g('func') == 'secim') {
                 // TODO fikrim var sayfasını tanımla
                 break;
             case 13: //siteyi paylaş
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/paylas';
+                $sonuc['aksiyon'] = 5;
+                $sonuc['veri']['baslik']= "🌳🌲🌳🌲🌳🌳🌲<br><br>BİZ GİDERİZ ORMANA";
+                $sonuc['veri']['url']= "http://orman.muaz712.com";
                 // TODO paylaşım platformu seç ekranı tanımla
                 break;
             case 14: //logo yazı
@@ -96,26 +97,14 @@ if (g('func') == 'secim') {
     /** sonuç paylaşım ekranı aksiyonları */
     if ($ekranNo == 30) {
         switch ($secim) {
-            case 0: //twitter
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'tivitırda paylaşıldı';
+            case 0:
+                $sonuc['veri']['baslik']= "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
+                $sonuc['veri']['url']= "http://orman.muaz712.com/e/".$_SESSION['kisaUrl'];
                 break;
-            case 1: //facebook
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'feysbukta paylaşıldı';
-                break;
-            case 2: //instagram
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'istagramda paylaşıldı';
-                break;
-            case 3: //whatsapp
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'vatzapta paylaşıldı';
-                break;
-            case 4: //başa dön
+            case 1: //başa dön
                 secimleriSifirla();
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/index.php';
+                $sonuc['aksiyon'] = 1;
+                $sonuc['veri']['url'] = 'http://orman.muaz712.com';
                 break;
             default: //seçim algılama hatası
                 $sonuc['aksiyon'] = 4;
@@ -132,7 +121,7 @@ if (g('func') == 'secim') {
                 //secimleriKaydet();
                 //TODO benzersiz paylaşım linki oluştur
                 $sonuc['aksiyon']= 5;
-                $sonuc['veri']['baslik']= "MACERANI PAYLAŞ !";
+                $sonuc['veri']['baslik']= "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
                 $sonuc['veri']['url']= "http://orman.muaz712.com/e/".$_SESSION['kisaUrl'];
                 break;
             case 1: //gülümse ve git
@@ -241,7 +230,7 @@ if (g('func') == 'secim') {
     exit;
 }
 
-if (g('secimler') == 712) {
+if (g('dev') == 'ssio') {
     //echo json_encode($_SESSION['secimler'],JSON_PRETTY_PRINT);
     var_dump($_SESSION['secimler']);
     var_dump($_SESSION['kisaUrl']);
