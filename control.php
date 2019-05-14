@@ -358,27 +358,33 @@ if (g('func') == 'secim') {
 
         switch ($secim) {
             case 0: //maceranı paylaş
-                //secimleriKaydet();
-                //TODO benzersiz paylaşım linki oluştur
                 $sonuc['aksiyon'] = 5;
                 $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
                 $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
                 break;
             case 1: //gülümse ve git
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'yeni bir macerada görüşmek üzere koca yürekli insan :)';
+                $sonuc['aksiyon'] = 6;
+                $sonuc['veri']['tip'] = 'success';
+                $sonuc['veri']['yazi'] = 'yeni bir macerada görüşmek üzere koca yürekli insan :)';
+                $sonuc['veri']['animasyon'] = 'fadeInUp';
                 break;
             case 2: //sadece git
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'peki..';
+                $sonuc['aksiyon'] = 6;
+                $sonuc['veri']['tip'] = '';
+                $sonuc['veri']['yazi'] = 'peki..';
+                $sonuc['veri']['animasyon'] = 'heartBeat';
                 break;
             case 3: //arkadaşlarını ormana çağır
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'arkadaşlar ormana çağırıldı';
+                $sonuc['aksiyon'] = 6;
+                $sonuc['veri']['tip'] = 'success';
+                $sonuc['veri']['yazi'] = 'arkadaşlar ormana çağırıldı';
+                $sonuc['veri']['animasyon'] = 'bounce';
                 break;
             case 4: //bilgeyi takip et
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'bilge takip edildi';
+                $sonuc['aksiyon'] = 6;
+                $sonuc['veri']['tip'] = 'success';
+                $sonuc['veri']['yazi'] = 'bilge takip edildi';
+                $sonuc['veri']['animasyon'] = 'shake';
                 break;
             default: //seçim algılama hatası
                 $sonuc['aksiyon'] = 4;
