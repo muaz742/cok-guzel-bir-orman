@@ -83,5 +83,6 @@
 - eski yapı dosyalarının gerekliliğini değerlendir
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir
-- oturum ve yetki sorgusu tanımlanacak index.php:203
+    - kullanıcı girişi olayı gündemden kaldırılıyor - yapıldı - 20190514-221546-muaz
+- veritabanı yapılarını deopya ekle
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...

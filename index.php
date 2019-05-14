@@ -18,6 +18,8 @@ $vtkullaniciparola = "";
 /** yapı bilgilerini tanımla */
 $httpHost = "sistem.site"; //alan adı
 $gui['lang']='tr'; //varsayılan dil
+
+/** içerik bilgilerini tanımla */
 $icerik['mNo'] = '0';
 $icerik['head']['title'] = 'ORMANA HOŞGELDİN';
 $icerik['baslik'] = 'ÇOK GÜZEL BİR ORMANDASIN';
@@ -68,24 +70,6 @@ function p($par) {
 function s($par){
     isset($_SESSION[$par])? $session = $_SESSION[$par] : $session = 0;
     return $session;
-}
-
-function mOturumAcikMi(){
-    return (s("oturum")==1)? 1: 0;
-}
-
-function mErisimYetkisiVarMi($obje, $kullanici){
-    global $vt;
-    if ($kullanici!=0){
-        $sorgu = $vt->query("SELECT `".$obje."` FROM `kullanici` WHERE `kod`=".$kullanici."")->fetch(PDO::FETCH_ASSOC);
-        if ($sorgu){
-            return $sorgu[$obje];
-        }else{
-            echo 0;
-        }
-    }else{
-        return 0;
-    }
 }
 
 function mEkranYukle ($ekranKodu){
@@ -168,6 +152,8 @@ function koddanIcerikGetir($girdi){
 /** http taleplerini index.php ye topla*/
 $talep = explode('/',$_SERVER['REQUEST_URI']);
 //dil talebi yokla - yoksa tr
+
+/** varsa sonuç görüntüleme ekranı yazdır */
 if (!empty($talep[1])){
     if ($talep[1]=="e"&&!empty($talep[2])){
         koddanIcerikGetir($talep['2']);
@@ -179,20 +165,12 @@ if (!empty($talep[1])){
         //echo $ekran;
         //exit;
     }else{
+        /** yoksa boş talep ile ana dizine geri göndür */
         header('Location: /');
         exit;
     }
 }
 
-/** oturum ve erişim yokla */
-// TODO oturum ve yetki sorgusu yapılacak
-if (s('oturum')==1&&s('erisim')==1){
-    // oturum ve erişim var
-}elseif (s('oturum')==1&&s('erisim')==0){
-    //oturum açık erişim yok
-}else{
-    //oturum yok
-}
 
 /** dil seçimi yokla */
 
@@ -327,12 +305,3 @@ $ekran = ('<!DOCTYPE html>
 
 /** ekran yükle */
 echo $ekran;
-
-/** ekran tipleri
- * giriş ekranı
- * seçim ekranı
- * sonuç ekranı
- * fikrim var ekranı
- * bilgi ekranı
- */
-
