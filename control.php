@@ -70,8 +70,8 @@ if (g('func') == 'secim') {
                 break;
             case 13: //siteyi paylaş
                 $sonuc['aksiyon'] = 5;
-                $sonuc['veri']['baslik']= "🌳🌲🌳🌲🌳🌳🌲<br><br>BİZ GİDERİZ ORMANA";
-                $sonuc['veri']['url']= "http://orman.muaz712.com";
+                $sonuc['veri']['baslik'] = "🌳🌲🌳🌲🌳🌳🌲<br><br>BİZ GİDERİZ ORMANA";
+                $sonuc['veri']['url'] = "http://orman.muaz712.com";
                 // TODO paylaşım platformu seç ekranı tanımla
                 break;
             case 14: //logo yazı
@@ -98,8 +98,8 @@ if (g('func') == 'secim') {
     if ($ekranNo == 30) {
         switch ($secim) {
             case 0:
-                $sonuc['veri']['baslik']= "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
-                $sonuc['veri']['url']= "http://orman.muaz712.com/e/".$_SESSION['kisaUrl'];
+                $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
+                $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
                 break;
             case 1: //başa dön
                 secimleriSifirla();
@@ -120,9 +120,9 @@ if (g('func') == 'secim') {
             case 0: //maceranı paylaş
                 //secimleriKaydet();
                 //TODO benzersiz paylaşım linki oluştur
-                $sonuc['aksiyon']= 5;
-                $sonuc['veri']['baslik']= "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
-                $sonuc['veri']['url']= "http://orman.muaz712.com/e/".$_SESSION['kisaUrl'];
+                $sonuc['aksiyon'] = 5;
+                $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
+                $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
                 break;
             case 1: //gülümse ve git
                 $sonuc['aksiyon'] = 4;
@@ -148,7 +148,7 @@ if (g('func') == 'secim') {
         exit;
     }
     /** ekran29 buton aksiyonlarını tanımla */
-    if ($ekranNo==29){
+    if ($ekranNo == 29) {
         switch ($secim) {
             case 0: //maceranı paylaş
                 //secimleriKaydet();
@@ -214,7 +214,7 @@ if (g('func') == 'secim') {
         exit;
     }
 
-
+    /** test içeriklerini tanımla */
     if ($ekranNo == 1) {
         switch ($secim) {
             case 0:
@@ -240,6 +240,8 @@ if (g('func') == 'secim') {
     $sonuc['veri']['butonluk']['0'] = 'mükemmel';
     $sonuc['veri']['butonluk']['1'] = 'standart';
     $sonuc['veri']['butonluk']['2'] = 'bok gibi';
+
+    /** çıktı ver */
     echo json_encode($sonuc, JSON_PRETTY_PRINT);
     exit;
 }
@@ -255,23 +257,23 @@ if (g('dev') == '712') {
         var_dump($_SESSION['kisaUrl']);
         exit;
     }
-    if (g('mod62')=='encode'){
+    if (g('mod62') == 'encode') {
         $girdi = (int)g('v');
         unset($cikti);
-        if (!empty($girdi)&&$girdi<999999999){
+        if (!empty($girdi) && $girdi < 999999999) {
             $cikti['sonuc'] = mod62_encode($girdi);
-        }else{
-            $cikti['hata']='değer algılanamadı';
+        } else {
+            $cikti['hata'] = 'değer algılanamadı';
         }
         echo json_encode($cikti, JSON_PRETTY_PRINT);
         exit;
     }
-    if (g('mod62')=='decode'){
+    if (g('mod62') == 'decode') {
         $girdi = g('v');
-        if (!empty($girdi)){
+        if (!empty($girdi)) {
             $cikti['sonuc'] = mod62_decode($girdi);
-        }else{
-            $cikti['hata']='değer algılanamadı';
+        } else {
+            $cikti['hata'] = 'değer algılanamadı';
         }
         echo json_encode($cikti, JSON_PRETTY_PRINT);
         exit;
