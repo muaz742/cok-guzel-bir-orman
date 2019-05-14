@@ -244,10 +244,18 @@ if (g('func') == 'secim') {
     exit;
 }
 
-if (g('dev') == 'ssio') {
-    //echo json_encode($_SESSION['secimler'],JSON_PRETTY_PRINT);
-    var_dump($_SESSION['secimler']);
-    var_dump($_SESSION['kisaUrl']);
+if (g('dev') == '712') {
+    $cikti['zaman konumu'] = time();
+    $cikti['oturum kodu'] = session_id();
+    if (g('ssio') == 'secimler') {
+        var_dump($_SESSION['secimler']);
+        exit;
+    }
+    if (g('ssio') == 'kisaUrl') {
+        var_dump($_SESSION['kisaUrl']);
+        exit;
+    }
+    echo json_encode($cikti, JSON_PRETTY_PRINT);
     exit;
 }
 
