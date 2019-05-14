@@ -54,6 +54,7 @@
     - fikrimvar.php - gerek yok - *github/issues* aynı işlevi görüyor - yapıldı - 20190514-171636-muaz
     - paylas.php - sweet alert ekranı ile işlem amaca ulaştı - yapıldı - 20190514-171738-muaz
     - katkılar.php - *readme/[katkılar](https://github.com/muaz742/cok-guzel-bir-orman/blob/master/README.md#katkilar)* başlığı işlemi amacına ulaştırıyor - yapıldı - 20190514-172108-muaz
+- *ormandan çık* butonuna bişeyler tanımlanmalı - yapıldı - 20190514-172748-muaz
 
 # YAPILIYORLAR
 
@@ -79,7 +80,6 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- *ormandan çık* butonuna bişeyler tanımlanmalı
 - eski yapı dosyalarının gerekliliğini değerlendir
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir

@@ -54,7 +54,7 @@ if (g('func') == 'secim') {
         $sonuc['aksiyon'] = 1;
         switch ($secim) {
             case 10: //ormandan çık
-                $sonuc['veri']['url'] = 'http://sistem.site';
+                $sonuc['veri']['url'] = 'https://www.youtube.com/watch?v=aqJciupunWQ';
                 $sonuc['veri']['target'] = '_blank';
                 break;
             case 11: //başa dön
