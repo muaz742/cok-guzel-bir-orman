@@ -72,7 +72,7 @@
 - paylaşım butonlarını geliştir
     - 0:11 - paylaş - yapıldı - 190514-060100-muaz
     - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
-    - 29:0 - maceranı paylaş
+    - 29:0 - maceranı paylaş - - yapıldı - 20190514-155446-muaz
 - eski yapı dosyalarının gerekliliğini değerlendir
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir

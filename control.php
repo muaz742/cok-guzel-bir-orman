@@ -147,7 +147,21 @@ if (g('func') == 'secim') {
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         exit;
     }
-
+    /** ekran29 buton aksiyonlarını tanımla */
+    if ($ekranNo==29){
+        switch ($secim) {
+            case 0: //maceranı paylaş
+                //secimleriKaydet();
+                //TODO benzersiz paylaşım linki oluştur
+                $sonuc['aksiyon'] = 5;
+                $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
+                $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
+                break;
+            default: //seçim algılama hatası
+                $sonuc['aksiyon'] = 4;
+                $sonuc['veri'] = 'seçim algılama hatası';
+        }
+    }
 
     /** seçim ekranı aksiyonlarını tanımla */
     if ($ekranNo >= 0 && $ekranNo < 29) {
