@@ -33,6 +33,13 @@
     - çözümleyici geliştirildi - 190513-043500 - muaz
     - *urlKodla* ve *urlCoz* olan fonksiyon isimleri *mod62_encode* ve *mod62_decode* olarak güncellendi - 199513-160200 - muaz
 - 63 ten küçük değerlerin encode işlemi yapılmıyor - onar - yapıldı - 190513-051000 - muaz
+- kullanıcıların sonuçlarını paylaşabilmesi sağlanacak - yapıldı - 190514-024402 - muaz
+    - sonuçlar kayıt edilmeli - yapıldı - 190513-233100 - muaz
+    - kayıtlar link ile paylaşılmalı - yapıldı - 190514-024400 - muaz
+    - link ile gelenlere sonuç görüntülenmeli - yapıldı - 190514-024401 - muaz
+- macerayı paylaş butonu geliştirildi - 190514-045100 - muaz
+    - input içerisinde kısa link seçilebilir şekilde görüntülendi
+    - kopyala butonu eklendi
 
 # YAPILIYORLAR
 
@@ -58,14 +65,18 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
+- *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır.
+- paylaşım butonlarını geliştir
+    - 0:11 - paylaş
+    - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
+    - 29:0 - maceranı paylaş
+- eski yapı dosyalarının gerekliliğini değerlendir
+- yapılan geliştirmeleri diyagrama işle
+- yapıyı sadeleştir
 - sayfalar tanımlanmalı
-    - fikrimvar.php
-    - paylas.php
+    - fikrimvar.php 
+    - paylas.php - sweet alert ile açılan ekranda yapılacak
     - katkılar.php
 - mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli
 - oturum ve yetki sorgusu tanımlanacak index.php:203
-- kullanıcıların sonuçlarını paylaşabilmesi sağlanacak
-    - sonuçlar kayıt edilmeli
-    - kayıtlar link ile paylaşılmalı
-    - link ile gelenlere sonuç görüntülenmeli
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
