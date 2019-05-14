@@ -68,10 +68,14 @@
     - eski sistem dosyaları kaldırılıyor - yapıldı - 20190514-224503-muaz
     - *control.php* içerikleri gruplandırılıyor - yapıldı - 20190514-225403-muaz
 - sonuç ekranı aksiyonları geliştirilmeli - yapıldı - 20190513-234641-muaz
+- aksiyonları eksik butonlar yayından kaldırılıyor - yapıldı - 20190515-003434-muaz
+    - 29:2 - SADECE GİT - kaldırılıyor - yapıldı - 20190515-003241-muaz
+    - 29:3 - ARKADAŞLARINI ORMANA ÇAĞIR - kaldırılıyor - yapıldı - 20190515-003244-muaz
+    - 29:4 - BİLGEYİ TAKİP ET - kaldırılıyor - yapıldı - 20190515-003246-muaz
 
 # YAPILIYORLAR
 
--
+- 
 
 ## çalışmaya başlamadan önce
 - görevleri sırasıyla kontrol et - [yapılıyorlar](#yaplyorlar), [yapılacaklar](#yaplacaklar)
