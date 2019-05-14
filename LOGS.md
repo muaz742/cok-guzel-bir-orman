@@ -55,6 +55,18 @@
     - paylas.php - sweet alert ekranı ile işlem amaca ulaştı - yapıldı - 20190514-171738-muaz
     - katkılar.php - *readme/[katkılar](https://github.com/muaz742/cok-guzel-bir-orman/blob/master/README.md#katkilar)* başlığı işlemi amacına ulaştırıyor - yapıldı - 20190514-172108-muaz
 - *ormandan çık* butonuna bişeyler tanımlanmalı - yapıldı - 20190514-172748-muaz
+- eski yapı dosyalarının gerekliliğini değerlendir - gerekli değil - yapıldı - 20190514-224428-muaz
+    - *test.php* kaldırılıyor - yapıldı - 20190514-223032-muaz
+    - *ayar/baglanti.php* kaldırılıyor - yapıldı - 20190514-223048-muaz
+    - *ayar/fonksiyon.php* kaldırılıyor - yapıldı - 20190514-223137-muaz
+    - *ayar/islem.php* kaldırılıyor - yapıldı - 20190514-223319-muaz
+    - *view* klasörü içerisindeki ekran yapıları siliniyor - yapıldı - 20190514-223808-muaz
+    - *assets* klasörü ana dizine taşınıyor ve *view* klasörü kaldırılıyor - yapıldı - 20190514-224414-muaz
+- yapıyı sadeleştir - yapıldı - 20190514-225406-muaz
+    - kullanıcı girişi olayı gündemden kaldırılıyor - yapıldı - 20190514-221546-muaz
+    - *index.php* içerisinde kullanılmayan tanımlar kaldırıldı - yapıldı - 20190514-222626-muaz
+    - eski sistem dosyaları kaldırılıyor - yapıldı - 20190514-224503-muaz
+    - *control.php* içerikleri gruplandırılıyor - yapıldı - 20190514-225403-muaz
 
 # YAPILIYORLAR
 
@@ -80,15 +92,14 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- eski yapı dosyalarının gerekliliğini değerlendir - gerekli değil
-    - *test.php* kaldırılıyor - yapıldı - 20190514-223032-muaz
-    - *ayar/baglanti.php* kaldırılıyor - yapıldı - 20190514-223048-muaz
-    - *ayar/fonksiyon.php* kaldırılıyor - yapıldı - 20190514-223137-muaz
-    - *ayar/islem.php* kaldırılıyor - yapıldı - 20190514-223319-muaz
-    - *view* klasörü içerisindeki ekran yapıları siliniyor - yapıldı - 20190514-223808-muaz
+## Bugün
+## Yarın
 - yapılan geliştirmeleri diyagrama işle
-- yapıyı sadeleştir
-    - kullanıcı girişi olayı gündemden kaldırılıyor - yapıldı - 20190514-221546-muaz
-    - *index.php* içerisinde kullanılmayan tanımlar kaldırıldı - yapıldı - 20190514-222626-muaz
-- veritabanı yapılarını deopya ekle
+    - ortak paydaları belirle
+    - belirtilere göre yapıyı birleştir
+## Yakında
+- veritabanı yapılarını depoya ekle
+## Bir gün
+- veritabanı yapılarını kıyasla. ortak bir yapıda toparla.
+- güvenlik geliştirmesi yap
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
