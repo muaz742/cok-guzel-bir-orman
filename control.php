@@ -255,6 +255,17 @@ if (g('dev') == '712') {
         var_dump($_SESSION['kisaUrl']);
         exit;
     }
+    if (g('mod62')=='encode'){
+        $girdi = (int)g('v');
+        unset($cikti);
+        if (!empty($girdi)&&$girdi<999999999){
+            $cikti['sonuc'] = mod62_encode($girdi);
+        }else{
+            $cikti['hata']='değer algılanamadı';
+        }
+        echo json_encode($cikti, JSON_PRETTY_PRINT);
+        exit;
+    }
     echo json_encode($cikti, JSON_PRETTY_PRINT);
     exit;
 }
