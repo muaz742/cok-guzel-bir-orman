@@ -24,21 +24,24 @@ $icerik['baslik'] = 'ÇOK GÜZEL BİR ORMANDASIN';
 $icerik['yazi'] = 'ORMANDA DOLAŞIRKEN<br>KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br>';
 $icerik['btn0Yazi'] = 'ORMANA GİR';
 $icerik['btn0Onclick'] = "secim(".$icerik['mNo'].',0)';
-$icerik['btn0Href'] = '#';
+$icerik['btn0Href'] = '';
 $icerik['btn010yazi'] = 'ORMANDAN ÇIK';
 $icerik['btn010Onclick'] = 'secim(0,10)';
-$icerik['btn010Href'] = '#';
+$icerik['btn010Href'] = '';
 $icerik['btn011yazi'] = 'BAŞA DÖN';
 $icerik['btn011Onclick'] = 'secim(0,11)';
-$icerik['btn011Href'] = '#';
+$icerik['btn011Href'] = '';
 $icerik['btn012yazi'] = 'FİKRİM VAR !';
 $icerik['btn012Onclick'] = 'secim(0,12)';
-$icerik['btn012Href'] = '#';
+$icerik['btn012Href'] = '';
 $icerik['btn013yazi'] = 'PAYLAŞ';
+$icerik['btn013Onclick'] = 'secim(0,13)';
+/*
 $icerik['btn013Onclick'] = "Toast.fire({
   type: 'error',
   title: 'fonksiyon pasif'
 })";
+*/
 $icerik['btn013Href'] = '#';
 $logoyazi = 'WALK ON THE JUNGLE';
 $yol = 'view/';
@@ -172,14 +175,6 @@ if (!empty($talep[1])){
         $icerik['title'] = 'ORMANA HOŞGELDİN';
         $icerik['baslik'] = 'ORMANDAN';
         $icerik['yazi'] = $sonuc['veri']['yazi'];
-        $icerik['btn0Onclick'] = '#';
-        $icerik['btn0Href'] = 'http://orman.muaz712.com';
-        $icerik['btn010Onclick'] = '#';
-        $icerik['btn010Href'] = 'https://sistem.site';
-        $icerik['btn011Onclick'] = '#';
-        $icerik['btn011Href'] = 'http://orman.muaz712.com';
-        $icerik['btn012Onclick'] = '#';
-        $icerik['btn012Href'] = 'https://github.com/muaz742/cok-guzel-bir-orman/issues';
         $yol = '../view/';
         //echo $ekran;
         //exit;
