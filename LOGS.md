@@ -66,8 +66,15 @@
 
 # YAPILACAKLAR
 - *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır.
+- sorunlar
+    - sonuç görüntüleme ekranı
+        - ormandan çık butonu
+            - yeni sekmede tek bir sayfa açmalı
+            - yeni sekmede önce kendini sonra sayfayı açıyor
+        - yazı altındaki ormana gir butonu
+            - tıklandığında başa sarması gerekirken aynı sayfayı yeniliyor
 - paylaşım butonlarını geliştir
-    - 0:11 - paylaş
+    - 0:11 - paylaş - yapıldı - 190514-060100-muaz
     - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
     - 29:0 - maceranı paylaş
 - eski yapı dosyalarının gerekliliğini değerlendir
