@@ -22,8 +22,24 @@ $icerik['mNo'] = '0';
 $icerik['title'] = 'ORMANA HOŞGELDİN';
 $icerik['baslik'] = 'ÇOK GÜZEL BİR ORMANDASIN';
 $icerik['yazi'] = 'ORMANDA DOLAŞIRKEN<br>KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA<br>HAZIR MISIN?<br>';
-$icerik['secim'] = $icerik['mNo'].',0';
-$icerik['btnYazi'] = 'ORMANA GİR';
+$icerik['btn0Yazi'] = 'ORMANA GİR';
+$icerik['btn0Onclick'] = "secim(".$icerik['mNo'].',0)';
+$icerik['btn0Href'] = '#';
+$icerik['btn010yazi'] = 'ORMANDAN ÇIK';
+$icerik['btn010Onclick'] = 'secim(0,10)';
+$icerik['btn010Href'] = '#';
+$icerik['btn011yazi'] = 'BAŞA DÖN';
+$icerik['btn011Onclick'] = 'secim(0,11)';
+$icerik['btn011Href'] = '#';
+$icerik['btn012yazi'] = 'FİKRİM VAR !';
+$icerik['btn012Onclick'] = 'secim(0,12)';
+$icerik['btn012Href'] = '#';
+$icerik['btn013yazi'] = 'PAYLAŞ';
+$icerik['btn013Onclick'] = "Toast.fire({
+  type: 'error',
+  title: 'fonksiyon pasif'
+})";
+$icerik['btn013Href'] = '#';
 $logoyazi = 'WALK ON THE JUNGLE';
 $yol = 'view/';
 
@@ -156,8 +172,14 @@ if (!empty($talep[1])){
         $icerik['title'] = 'ORMANA HOŞGELDİN';
         $icerik['baslik'] = 'ORMANDAN';
         $icerik['yazi'] = $sonuc['veri']['yazi'];
-        $icerik['secim'] = $icerik['mNo'].',0';
-        $icerik['btnYazi'] = 'ORMANA GİR';
+        $icerik['btn0Onclick'] = '#';
+        $icerik['btn0Href'] = 'http://orman.muaz712.com';
+        $icerik['btn010Onclick'] = '#';
+        $icerik['btn010Href'] = 'https://sistem.site';
+        $icerik['btn011Onclick'] = '#';
+        $icerik['btn011Href'] = 'http://orman.muaz712.com';
+        $icerik['btn012Onclick'] = '#';
+        $icerik['btn012Href'] = 'https://github.com/muaz742/cok-guzel-bir-orman/issues';
         $yol = '../view/';
         //echo $ekran;
         //exit;
@@ -240,18 +262,18 @@ $ekran = ('<!DOCTYPE html>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" onclick="secim(0,10)" target="_blank">
-                        <span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>ORMANDAN ÇIK</a>
+                    <a class="nav-link link text-white display-4" onclick="'.$icerik['btn010Onclick'].'" href="'.$icerik['btn010Href'].'" target="_blank">
+                        <span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>'.$icerik['btn010yazi'].'</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" onclick="secim(0,11)">
-                    <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> BAŞA DÖN</a></li>
+                <li class="nav-item"><a class="nav-link link text-white display-4" onclick="'.$icerik['btn011Onclick'].'" href="'.$icerik['btn011Href'].'">
+                    <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> '.$icerik['btn011yazi'].'</a></li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" onclick="secim(0,12)"><span
-                            class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> FİKRİM VAR !</a>
+                    <a class="nav-link link text-white display-4" onclick="'.$icerik['btn012Onclick'].'" href="'.$icerik['btn012Href'].'"><span
+                            class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span>'.$icerik['btn012yazi'].'</a>
                 </li>
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="#"
-                                                           onclick="secim(0,13)">PAYLAŞ</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-4" href="'.$icerik['btn013Href'].'"
+                                                           onclick="'.$icerik['btn013Onclick'].'">'.$icerik['btn013yazi'].'</a></div>
         </div>
     </nav>
 </section>
@@ -267,7 +289,7 @@ $ekran = ('<!DOCTYPE html>
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" id="mBaslik">'.$icerik['baslik'].'</h1>
                 <p class="mbr-text pb-3 mbr-fonts-style display-5" id="mYazi">'.$icerik['yazi'].'</p>
                 <div class="mbr-section-btn" id="mButonluk">
-                    <a class="btn btn-md btn-primary display-4 butonamk" id="mBtn0" onclick="secim('.$icerik['secim'].')">'.$icerik['btnYazi'].'</a>
+                    <a class="btn btn-md btn-primary display-4 butonamk" id="mBtn0" href="'.$icerik['btn0Href'].'" onclick="'.$icerik['btn0Onclick'].'">'.$icerik['btn0Yazi'].'</a>
                 </div>
             </div>
         </div>
@@ -303,7 +325,7 @@ $ekran = ('<!DOCTYPE html>
 <script src="' .$yol. 'assets/theme/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-<script src="index.js?v=' .time(). '"></script>
+<script src="http://orman.muaz712.com/index.js?v=' .time(). '"></script>
 </body>
 </html>');
 
