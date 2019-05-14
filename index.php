@@ -42,7 +42,7 @@ $icerik['btn013']['href'] = 'href="#"';
 $icerik['header2-1']['attr'] = 'class="cid-r3yvzHG8J6 mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=gVrfBvCNCkU"';
 if (isMobile()){$icerik['header2-1']['attr'] = 'class="cid-r7lyGYk8HF mbr-fullscreen"';}
 $logoyazi = 'WALK ON THE JUNGLE';
-$yol = 'view/';
+$yol = '';
 
 
 
