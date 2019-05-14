@@ -15,6 +15,13 @@ $vtisim = "";
 $vtkullaniciisim = "";
 $vtkullaniciparola = "";
 
+/** veritabanı bağlantısı yap */
+try{
+    $vt = new PDO("mysql:host=$sunucu;dbname=$vtisim;charset=utf8", "$vtkullaniciisim", "$vtkullaniciparola");
+}catch (PDOException $e){
+    print $e->getMessage();
+}
+
 /** yapı bilgilerini tanımla */
 $httpHost = "sistem.site"; //alan adı
 $gui['lang']='tr'; //varsayılan dil
@@ -43,15 +50,6 @@ $icerik['header2-1']['attr'] = 'class="cid-r3yvzHG8J6 mbr-fullscreen" data-bg-vi
 if (isMobile()){$icerik['header2-1']['attr'] = 'class="cid-r7lyGYk8HF mbr-fullscreen"';}
 $logoyazi = 'WALK ON THE JUNGLE';
 $yol = '';
-
-
-
-/** veritabanı bağlantısı yap */
-try{
-    $vt = new PDO("mysql:host=$sunucu;dbname=$vtisim;charset=utf8", "$vtkullaniciisim", "$vtkullaniciparola");
-}catch (PDOException $e){
-    print $e->getMessage();
-}
 
 /** kullanıcıya hata gösterimini pasifleştir */
 error_reporting(0);
