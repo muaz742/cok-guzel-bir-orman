@@ -29,7 +29,7 @@ const copyToClipboard = str => {
 function secim(ekranNo, secim) {
     /** ekran kodu ve seçimi gönder */
     var veri = {ekran: ekranNo, secim: secim};
-    $.getJSON('control.php?func=secim', veri, function (yanit) {
+    $.getJSON('http://orman.muaz712.com/control.php?func=secim', veri, function (yanit) {
         JSON.stringify(yanit);
         isle(yanit.aksiyon, yanit.veri);
     });
