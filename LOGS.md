@@ -43,6 +43,12 @@
 - sorun - butonlara tıklandığında anasayfaya yeniden yönlendiriliyor. akış geri sarıyor
     - href etiketlerinin boşaltılmasının sebep olduğu tespit edildi
     - *index.php* içindeki element tanımları iyileştirilmeli - yapıldı - 190514-142300-muaz
+- paylaşım butonlarını geliştir - - yapıldı - 20190514-160305-muaz
+    - 0:11 - paylaş - yapıldı - 190514-060100-muaz
+    - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
+    - 29:0 - maceranı paylaş - - yapıldı - 20190514-155446-muaz
+- *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır. - yönlendirme kaldırıldı - - yapıldı - 20190514-160602-muaz
+- mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli - yapıldı - 20190514-165640-muaz
 
 # YAPILIYORLAR
 
@@ -68,11 +74,6 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
-- *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır.
-- paylaşım butonlarını geliştir
-    - 0:11 - paylaş - yapıldı - 190514-060100-muaz
-    - 28:0 - maceranı paylaş - yapıldı - 190514-051900-muaz
-    - 29:0 - maceranı paylaş - - yapıldı - 20190514-155446-muaz
 - eski yapı dosyalarının gerekliliğini değerlendir
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir
@@ -80,6 +81,5 @@
     - fikrimvar.php 
     - paylas.php - sweet alert ile açılan ekranda yapılacak
     - katkılar.php
-- mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli
 - oturum ve yetki sorgusu tanımlanacak index.php:203
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
