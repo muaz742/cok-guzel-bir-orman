@@ -13,3 +13,10 @@ Bu projeye GitHub aracılığıyla katkı sağlayabilirsin.<br>
 *"Git nedir?"*, *"Nasıl kullanılır?"*, *"Git mantığı nasıl çalışır?"*
 
 - Fikir ve Önerileri [**Issues**](https://github.com/muaz742/cok-guzel-bir-orman/issues) sayfasından paylaşabilirsin.
+
+# Katkılar
+Projeye katkıda bulunanları burada ifşa ediyorum.
+
+|Kişi|Katkı|
+|---|---|
+|kişi adı|kişi katkısı|

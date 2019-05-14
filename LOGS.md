@@ -50,6 +50,10 @@
 - *28:0->30* yönlendirmesini gözden geçir. gerekirse kaldır. - yönlendirme kaldırıldı - - yapıldı - 20190514-160602-muaz
 - mobil cihazdan erişen kullanıcılar için arkaplanda sabit resim gösterilmeli - yapıldı - 20190514-165640-muaz
 - *README.md* dosyası güncellendi - yapıldı - 20190514-171441-muaz
+- sayfalar tanımlanmalı - yapıldı - 20190514-172115-muaz
+    - fikrimvar.php - gerek yok - *github/issues* aynı işlevi görüyor - yapıldı - 20190514-171636-muaz
+    - paylas.php - sweet alert ekranı ile işlem amaca ulaştı - yapıldı - 20190514-171738-muaz
+    - katkılar.php - *readme/[katkılar](https://github.com/muaz742/cok-guzel-bir-orman/blob/master/README.md#katkilar)* başlığı işlemi amacına ulaştırıyor - yapıldı - 20190514-172108-muaz
 
 # YAPILIYORLAR
 
@@ -75,12 +79,9 @@
 - geliştirilen yapıyı sunucuya yükle
 
 # YAPILACAKLAR
+- *ormandan çık* butonuna bişeyler tanımlanmalı
 - eski yapı dosyalarının gerekliliğini değerlendir
 - yapılan geliştirmeleri diyagrama işle
 - yapıyı sadeleştir
-- sayfalar tanımlanmalı
-    - fikrimvar.php 
-    - paylas.php - sweet alert ile açılan ekranda yapılacak
-    - katkılar.php
 - oturum ve yetki sorgusu tanımlanacak index.php:203
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
