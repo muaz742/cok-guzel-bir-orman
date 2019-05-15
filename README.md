@@ -102,6 +102,7 @@ Aksiyon dönütünü JSON formatına dönüştürür.<br>
 İstemci kontrol birimine gönderir.
 - Aksiyon dönütü alan istemci kontrol birimi, aksiyon tipine göre işlem başlatır.<br>
 Aksiyon verilerini işlemde kullanır.
+- Uygulanan işleme göre ekran güncellemesi yapılır
 
 # Katkılar
 Projeye katkıda bulunanları burada ifşa ediyorum.
