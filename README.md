@@ -1,6 +1,45 @@
+<!-- eğer eklenen içerik yeni bir başlık içeriyorsa, başlıklar tablosuna tanımlanmalı-->
+
 # Çok Güzel Bir Orman
 kullanıcının cevaplarına göre çıktı veren deneysel kişilik testi uygulaması<br>
 [orman.muaz712.com](http://orman.muaz712.com)
+
+<table>
+  <tr>
+    <td><b>başlıklar</b></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>
+          <a href="https://github.com/muaz742/cok-guzel-bir-orman#kullan%C4%B1m">
+            Kullanım
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/muaz742/cok-guzel-bir-orman/blob/master/README.md#proje-rehberi">
+            Proje rehberi
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/muaz742/cok-guzel-bir-orman#yap%C4%B1-hakk%C4%B1nda">
+            Yapı hakkında
+          </a>
+        </li>
+        <li>          
+          <a href="https://github.com/muaz742/cok-guzel-bir-orman#%C3%A7al%C4%B1%C5%9Fma-prensibi">
+            Çalışma prensibi
+          </a>
+        </li>
+        <li>          
+          <a href="https://github.com/muaz742/cok-guzel-bir-orman#katk%C4%B1lar">
+            Katkılar
+          </a>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## Kullanım
 - [Orman](http://orman.muaz712.com)'a gir,
@@ -49,6 +88,8 @@ Butonlar, buton biçimindedir. Etkileşim elementidir. Ekranın alt kısmında b
 Yapı, kullanıcı seçimleri<!-- ve HTML talepleri-->ne göre tepki verir.
 
 ![asamalar0](docs/asamalar0.svg)
+
+
 
 # Katkılar
 Projeye katkıda bulunanları burada ifşa ediyorum.
