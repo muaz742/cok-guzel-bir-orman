@@ -51,3 +51,4 @@ Projeye katkıda bulunanları burada ifşa ediyorum.
 |Kişi|Katkı|
 |---|---|
 |kişi adı|kişi katkısı|
+|tugay|orman için sonuç yazıları üretti|
