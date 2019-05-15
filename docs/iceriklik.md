@@ -5,7 +5,7 @@ Kayıtlar bu dosya üzerinde daha pratik gözlemlenip geliştirilebilir.
 # Sonuç yazıları
 Sonuç ekranlarında görüntülenen yazıların içerikleri ve seçimlerle olan ilişkileri.
 
-# Duru tanımlar
+## Duru tanımlar
 Seçim ile sonuç arasındaki ilişkiyi net ifade eden sonuç tanımları.
 
 |seçim yazı|sonuç tipi|temsili|değeri|sonuç yazısı - duru|
@@ -58,3 +58,55 @@ Seçim ile sonuç arasındaki ilişkiyi net ifade eden sonuç tanımları.
 |YÜRÜMEYE DEVAM ET|kutu|anılar|ilgi|Kutuyu açmadan yürümeye devam etmeyi seçtin. Bu senin geçmişe ilgili olmadığını gösterir.|
 |EVET|parça|anılar|tutum|Sen bu parçaları yanında götürmeyi seçtin. Yani senin geçmişteki anıların vazgeçilmezin.|
 |HAYIR|parça|anılar|tutum|Sen bu parçaları yanında götürmek istemedin. Yani senin için geçmişteki anıların geçmişte kaldığıyla güzel.|
+
+## Tugay'dan gelen tanımlar
+|seçim yazı|sonuç tipi|temsili|değeri|sonuç yazısı - tugay|
+|---|---|---|---|---|
+|ORMANA GİR|-||||
+|YÜRÜMEYE DEVAM ET|-||||
+|SIK|ağaç|arkadaşlık|miktarı|Tam arkadaş canlısısın. Yeni arkadaşlıklar kurmayı seviyorsun. Konserde alanı hınca hınç dolmuş pop sanatçısı gibisin. Kalabalığı seviyorsun. Kalabalığın içinde olmaktan haz alıyorsun. |
+|SEYREK|ağaç|arkadaşlık|mikratı|Kalabalıktan kaçıyorsun. Dost canlısı değilsin. Bir iki tane olsun az olsun istiyorsun. Kalabalıktan ziyade seni anlayan bir arkadaş olsun yeterde artar. |
+|UZUN|ağaç|arkadaşlık|ömrü|Uzun süreli arkadaşlıkların var. Her şeyin yenisi, dostun eskisi diyorsun. Arkadaşlığa önem veriyorsun. Sağlam arkadaşlıkların var.|
+|KISA|ağaç|arkadaşlık|ömrü|Arkadaşlarına karşı mesafelisin. Ne kadar iyi de olsalar araya hep bir mesafe koyuyorsun. Prensiplerin var ve kimse onlardan üstün değil. |
+|APAÇIK GÖREBİLİYORUM|ağaç|arkadaşlık|bağı|Tavsiye almayı sevmiyorsun. Arkadaşlarının tavsiyesini kulak ardı ediyorsun. Söylenen şeyleri gözünle görmeden inanmıyorsun. Etki altında kalmıyorsun. |
+|AĞAÇLARIN ARASINDAN GÖREBİLİYORUM|ağaç|arkadaşlık|bağı|Arkadaş tavsiyelerini önemsiyorsun. Bir şeyi yorumlarken veya bir olayı sonuca bağlamaya çalışırken onların tavsiyelerinde faydalanıyorsun. |
+|AĞAÇLAR O KADAR GÜR Kİ GÖREMİYORUM|ağaç|arkadaşlık|bağı|Kendi başına karar vermekte zorlanıyorsun. Hatta çoğu zaman karar bile veremiyorsun. Sürekli arkadaşlarında tavsiye alma mecburiyeti hissediyorsun. Fazla etkileniyorsun. |
+|YÜRÜMEYE DEVAM ET|-||||
+|KURT|hayvan|karakter|yapısı|Asil bir insansın. Boyun eğmez. En zor zamanlarda bile taviz vermiyorsun. Dostluğa ve sadakate önem veriyorsun. |
+|TAVŞAN|hayvan|karakter|yapısı|Oldukça sempatiksin. Deli, dolu ve zarif. Özel hayatın çok hareketli. Cinselliğe önem veriyorsun. |
+|KEDİ|hayvan|karakter|yapısı|Uysal bir insansın. Suyuna giden herkesle anlaşabiliyorsun. Ama tersini kimse görmek istemez. En güzel yanın umursamazlığın. Hak ettiğin değeri vermeyen herkesi hayatından çıkarıyorsun. Çorap çıkarır gibi. |
+|ASLAN|hayvan|karakter|yapısı|Gücünü yalnızlığından alıyorsun. Gücünün farkındasın. Dürüst, cesur, korkusuzsun. Lafını esirgemiyorsun. Yalnızsın çünkü tek kafa dengin kendinsin. Yalnızsın ama herkesin arkadaş olmak isteyeceği birisin. |
+|BOĞA|hayvan|karakter|yapısı|Dirayetli bir insansın. Zorluklar yıldıramaz seni. Zorluk yoktur. Ayağa kalkmayan sen vardır. Cüssen gibi kocaman bir kalbin var. Her ne kadar göstermesen de oldukça uysalsın. Yeter ki önerilen şey mantıklı olsun. |
+|KUZU|hayvan|karakter|yapısı|Sempatik ve sevimli oluşunu korkaklık olarak algılıyorlar. Uysallığını suiistimal edenlerin fırtınanın göbeğinde olmanın ne demek olduğunu anlamaları uzun sürmez. Aptalmış gibi yapmayı seviyorsun. Kendini akıllı zanneden aptalları izlemek zevkli sonuçta.|
+|HİPOPOTAM|hayvan|karakter|yapısı||
+|İYİ|hayvan|karakter|benimseme|Kendinle yüzleşmeyi seviyorsun. Korkmuyorsun. Evet bu benim. Benim bu. Seni mükemmel kılan şey bu. Eksiklik veya fazlalıklarını biliyorsun. |
+|KÖTÜ|hayvan|karakter|benimseme|Kendinden kaçıyorsun. Yüzleşmekten çekiniyorsun. Eleştirilmeyi kaldıramıyorsun. Kendine haksızlık etmemelisin ama kendinle yüzleşmekten de kaçmamalısın.|
+|NORMAL|hayvan|karakter|benimseme|Kendinle yüzleşmekten korkmuyorsun. Ama hani aynaya çok bakmasam veya eleştirilmesem daha iyi olur diyorsun.|
+|BÜYÜK|beyaz kapı|umut|miktarı|Şu umudundan dünyaya da versen daha yaşanılabilir bir yer olurdu. Her şeye rağmen ümitlisin. Bir dünya barışının olabileceğinden bile ümitlisin. |
+|NORMAL|beyaz kapı|umut|miktarı|Ümitlisin ama gerçekleri ve koşulları göz ardı etmeyecek kadar da mantıklı. Kesinlikle bir hayalperest değilsin ama biraz hayal etmekten de bir şey olmaz diyorsun. |
+|KÜÇÜK|beyaz kapı|umut|miktarı|Bu kadar ümitsiz olman zamanında ümit ettiğin şeylerin sana koca bir nanik yapmış olmasından olsa gerek.  Amerika’nın demokrasi getirmesini bekleme **. Ama sürprizleri de yadsıma.|
+|İYİ|beyaz kapı|umut|his|İyi veya kötü, güzel veya çirkin kararlısın. İkilemde kalmıyorsun. En kötü karar bile kararsızlıktan iyidir diyorsun. Ümit etmekten de vazgeçmiyorsun.|
+|KÖTÜ|beyaz kapı|umut|his|Gerçekten yapmak istediğin ile hissettiğin şey hep çelişiyor. Kararsızsın. Nasıl davranacağını bilmiyorsun. Ümit etmenin saçma olduğunu düşünmek dışında.|
+|NORMAL|beyaz kapı|umut|his|O kadar olgunsun ki herşeye büyük bir olgunlukla yaklaşıyorsun. |
+|EVET|beyaz kapı|umut|tutum|Yeni şeyler görmek, öğrenmek seni cezbediyor. Bu sende dinmeyen bir susuzluk gibi. Meraklısın. Ve yeni şeylere açsın. Sonsuz bir umudun var. Hiç kurumayacak bir nehir gibi.|
+|HAYIR|beyaz kapı|umut|tutum|Rasyonelsin. Hem çilekten muz tadı almaya çalışmak saçmalık. Ümit etmek, boş beklentilere kapılmak istemiyorsun. Beklentiyi az tutmak başa çıkmaları durumunda acıyı hafifletir. Hem ormandaki bir kapının önünde ne varsa arkasında da o vardır.|
+|BÜYÜK|kırmızı kapı|aşk|miktarı|Eros’un dünyadaki varisisin. Sen tam bir aşk insanısın. Tutkulu ve duygusalsın. Her şeyi tutkuyla yapıyorsun. Sevmeyi de nefret etmeyi de. Tutku senin ölçütün. |
+|KÜÇÜK|kırmızı kapı|aşk|miktarı|Eros’un “fail” i sen olmalısın. Duygusallığın mantığı körelttiğini düşünüyorsun. Duygusallık mantığın düşmanı. Özel hayatında (sevgili, arkadaş) ilişkilerinde mantık senin ölçütün. |
+|NORMAL|kırmızı kapı|aşk|miktarı|Mantığı duygularınla, duygularını mantıkla destekliyorsun. İkisi de tek başlarına hata yaptırır diye düşünüyorsun. Düzeni, standartları olan uçlarda yaşamayan bir insansın. |
+|İYİ|kırmızı kapı|aşk|his|Romeo da kim senin yanında? (sonun onun gibi olmasın) Aşktan yana şanslısın. Sevmeyi istiyorsun. Yaptığın en iyi şey güzel sevmek. Senin gibisini bulmak zor bu zamanda. |
+|KÖTÜ|kırmızı kapı|aşk|his|Hep olmadık insanlar çıkmış karşına. Ya yanlış insanı doğru sevmişsin, yada doğru insanı yanlış sevmişsin. Bıktırmışlar seni. |
+|NORMAL|kırmızı kapı|aşk|his|Her şeyi olduğu gibi, aşkı da sevmeyi de olgunlukla karşılıyorsun. Olması gereken oldu bitmesi gerektiğinde de bitti diyorsun.  |
+|EVET|kırmızı kapı|aşk|tutum|Aşk tutkun dünya döndükçe baki kalacak. Sen sevmeyi seviyorsun. Tutkuyla. Hiçbir şey seni tutkuyla sevmekten alıkoyamaz. Sevmeyi bildikten sonra sevilecek birini bulmak kolay. Senin tarafından sevilmek ayrıcalık. |
+|HAYIR|kırmızı kapı|aşk|tutum| Hepsinin sonu Romeo gibi olacak diyorsun. Juliet’ten başka kız mı yoktu? Kapattık dükkanı diyorsun. Çok kırmışlar seni. Hatta paramparça etmişler. |
+|BÜYÜK|siyah kapı|ölüm|miktarı|Ölüm hayatının her anında. Onu düşünmediğin anlar pek az. Hatta çoğu zaman seni karamsarlığa itiyor. |
+|KÜÇÜK|siyah kapı|ölüm|miktarı|Ölüm mü? Daha değil. Yapacak bir sürü şey var. Bir sürü planın var. Ve bunların arasında ölüm yok. |
+|NORMAL|siyah kapı|ölüm|miktarı|Her canlı ölümü tadacaktır. Ama şimdiden durup kendi yasını tutmanın bir anlamı yok.|
+|İYİ|siyah kapı|ölüm|his|Hayatı tam manasıyla olmasada yaşadığını düşünüyorsun. Öleceğini inkar etmeden, yapmak istediği şeyleri yaparak, buradaki sorumlulukları yerine getirdikten sonra ölümün kaçınılmaz son olduğunu düşünüyorsun. Ona göre yaşadın ve yaşıyorsun. |
+|KÖTÜ|siyah kapı|ölüm|his|İçinde henüz bir sürü şeyi yarım bırakmışlığın tedirginliği var. Ölümden korkmuyorsun. İşlerini erteliyorsun. İlişkilerini. Bu yüzden 100 yaşına da gelsen her ölüm senin için erken ölüm olacak. |
+|NORMAL|siyah kapı|ölüm|his|Ölümü kabulleniyor ama gölgesinde yaşayamıyorsun. Hem bugün ölecekmiş gibi hem de hiç ölmeyecekmiş gibi yaşıyorsun.|
+|EVET|siyah kapı|ölüm|tutum|Sorumluluk duygun yüksek. Üzerine düşen her sorumluluğu yerine getirmeyi başarıyorsun. Yaşamının da sorumluluğu bir gün ölmek ve sen sorumluluk sahibisin. |
+|HAYIR|siyah kapı|ölüm|tutum|Hey bir dakika yeni geldik ya! Sorumluluk sahibi değilsin. Sorumluluktan kaçıyorsun. Ciddi ilişkilerden kaçtın, evlilikten, işlerinin sorumluluğundan. Ama ölüm nihai son, sıkıysa kaç. |
+|KUTUYU AÇ|kutu|anılar|ilgi|Geçmişinden kaçmıyor, onunla yüzleşme cesareti gösteriyorsun. Ondan ders çıkarıyorsun. Aynı hataları yapmak istemiyorsun. |
+|YÜRÜMEYE DEVAM ET|kutu|anılar|ilgi|Geçmişin hayal kırıklıkları ve pişmanlıkla dolu. Ve en iyi yolu ondan kaçmakta buluyorsun. |
+|EVET|parça|anılar|tutum|Gereksiz anıları taşıyorsun. Pişmanlıklarını. Pişmanlıklarının gölgesinde yaşıyorsun. Seni üzdüğünü bildiğin halde bunları kendine yük etmekten geri durmuyorsun. Mazoşistsin. |
+|HAYIR|parça|anılar|tutum|Yaşandı ve bitti. İyi yada kötü. Yeni şeyler söylemek yeni şeyler yaşamak istiyorsun. Geçmişi kendine köstek yapmıyorsun. En azından güzel bir gelecek için anıları rafa kaldırıyorsun. Senin hayatında geçmişin pişmanlıklarına YER YOK. |
