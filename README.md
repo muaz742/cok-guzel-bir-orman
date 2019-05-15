@@ -87,9 +87,21 @@ Butonlar, buton biçimindedir. Etkileşim elementidir. Ekranın alt kısmında b
 ## Çalışma prensibi
 Yapı, kullanıcı seçimleri<!-- ve HTML talepleri-->ne göre tepki verir.
 
+Olaylar, istemci ve sunucuda bulunan iki kontrol birimi tarafından yönetilir.<br>
+Bu birimler, HTTP üzerinden JSON dili kullanarak aralarında iletişim kurar.
+
 ![asamalar0](docs/asamalar0.svg)
-
-
+<br>
+İşlem aşamaları;
+- kullanıcı tarafından ekran üzerinde buton seçimi yapılır.
+- İstemci kontrol birimi, kullanıcının seçimini JSON formatına dönüştürür.<br>
+Sunucu kontrol birimine gönderir.
+- Sunucu kontrol birimi, gelen talebi yorumlar.<br>
+Uygulanacak aksiyona karar verir.<br>
+Aksiyon dönütünü JSON formatına dönüştürür.<br>
+İstemci kontrol birimine gönderir.
+- Aksiyon dönütü alan istemci kontrol birimi, aksiyon tipine göre işlem başlatır.<br>
+Aksiyon verilerini işlemde kullanır.
 
 # Katkılar
 Projeye katkıda bulunanları burada ifşa ediyorum.
