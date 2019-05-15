@@ -48,7 +48,7 @@ Butonlar, buton biçimindedir. Etkileşim elementidir. Ekranın alt kısmında b
 ## Çalışma prensibi
 Yapı, kullanıcı seçimleri<!-- ve HTML talepleri-->ne göre tepki verir.
 
-![asamalar0](docs/asamalar0.svg)
+![asamalar0](./docs/asamalar0.svg)
 
 # Katkılar
 Projeye katkıda bulunanları burada ifşa ediyorum.
