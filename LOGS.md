@@ -72,6 +72,7 @@
     - 29:2 - SADECE GİT - kaldırılıyor - yapıldı - 20190515-003241-muaz
     - 29:3 - ARKADAŞLARINI ORMANA ÇAĞIR - kaldırılıyor - yapıldı - 20190515-003244-muaz
     - 29:4 - BİLGEYİ TAKİP ET - kaldırılıyor - yapıldı - 20190515-003246-muaz
+- proje tanımları gelştildi. sonuç ekranı içerikleri bir dosyada paylaşıldı. - yapıldı - 20190516-031738-muaz
 
 # YAPILIYORLAR
 
@@ -104,8 +105,13 @@
     - ortak paydaları belirle
     - belirtilere göre yapıyı birleştir
 ## Yakında
+- *docs/iceriklik.md* dosyası daha kullanışlı bir görünüme güncellenebilir 
 - veritabanı yapılarını depoya ekle
 ## Bir gün
+- sunucu kontrol birimindeki karar mekanizması incele
+    - karar işlemleri veritabanından çekilebilir biçimde kayıt edilebilir mi dene
+    - eğer olursa hareketleri veritabanına tanımla
+    - birden fazla işleyişi pratik biçimde yapıya eklemeyi sağlar. güzel bir şey olur...
 - veritabanı yapılarını kıyasla. ortak bir yapıda toparla.
 - güvenlik geliştirmesi yap
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
