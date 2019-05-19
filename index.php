@@ -140,7 +140,7 @@ if (!empty($talep[1])){
         $icerik['head']['title'] = 'ORMANA HOŞGELDİN';
         $icerik['baslik'] = 'ORMANDAN';
         $icerik['yazi'] = $sonuc['veri']['yazi'];
-        $yol = '../view/';
+        $yol = '../';
         //echo $ekran;
         //exit;
     }else{
