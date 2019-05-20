@@ -5,6 +5,7 @@
  * Geliştirici: muaz
  */
 
+/** oturum kaydını başlat */
 session_start();
 
 /** veritabanı bağlantı bilgilerini tanımla */
@@ -283,17 +284,21 @@ function sonucGetir($ekranNo, $sonucTipi = 0)
  * {aksiyon:aksiyonkodu,veri:aksiyonverisi}
  * şeklindedir.
  */
+
+/** seçim varsa */
 if (g('func') == 'secim') {
+    /** ekran ve seçim numarasını algıla */
     $ekranNo = g('ekran');
     $secim = g('secim');
     /** seçimi oturum kaydına kaydet */
     $_SESSION['secimler'][$ekranNo] = $secim;
 
-    /** kontrol butonları aksiyonlarını tanımla */
+    /** seçim, kontrol butonlarına ait ise */
     if ($ekranNo == 0 && $secim > 9) {
-        $sonuc['aksiyon'] = 1;
+        /** aksiyonları seçime göre sonuca tanımla */
         switch ($secim) {
             case 10: //ormandan çık
+                $sonuc['aksiyon'] = 1;
                 $sonuc['veri']['url'] = 'https://www.youtube.com/watch?v=aqJciupunWQ';
                 $sonuc['veri']['target'] = '_blank';
                 break;
@@ -326,13 +331,16 @@ if (g('func') == 'secim') {
                 $sonuc['aksiyon'] = 4;
                 $sonuc['veri'] = 'senin ne işin var burada :(';
         }
+        /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        /** bitir */
         exit;
     }
 
-    /** sonuç ekranıları aksiyonlarını tanımla */
-    /** sonuç paylaşım ekranı aksiyonları */
+    /** sonuç ekranları aksiyonlarını tanımla */
+    /** seçim, sonuç gösterim ekranına ait ise */
     if ($ekranNo == 30) {
+        /** aksiyonları seçime göre sonuca tanımla */
         switch ($secim) {
             case 0:
                 $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
@@ -347,12 +355,14 @@ if (g('func') == 'secim') {
                 $sonuc['aksiyon'] = 4;
                 $sonuc['veri'] = 'seçim algılama hatası';
         }
+        /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        /** bitir */
         exit;
     }
-    /** son sonuç ekranı aksiyonları */
+    /** seçim, veda ekranına ait ise */
     if ($ekranNo == 28) {
-
+        /** aksiyonları seçime göre sonuca tanımla */
         switch ($secim) {
             case 0: //maceranı paylaş
                 $sonuc['aksiyon'] = 5;
@@ -387,11 +397,14 @@ if (g('func') == 'secim') {
                 $sonuc['aksiyon'] = 4;
                 $sonuc['veri'] = 'seçim algılama hatası';
         }
+        /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        /** bitir */
         exit;
     }
-    /** ekran29 buton aksiyonlarını tanımla */
+    /** seçim, 29 nolu ekrana ait ise */
     if ($ekranNo == 29) {
+        /** aksiyonları seçime göre sonuca tanımla */
         switch ($secim) {
             case 0: //maceranı paylaş
                 //secimleriKaydet();
@@ -404,11 +417,15 @@ if (g('func') == 'secim') {
                 $sonuc['aksiyon'] = 4;
                 $sonuc['veri'] = 'seçim algılama hatası';
         }
+        /** sonucu json olarak döndür */
+        echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        /** bitir */
+        exit;
     }
 
-    /** seçim ekranı aksiyonlarını tanımla */
+    /** seçim, seçim ekranlarına ait ise */
     if ($ekranNo >= 0 && $ekranNo < 29) {
-        /** özel koşullar */
+        /** ekran numarasını tanımla */
         if ($ekranNo == 17 && $secim == 1) {
             $ekranNo = 19;
         } elseif ($ekranNo == 20 && $secim == 1) {
@@ -419,13 +436,16 @@ if (g('func') == 'secim') {
         } else {
             $ekranNo++;
         }
+
         /** seçimleri veritabanına işle */
         if ($ekranNo == 19) {
             secimleriKaydet();
         }
 
+        /** ekran numarasına göre içeriği getir */
         icerigiSonucaTanimla($ekranNo);
-        /** sonuç ekranı aksiyonlarını tanımla */
+
+        /** sonuç görüntüleme ekranı içeriği getir */
         switch ($ekranNo) {
             case 21:
                 sonucYazAgac();
@@ -453,7 +473,9 @@ if (g('func') == 'secim') {
                 break;
         }
 
+        /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
+        /** bitir */
         exit;
     }
 
@@ -484,11 +506,14 @@ if (g('func') == 'secim') {
     $sonuc['veri']['butonluk']['1'] = 'standart';
     $sonuc['veri']['butonluk']['2'] = 'bok gibi';
 
-    /** çıktı ver */
+    /** sonucu json olarak döndür */
     echo json_encode($sonuc, JSON_PRETTY_PRINT);
+    /** bitir */
     exit;
 }
 
+/** geliştirici araçları talebi varsa */
+// TODO diagrama göre yorum satırları geliştirilecek
 if (g('dev') == '712') {
     $cikti['zaman konumu'] = time();
     $cikti['oturum kodu'] = session_id();
@@ -527,3 +552,5 @@ if (g('dev') == '712') {
 
 /** eylem yoksa ana dizine döndür */
 header("Location: /index.php");
+/** bitir */
+exit;
