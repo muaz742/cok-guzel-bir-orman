@@ -102,6 +102,8 @@
 ## Yarın
 - ekran güncellemeleri *docs/orman.xd* işlenmeli
 - yapılan geliştirmeleri diyagrama işle
+    - *index.php* ve *control.php* diyarama tanımlandı - yapıldı - 20190520-145550-muaz
+    - *index.js* diyagrama tanımlanmalı
     - ortak paydaları belirle
     - belirtilere göre yapıyı birleştir
 ## Yakında
