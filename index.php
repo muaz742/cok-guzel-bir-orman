@@ -137,9 +137,11 @@ function koddanIcerikGetir($girdi)
 $talep = explode('/', $_SERVER['REQUEST_URI']);
 //dil talebi yokla - yoksa tr
 
-/** varsa sonuç görüntüleme ekranı yazdır */
+/** talep var mı */
 if (!empty($talep[1])) {
+    /** sonuç görüntüleme mi */
     if ($talep[1] == "e" && !empty($talep[2])) {
+        /** koda göre içerik getir */
         koddanIcerikGetir($talep['2']);
         $icerik['mNo'] = '30';
         $icerik['head']['title'] = 'ORMANA HOŞGELDİN';
@@ -149,8 +151,9 @@ if (!empty($talep[1])) {
         //echo $ekran;
         //exit;
     } else {
-        /** yoksa boş talep ile ana dizine geri göndür */
+        /** ana dizine döndür */
         header('Location: /');
+        /** bitir */
         exit;
     }
 }
@@ -158,6 +161,7 @@ if (!empty($talep[1])) {
 
 /** dil seçimi yokla */
 
+/** ekranı tanımla */
 $ekran = ('<!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -287,3 +291,5 @@ $ekran = ('<!DOCTYPE html>
 
 /** ekran yükle */
 echo $ekran;
+/** bitir */
+exit;
