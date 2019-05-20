@@ -322,9 +322,6 @@ if (g('func') == 'secim') {
                 $sonuc['aksiyon'] = 2;
                 $sonuc['veri']['url'] = '/index.php';
                 break;
-            case 16: //gönder butonu-fikrimvar.php
-                //TODO kullanıcı geribildirimleri kayıt altına alınacak
-                break;
             default:
                 $sonuc['aksiyon'] = 4;
                 $sonuc['veri'] = 'senin ne işin var burada :(';
