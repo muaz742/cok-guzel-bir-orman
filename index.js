@@ -1,41 +1,18 @@
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000
-});
-
-/** https://hackernoon.com/copying-text-to-clipboard-with-javascript-df4d4988697f */
-const copyToClipboard = str => {
-    const el = document.createElement('textarea');  // Create a <textarea> element
-    el.value = str;                                 // Set its value to the string that you want copied
-    el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
-    el.style.position = 'absolute';
-    el.style.left = '-9999px';                      // Move outside the screen to make it invisible
-    document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
-    const selected =
-        document.getSelection().rangeCount > 0        // Check if there is any content selected previously
-            ? document.getSelection().getRangeAt(0)     // Store selection if found
-            : false;                                    // Mark as false to know no selection existed before
-    el.select();                                    // Select the <textarea> content
-    document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
-    document.body.removeChild(el);                  // Remove the <textarea> element
-    if (selected) {                                 // If a selection existed before copying
-        document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
-        document.getSelection().addRange(selected);   // Restore the original selection
-    }
-}
-
+/** seçim fonksiyonu tanımla */
 function secim(ekranNo, secim) {
-    /** ekran kodu ve seçimi gönder */
+    /** ekran kodu ve seçimi veriye tanımla */
     var veri = {ekran: ekranNo, secim: secim};
+    /** veriyi kontrole gönder */
     $.getJSON('http://orman.muaz712.com/control.php?func=secim', veri, function (yanit) {
         JSON.stringify(yanit);
+        /** yanıtı işle */
         isle(yanit.aksiyon, yanit.veri);
     });
 }
 
+/** işle fonksiyonu tanımla */
 function isle(aksiyon, veri) {
+    /** aksiyona göre işlem seç */
     switch (aksiyon) {
         case 0: //aksiyon yok
             console.log('aksiyon yok');
@@ -94,6 +71,7 @@ function isle(aksiyon, veri) {
     }
 }
 
+/** fonksiyonları tanımla */
 function mEkranYaz(veri) {
     mButonlukKaldir();
     mButonlukEkle();
@@ -141,4 +119,34 @@ function mEkleButon(no, yazi, ekranNo) {
     yeniElement.innerText = yazi;
     var ana = document.getElementById("mButonluk");
     ana.appendChild(yeniElement);
+}
+
+/** tost gösterimi tanımla */
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+});
+
+/** panoya kopyala fonkisyonu tanımla */
+/** https://hackernoon.com/copying-text-to-clipboard-with-javascript-df4d4988697f */
+const copyToClipboard = str => {
+    const el = document.createElement('textarea');  // Create a <textarea> element
+    el.value = str;                                 // Set its value to the string that you want copied
+    el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+    document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+    const selected =
+        document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+            ? document.getSelection().getRangeAt(0)     // Store selection if found
+            : false;                                    // Mark as false to know no selection existed before
+    el.select();                                    // Select the <textarea> content
+    document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+    document.body.removeChild(el);                  // Remove the <textarea> element
+    if (selected) {                                 // If a selection existed before copying
+        document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+        document.getSelection().addRange(selected);   // Restore the original selection
+    }
 }
