@@ -73,6 +73,7 @@
     - 29:3 - ARKADAŞLARINI ORMANA ÇAĞIR - kaldırılıyor - yapıldı - 20190515-003244-muaz
     - 29:4 - BİLGEYİ TAKİP ET - kaldırılıyor - yapıldı - 20190515-003246-muaz
 - proje tanımları gelştildi. sonuç ekranı içerikleri bir dosyada paylaşıldı. - yapıldı - 20190516-031738-muaz
+- *docs/iceriklik.md* dosyası içerisine seçim-sonuç ilişkili tablo görünümleri tanımlanmalı - yapıldı - 20190523-220445-muaz
 
 # YAPILIYORLAR
 
