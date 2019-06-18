@@ -293,7 +293,6 @@ $ekran = ('<!DOCTYPE html>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
 <script src="http://orman.muaz712.com/index.js?v=' . time() . '"></script>
-<script>tamEkran();</script>
 </body>
 </html>');
 
