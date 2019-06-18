@@ -121,6 +121,46 @@ function mEkleButon(no, yazi, ekranNo) {
     ana.appendChild(yeniElement);
 }
 
+
+/** tam ekran fonksiyonu tanımla */
+var elem = document.documentElement;
+var durumTamEkran = false;
+function tamEkran() {
+    if (!durumTamEkran) {
+        acTamEkran();
+    }else {
+        kapaTamEkran();
+    }
+}
+
+/* aç tam ekran */
+function acTamEkran() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+    durumTamEkran = true;
+}
+
+/* kapa tam ekran */
+function kapaTamEkran() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+    }
+    durumTamEkran = false;
+}
+
 /** tost gösterimi tanımla */
 const Toast = Swal.mixin({
     toast: true,

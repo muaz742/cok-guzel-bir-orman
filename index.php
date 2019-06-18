@@ -254,6 +254,13 @@ $ekran = ('<!DOCTYPE html>
             </div>
         </div>
     </div>
+    <p style="position: fixed;
+  bottom: 0em;
+  right: 1em">
+                <a onclick="tamEkran();">
+                <img src="' . $yol . 'assets/images/tam-ekran.svg" alt="" style="height: 2.0rem;">
+                </a>
+                </p>
 </section>
 <section once="" class="cid-r3yvICSlmZ mbr-reveal" id="footer7-4">
     <div class="container">
@@ -286,6 +293,7 @@ $ekran = ('<!DOCTYPE html>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
 <script src="http://orman.muaz712.com/index.js?v=' . time() . '"></script>
+<script>tamEkran();</script>
 </body>
 </html>');
 
