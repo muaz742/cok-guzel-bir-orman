@@ -190,7 +190,11 @@ $ekran = ('<!DOCTYPE html>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112846050-7"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag(\'js\', new Date());
 
     gtag(\'config\', \'UA-112846050-7\');
@@ -216,7 +220,8 @@ $ekran = ('<!DOCTYPE html>
                               style="height: 3.8rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="#header2-1">' . $logoyazi . '</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4"
+                                                     href="#header2-1">' . $logoyazi . '</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -257,10 +262,10 @@ $ekran = ('<!DOCTYPE html>
     <p style="position: fixed;
   bottom: 0em;
   right: 1em">
-                <a onclick="tamEkran();">
-                <img src="' . $yol . 'assets/images/tam-ekran.svg" alt="" style="height: 2.0rem;">
-                </a>
-                </p>
+        <a onclick="tamEkran();">
+            <img src="' . $yol . 'assets/images/tam-ekran.svg" alt="" style="height: 2.0rem;">
+        </a>
+    </p>
 </section>
 <section once="" class="cid-r3yvICSlmZ mbr-reveal" id="footer7-4">
     <div class="container">
@@ -272,9 +277,9 @@ $ekran = ('<!DOCTYPE html>
             </div>
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                <a href="https://github.com/muaz742/cok-guzel-bir-orman" target="_blank">
-                <img src="' . $yol . 'assets/images/github.svg" alt="" style="height: 2.0rem;">
-                </a>
+                    <a href="https://github.com/muaz742/cok-guzel-bir-orman" target="_blank">
+                        <img src="' . $yol . 'assets/images/github.svg" alt="" style="height: 2.0rem;">
+                    </a>
                 </p>
             </div>
         </div>
