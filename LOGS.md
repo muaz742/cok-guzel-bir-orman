@@ -76,6 +76,8 @@
 - *docs/iceriklik.md* dosyası içerisine seçim-sonuç ilişkili tablo görünümleri tanımlanmalı - yapıldı - 20190523-220445-muaz
 - tam ekran işlevi tanımlandı - yapıldı - 20190618-184326-muaz
 - sayfa yüklendiğinde çalışan tam ekran fonksiyonu kaldırıldı - yapıldı - 20190618-184737-muaz
+- 'icerikekran' tablosuna olan bağ 'iceriklik' tablosuna aktarıldı - yapıldı - 20190626-160100-muaz
+- 'iceriklik' tablosuna diğer ekranlar tanımlandı - yapıldı - 20190626-162400-muaz
 
 # YAPILIYORLAR
 
