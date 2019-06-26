@@ -193,16 +193,16 @@ function icerigiSonucaTanimla($ekranNo)
 {
     global $vt;
     global $sonuc;
-    $veri = $vt->query("SELECT * FROM icerikekran WHERE no='" . $ekranNo . "'", PDO::FETCH_ASSOC);
-    $butonlar = $veri->fetch(PDO::FETCH_ASSOC);
-    $sonuc['veri']['baslik'] = $butonlar['baslik'];
-    $sonuc['veri']['yazi'] = $butonlar['yazi'];
-    $sonuc['veri']['ekranNo'] = $butonlar['no'];
-    unset($butonlar['baslik']);
-    unset($butonlar['yazi']);
-    unset($butonlar['no']);
-    $sonuc['aksiyon'] = 3;
-    $sonuc['veri']['butonluk'] = $butonlar;
+    $sorgu = $vt->prepare("SELECT ekranNo,baslik,yazi,secimNo,secimYazi FROM iceriklik WHERE ekranNo='" . $ekranNo . "'");
+    $sorgu->execute();
+    $veri = $sorgu->fetchAll();
+	$sonuc['aksiyon']=3;
+	$sonuc['veri']['ekranNo']=$veri[0]['ekranNo'];
+	$sonuc['veri']['baslik']=$veri[0]['baslik'];
+	$sonuc['veri']['yazi']=$veri[0]['yazi'];
+	foreach ($veri as $a){
+    	$sonuc['veri']['butonluk'][$a['secimNo']]=$a['secimYazi'];
+	}
 }
 
 function secimleriSifirla()
