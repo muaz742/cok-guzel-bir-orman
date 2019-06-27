@@ -69,6 +69,16 @@ function isle(aksiyon, veri) {
         default:
             alert("aksiyon algılanamadı");
     }
+    if(veri.qrcode){
+        var qrcode = new QRCode("qrcode", {
+            text: veri.qrcode,
+            width: 64,
+            height: 64,
+            colorDark : "#ffffff",
+            colorLight : "#000000",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    }
 }
 
 /** fonksiyonları tanımla */
