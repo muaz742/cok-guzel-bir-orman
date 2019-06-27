@@ -449,6 +449,9 @@ if (g('func') == 'secim') {
         switch ($ekranNo) {
             case 21:
                 sonucYazAgac();
+                if(isset($_SESSION['kisaUrl'])){
+                    $sonuc['veri']['qrcode'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
+                }
                 break;
             case 22:
                 sonucYazHayvan();
