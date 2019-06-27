@@ -78,6 +78,7 @@
 - sayfa yüklendiğinde çalışan tam ekran fonksiyonu kaldırıldı - yapıldı - 20190618-184737-muaz
 - 'icerikekran' tablosuna olan bağ 'iceriklik' tablosuna aktarıldı - yapıldı - 20190626-160100-muaz
 - 'iceriklik' tablosuna diğer ekranlar tanımlandı - yapıldı - 20190626-162400-muaz
+- sonuç gösterim ekranında qr kodu gösterimi geliştirildi - yapıldı - 20190627-144300-muaz
 
 # YAPILIYORLAR
 
