@@ -259,6 +259,9 @@ $ekran = ('<!DOCTYPE html>
             </div>
         </div>
     </div>
+    <div style="position: fixed; bottom: 0.5em; left: 1em; opacity: 0.6" 
+        class="border border-dark" id="qrcode" onclick="secim(28,0)">
+    </div>
     <p style="position: fixed;
   bottom: 0em;
   right: 1em">
@@ -296,6 +299,7 @@ $ekran = ('<!DOCTYPE html>
 <script src="' . $yol . 'assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
 <script src="' . $yol . 'assets/theme/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="' . $yol . 'assets/qrcode/qrcode.js"></script>
 
 <script src="http://orman.muaz712.com/index.js?v=' . time() . '"></script>
 </body>
