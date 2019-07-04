@@ -279,6 +279,8 @@ function sonucGetir($ekranNo, $sonucTipi = 0)
  * - 2 - yönlendir - location
  * - 3 - ekran güncelle
  * - 4 - alert
+ * - 5 - swal alert
+ * - 6 - swal toast
  * verilen karar JSON formatında döndürülür.
  * cevap formatı;
  * {aksiyon:aksiyonkodu,veri:aksiyonverisi}
