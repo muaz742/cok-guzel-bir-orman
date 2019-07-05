@@ -295,9 +295,9 @@ if (g('func') == 'secim') {
     /** seçimi oturum kaydına kaydet */
     $_SESSION['secimler'][$ekranNo] = $secim;
 
-    /** kontol ve sonuç ekranı butonları aksiyonlarını tanımla */
+    /** seçim, kontrol butonları veya sonuç gösterim ekranı butonlarına aitse ise */
     if ($ekranNo==0||$ekranNo==28||$ekranNo==29||$ekranNo==30){
-        /** aksiyonları seçime göre sonuca tanımla */
+        /** aksiyon-veri kayıtlarını ekran ve seçim numarasına göre veritabanından çek */
         $kisaUrl = $_SESSION['kisaUrl'];
         $vt->exec("set names utf8mb4");
         $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
