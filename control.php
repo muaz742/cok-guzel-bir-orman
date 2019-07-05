@@ -317,19 +317,17 @@ if (g('func') == 'secim') {
     /** seçim, sonuç gösterim ekranına ait ise */
     if ($ekranNo == 30) {
         /** aksiyonları seçime göre sonuca tanımla */
-        switch ($secim) {
-            case 0:
-                $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
-                $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
-                break;
-            case 1: //başa dön
-                secimleriSifirla();
-                $sonuc['aksiyon'] = 1;
-                $sonuc['veri']['url'] = 'http://orman.muaz712.com';
-                break;
-            default: //seçim algılama hatası
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'seçim algılama hatası';
+        $kisaUrl = $_SESSION['kisaUrl'];
+        $vt->exec("set names utf8mb4");
+        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
+        $query->execute();
+        $veri = $query->fetchAll();
+        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
+        $asama0 = explode('|', $veri[0]['veri']);
+        for ($i = 0; $i < count($asama0); $i++) {
+            $asama1 = explode('~', $asama0[$i]);
+            eval("\$asama1[1] = \"$asama1[1]\";");
+            $sonuc['veri'][$asama1[0]] = $asama1[1];
         }
         /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
