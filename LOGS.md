@@ -81,6 +81,15 @@
 - sonuç gösterim ekranında qr kodu gösterimi geliştirildi - yapıldı - 20190627-144300-muaz
 - yapı unsuru veritabanında bulunan "iceriklik" tablosu git deposuna eklendi - yapıldı - 20190704-154048-muaz
 - "docs/iceriklik.md" başlıklar listesi tanımlandı - yapıldı - 20190704-155632-muaz
+- "control.php" içerisinde bulunan sabit aksiyonlar "iceriklik" veritabanına işlendi - yapıldı - 20190704-153921-muaz
+    - veritabanından çekilen verinin işlenmesi geliştirildi - yapıldı - 20190705-143509-muaz
+    - veritabanındaki veri kayıtları yeni standarta göre güncellendi - yapıldı - 20190705-143545-muaz
+    - kontrol butonlarına ait sabit aksiyonlara işlem uygulandı - yapıldı - 20190705-143557-muaz
+    - işlem sonuç ekranı butonlarına uygulandı - yapıldı - 20190705-160532-muaz
+    - kontrol butonları ve sonuç ekranı butonları aksiyon-veri tanımlama işlemleri bileştirildi - yapıldı - 20190705-160631-muaz
+    - veri sütunu kodlaması utf8mb4 olarak değiştirildi. fonksiyona işlendi. böylece verilere emoji desteği verilerek paylaşım ekranında emoji gösterimi eklendi - yapıldı - 20190705-160748-muaz
+    - veri.yazi içerisine değişken eklendi. gösterim sırasında php.eval fonksiyonu ile çalışacak biçimde fonksiyon geliştirildi. böylece paylaşım sırasında kısa link gösterimi sağlandı. - yapıldı - 20190705-160939-muaz
+    - sabit aksiyonların veritabanı kayıtlarından çalışması tamamlandı - yapıldı - 20190705-161031-muaz
 
 # YAPILIYORLAR
 
