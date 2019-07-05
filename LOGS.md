@@ -79,6 +79,8 @@
 - 'icerikekran' tablosuna olan bağ 'iceriklik' tablosuna aktarıldı - yapıldı - 20190626-160100-muaz
 - 'iceriklik' tablosuna diğer ekranlar tanımlandı - yapıldı - 20190626-162400-muaz
 - sonuç gösterim ekranında qr kodu gösterimi geliştirildi - yapıldı - 20190627-144300-muaz
+- yapı unsuru veritabanında bulunan "iceriklik" tablosu git deposuna eklendi - yapıldı - 20190704-154048-muaz
+- "docs/iceriklik.md" başlıklar listesi tanımlandı - yapıldı - 20190704-155632-muaz
 
 # YAPILIYORLAR
 
