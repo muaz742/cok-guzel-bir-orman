@@ -298,40 +298,14 @@ if (g('func') == 'secim') {
     /** seçim, kontrol butonlarına ait ise */
     if ($ekranNo == 0 && $secim > 9) {
         /** aksiyonları seçime göre sonuca tanımla */
-        switch ($secim) {
-            case 10: //ormandan çık
-                $sonuc['aksiyon'] = 1;
-                $sonuc['veri']['url'] = 'https://www.youtube.com/watch?v=aqJciupunWQ';
-                $sonuc['veri']['target'] = '_blank';
-                break;
-            case 11: //başa dön
-                secimleriSifirla();
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/index.php';
-                break;
-            case 12: //fikrim var
-                $sonuc['aksiyon'] = 1;
-                $sonuc['veri']['mesaj'] = '"new issue" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin';
-                $sonuc['veri']['url'] = 'https://github.com/muaz742/cok-guzel-bir-orman/issues';
-                // TODO fikrim var sayfasını tanımla
-                break;
-            case 13: //siteyi paylaş
-                $sonuc['aksiyon'] = 5;
-                $sonuc['veri']['baslik'] = "🌳🌲🌳🌲🌳🌳🌲<br><br>BİZ GİDERİZ ORMANA";
-                $sonuc['veri']['url'] = "http://orman.muaz712.com";
-                // TODO paylaşım platformu seç ekranı tanımla
-                break;
-            case 14: //logo yazı
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/index.php';
-                break;
-            case 15: //logo resim
-                $sonuc['aksiyon'] = 2;
-                $sonuc['veri']['url'] = '/index.php';
-                break;
-            default:
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'senin ne işin var burada :(';
+        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
+        $query->execute();
+        $veri = $query->fetchAll();
+        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
+        $asama0 = explode('|', $veri[0]['veri']);
+        for ($i = 0; $i < count($asama0); $i++) {
+            $asama1 = explode('~', $asama0[$i]);
+            $sonuc['veri'][$asama1[0]] = $asama1[1];
         }
         /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
