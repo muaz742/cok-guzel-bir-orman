@@ -295,9 +295,11 @@ if (g('func') == 'secim') {
     /** seçimi oturum kaydına kaydet */
     $_SESSION['secimler'][$ekranNo] = $secim;
 
-    /** seçim, kontrol butonlarına ait ise */
-    if ($ekranNo == 0 && $secim > 9) {
+    /** kontol ve sonuç ekranı butonları aksiyonlarını tanımla */
+    if ($ekranNo==0||$ekranNo==28||$ekranNo==29||$ekranNo==30){
         /** aksiyonları seçime göre sonuca tanımla */
+        $kisaUrl = $_SESSION['kisaUrl'];
+        $vt->exec("set names utf8mb4");
         $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
         $query->execute();
         $veri = $query->fetchAll();
@@ -305,50 +307,10 @@ if (g('func') == 'secim') {
         $asama0 = explode('|', $veri[0]['veri']);
         for ($i = 0; $i < count($asama0); $i++) {
             $asama1 = explode('~', $asama0[$i]);
+            eval("\$asama1[1] = \"$asama1[1]\";");
             $sonuc['veri'][$asama1[0]] = $asama1[1];
         }
-        /** sonucu json olarak döndür */
-        echo json_encode($sonuc, JSON_PRETTY_PRINT);
-        /** bitir */
-        exit;
-    }
 
-    /** sonuç ekranları aksiyonlarını tanımla */
-    /** seçim, sonuç gösterim ekranına ait ise */
-    if ($ekranNo == 30) {
-        /** aksiyonları seçime göre sonuca tanımla */
-        $kisaUrl = $_SESSION['kisaUrl'];
-        $vt->exec("set names utf8mb4");
-        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
-        $query->execute();
-        $veri = $query->fetchAll();
-        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
-        $asama0 = explode('|', $veri[0]['veri']);
-        for ($i = 0; $i < count($asama0); $i++) {
-            $asama1 = explode('~', $asama0[$i]);
-            eval("\$asama1[1] = \"$asama1[1]\";");
-            $sonuc['veri'][$asama1[0]] = $asama1[1];
-        }
-        /** sonucu json olarak döndür */
-        echo json_encode($sonuc, JSON_PRETTY_PRINT);
-        /** bitir */
-        exit;
-    }
-    /** seçim, veda ekranına ait ise */
-    if ($ekranNo == 28) {
-        /** aksiyonları seçime göre sonuca tanımla */
-        $kisaUrl = $_SESSION['kisaUrl'];
-        $vt->exec("set names utf8mb4");
-        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
-        $query->execute();
-        $veri = $query->fetchAll();
-        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
-        $asama0 = explode('|', $veri[0]['veri']);
-        for ($i = 0; $i < count($asama0); $i++) {
-            $asama1 = explode('~', $asama0[$i]);
-            eval("\$asama1[1] = \"$asama1[1]\";");
-            $sonuc['veri'][$asama1[0]] = $asama1[1];
-        }
         /**
          * silinen fonksiyonda bulunan aksiyon kayıtları (veritabanına kopyalanmaya hazır biçimde yazıldı - 20190705-152950-muaz)
          *
@@ -367,26 +329,7 @@ if (g('func') == 'secim') {
          * aksiyon: 6
          * veri: tip~success|yazi~bilge takip edildi|animasyon:~shake
          */
-        /** sonucu json olarak döndür */
-        echo json_encode($sonuc, JSON_PRETTY_PRINT);
-        /** bitir */
-        exit;
-    }
-    /** seçim, 29 nolu ekrana ait ise */
-    if ($ekranNo == 29) {
-        /** aksiyonları seçime göre sonuca tanımla */
-        $kisaUrl = $_SESSION['kisaUrl'];
-        $vt->exec("set names utf8mb4");
-        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
-        $query->execute();
-        $veri = $query->fetchAll();
-        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
-        $asama0 = explode('|', $veri[0]['veri']);
-        for ($i = 0; $i < count($asama0); $i++) {
-            $asama1 = explode('~', $asama0[$i]);
-            eval("\$asama1[1] = \"$asama1[1]\";");
-            $sonuc['veri'][$asama1[0]] = $asama1[1];
-        }
+
         /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         /** bitir */
