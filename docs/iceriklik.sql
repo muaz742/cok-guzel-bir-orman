@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost:3306
--- Üretim Zamanı: 04 Tem 2019, 15:34:48
+-- Üretim Zamanı: 05 Tem 2019, 14:38:09
 -- Sunucu sürümü: 10.0.38-MariaDB-cll-lve
 -- PHP Sürümü: 7.2.7
 
@@ -103,19 +103,19 @@ INSERT INTO `iceriklik` (`ekranNo`, `baslik`, `yazi`, `secimNo`, `secimYazi`, `s
 (25, 'başlık 25', 'yazı 25', '0', 'DEVAM ET', NULL, NULL, 0, ''),
 (26, 'başlık 26', 'yazı 26', '0', 'DEVAM ET', NULL, NULL, 0, ''),
 (27, 'başlık 27', 'yazı 27', '0', 'DEVAM ET', NULL, NULL, 0, ''),
-(28, ' ', '<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url: \"http://orman.muaz712.com/e/\" . $_SESSION[\'kisaUrl\'] | MACERANI PAYLAŞ'),
-(28, ' ', '<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.', '1', 'GÜLÜMSE VE GİT :)', NULL, NULL, 6, 'tip: \'success\' | yazi: \'Hoşcakal :)\' | animasyon: \'fadeInUp\''),
-(29, 'YENİ BİR MACERADA GÖRÜŞMEK ÜZERE', 'DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url: \"http://orman.muaz712.com/e/\" . $_SESSION[\'kisaUrl\'] | MACERANI PAYLAŞ'),
+(28, ' ', '<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url~http://orman.muaz712.com/e/$dizge'),
+(28, ' ', '<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.', '1', 'GÜLÜMSE VE GİT :)', NULL, NULL, 6, 'tip~\'success\'|yazi~\'Hoşcakal :)\'|animasyon~\'fadeInUp\''),
+(29, 'YENİ BİR MACERADA GÖRÜŞMEK ÜZERE', 'DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url~\"http://orman.muaz712.com/e/\" . $_SESSION[\'kisaUrl\']|MACERANI PAYLAŞ'),
 (29, 'YENİ BİR MACERADA GÖRÜŞMEK ÜZERE', 'DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.', '1', 'GÜLÜMSE VE GİT :)', NULL, NULL, 0, ''),
 (29, 'YENİ BİR MACERADA GÖRÜŞMEK ÜZERE', 'DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.', '2', 'SADECE GİT', NULL, NULL, 0, ''),
-(30, 'ORMANDAN', 'yazı 30', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url: \"http://orman.muaz712.com/e/\" . $_SESSION[\'kisaUrl\'] | MACERANI PAYLAŞ'),
-(30, 'ORMANDAN', 'yazı 30', '1', 'BAŞA DÖN', NULL, NULL, 1, 'url: \'/index.php\''),
-(0, 'baslik 0', 'yazi 0', '10', 'ORMANA GİR', NULL, NULL, 1, 'url: \'https://www.youtube.com/watch?v=aqJciupunWQ\' | target:\'_blank\''),
-(0, 'baslik 0', 'yazi 0', '11', 'BAŞA DÖN', NULL, NULL, 1, 'url: \'/index.php\''),
-(0, 'baslik 0', 'yazi 0', '12', 'FİKRİM VAR !', NULL, NULL, 1, 'url: \'https://github.com/muaz742/cok-guzel-bir-orman/issues\'|mesaj: \'\"new issue\" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin\''),
-(0, 'baslik 0', 'yazi 0', '13', 'PAYLAŞ', NULL, NULL, 5, 'url: \"http://orman.muaz712.com\"| baslik: \"BİZ GİDERİZ ORMANA\"'),
-(0, 'baslik 0', 'yazi 0', '14', NULL, NULL, NULL, 2, 'url: \'/index.php\''),
-(0, 'baslik 0', 'yazi 0', '15', NULL, NULL, NULL, 4, 'url: \'/index.php\'');
+(30, 'ORMANDAN', 'yazı 30', '0', 'MACERANI PAYLAŞ', NULL, NULL, 5, 'url~\"http://orman.muaz712.com/e/\" . $_SESSION[\'kisaUrl\']|MACERANI PAYLAŞ'),
+(30, 'ORMANDAN', 'yazı 30', '1', 'BAŞA DÖN', NULL, NULL, 1, 'url~/index.php'),
+(0, 'baslik 0', 'yazi 0', '10', 'ORMANA GİR', NULL, NULL, 1, 'url~https://www.youtube.com/watch?v=aqJciupunWQ|target:_blank'),
+(0, 'baslik 0', 'yazi 0', '11', 'BAŞA DÖN', NULL, NULL, 2, 'url~/index.php'),
+(0, 'baslik 0', 'yazi 0', '12', 'FİKRİM VAR !', NULL, NULL, 1, 'url~https://github.com/muaz742/cok-guzel-bir-orman/issues|mesaj~\'\"new issue\" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin\''),
+(0, 'baslik 0', 'yazi 0', '13', 'PAYLAŞ', NULL, NULL, 5, 'url~http://orman.muaz712.com|baslik~BİZ GİDERİZ ORMANA'),
+(0, 'baslik 0', 'yazi 0', '14', '*logo yazı*', NULL, NULL, 2, 'url~/index.php'),
+(0, 'baslik 0', 'yazi 0', '15', '*logo resim*', NULL, NULL, 4, 'url~/index.php');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
