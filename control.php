@@ -339,40 +339,36 @@ if (g('func') == 'secim') {
     /** seçim, veda ekranına ait ise */
     if ($ekranNo == 28) {
         /** aksiyonları seçime göre sonuca tanımla */
-        switch ($secim) {
-            case 0: //maceranı paylaş
-                $sonuc['aksiyon'] = 5;
-                $sonuc['veri']['baslik'] = "🎊🌲🌳🎄🌳🌳🎉<br><br>MACERANI PAYLAŞ";
-                $sonuc['veri']['url'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
-                break;
-            case 1: //gülümse ve git
-                $sonuc['aksiyon'] = 6;
-                $sonuc['veri']['tip'] = 'success';
-                $sonuc['veri']['yazi'] = 'yeni bir macerada görüşmek üzere koca yürekli insan :)';
-                $sonuc['veri']['animasyon'] = 'fadeInUp';
-                break;
-            case 2: //sadece git
-                $sonuc['aksiyon'] = 6;
-                $sonuc['veri']['tip'] = '';
-                $sonuc['veri']['yazi'] = 'peki..';
-                $sonuc['veri']['animasyon'] = 'heartBeat';
-                break;
-            case 3: //arkadaşlarını ormana çağır
-                $sonuc['aksiyon'] = 6;
-                $sonuc['veri']['tip'] = 'success';
-                $sonuc['veri']['yazi'] = 'arkadaşlar ormana çağırıldı';
-                $sonuc['veri']['animasyon'] = 'bounce';
-                break;
-            case 4: //bilgeyi takip et
-                $sonuc['aksiyon'] = 6;
-                $sonuc['veri']['tip'] = 'success';
-                $sonuc['veri']['yazi'] = 'bilge takip edildi';
-                $sonuc['veri']['animasyon'] = 'shake';
-                break;
-            default: //seçim algılama hatası
-                $sonuc['aksiyon'] = 4;
-                $sonuc['veri'] = 'seçim algılama hatası';
+        $kisaUrl = $_SESSION['kisaUrl'];
+        $vt->exec("set names utf8mb4");
+        $query = $vt->prepare("SELECT ekranNo,secimNo,aksiyon,veri FROM iceriklik WHERE ekranNo='".$ekranNo."' AND secimNo='".$secim."'");
+        $query->execute();
+        $veri = $query->fetchAll();
+        $sonuc['aksiyon'] = (int)$veri[0]['aksiyon'];
+        $asama0 = explode('|', $veri[0]['veri']);
+        for ($i = 0; $i < count($asama0); $i++) {
+            $asama1 = explode('~', $asama0[$i]);
+            eval("\$asama1[1] = \"$asama1[1]\";");
+            $sonuc['veri'][$asama1[0]] = $asama1[1];
         }
+        /**
+         * silinen fonksiyonda bulunan aksiyon kayıtları (veritabanına kopyalanmaya hazır biçimde yazıldı - 20190705-152950-muaz)
+         *
+         * ekranNo:28 | secim:2
+         * yazi: SADECE GİT
+         * aksiyon: 6
+         * veri: tip~success|yazi~yeni bir macerada görüşmek üzere koca yürekli insan :)|animasyon~fadeInUp
+         *
+         * ekranNo:28 | secim:3
+         * yazi: ARKADAŞLARINI ORMAN ÇAĞIR
+         * aksiyon: 6
+         * veri: tip~sucess|yazi~arkadaşlar ormana çağırıldı|animasyon~success
+         *
+         * ekranNo:28 | secim:4
+         * yazi: BİLGEYİ TAKİP ET
+         * aksiyon: 6
+         * veri: tip~success|yazi~bilge takip edildi|animasyon:~shake
+         */
         /** sonucu json olarak döndür */
         echo json_encode($sonuc, JSON_PRETTY_PRINT);
         /** bitir */
