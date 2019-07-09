@@ -386,6 +386,9 @@ if (g('func') == 'secim') {
                 break;
             case 30:
                 sonuclariYaz();
+                if ($secim==1&&isset($_SESSION['kisaUrl'])){
+                    $sonuc['veri']['qrcode'] = "http://orman.muaz712.com/e/" . $_SESSION['kisaUrl'];
+                }
                 break;
         }
 
