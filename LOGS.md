@@ -91,6 +91,7 @@
     - veri.yazi içerisine değişken eklendi. gösterim sırasında php.eval fonksiyonu ile çalışacak biçimde fonksiyon geliştirildi. böylece paylaşım sırasında kısa link gösterimi sağlandı. - yapıldı - 20190705-160939-muaz
     - sabit aksiyonların veritabanı kayıtlarından çalışması tamamlandı - yapıldı - 20190705-161031-muaz
 - son yapılan geliştirme ile ilk ekrandaki 'ORMANA GİR' butonunun çalışmadığı görüldü. 'control.php' içerisinde ilgili koşul güncellenerek onarım yapıldı - yapıldı - 20190709-145426-muaz
+- hızlı sonuç gösterim ekranına qrcode eklendi - yapıldı - 20190709-145714-muaz
 
 # YAPILIYORLAR
 
