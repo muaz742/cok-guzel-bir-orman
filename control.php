@@ -296,7 +296,7 @@ if (g('func') == 'secim') {
     $_SESSION['secimler'][$ekranNo] = $secim;
 
     /** seçim, kontrol butonları veya sonuç gösterim ekranı butonlarına aitse ise */
-    if ($ekranNo==0||$ekranNo==28||$ekranNo==29||$ekranNo==30){
+    if (!($ekranNo==0&&$secim==0)&&($ekranNo==0||$ekranNo==28||$ekranNo==29||$ekranNo==30)){
         /** aksiyon-veri kayıtlarını ekran ve seçim numarasına göre veritabanından çek */
         $kisaUrl = $_SESSION['kisaUrl'];
         $vt->exec("set names utf8mb4");
