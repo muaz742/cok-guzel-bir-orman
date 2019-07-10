@@ -133,6 +133,18 @@
     - karar işlemleri veritabanından çekilebilir biçimde kayıt edilebilir mi dene
     - eğer olursa hareketleri veritabanına tanımla
     - birden fazla işleyişi pratik biçimde yapıya eklemeyi sağlar. güzel bir şey olur...
-- veritabanı yapılarını kıyasla. ortak bir yapıda toparla.
+-  yapılarını kıyasla. ortak bir yapıda toparla.
 - güvenlik geliştirmesi yap
 - sistemin sql bağlantısını kaybetme ihtimaline karşı sunucuyla etkileşim kurabileceği alternatif bir yapı düşün. json ile api falan...
+- içerik geçiş efekti tanımlanabilir 
+    - kullanıcı deneyimi gözlemlerime göre 700 ms içerisinde tamamlanan yumuşak geçiş gayet ideal
+    - 350 ms silinme, 350 ms görünme olarak 2 evreden oluşmakta 
+    - ilk 350 ms içerisinde sunucudan cevap gelmeli 
+        - eğer geçikme olursa bekleme sürecini yansıtan bir animasyon gösterilebilir 
+- çoklu dil desteği ekle 
+- işlem ve bellek paylaştırma 
+    - işlem sırasında sunucudan içerikler gönderilmekte
+    - bunun yerine bu işleyişi değerlendir 
+        - içeriklere referans değerler tanımla 
+        - tüm içerikleri istemci belleğin yükle 
+        - sunucu tarafından gelen kararlara karşılık gelen içeriği göster 
