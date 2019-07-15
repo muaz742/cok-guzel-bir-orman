@@ -57,24 +57,54 @@ $yol = '';
 error_reporting(0);
 
 /** fonksiyonları tanımla */
-function mod62_decode($girdi, $anahtar = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
+class Mod62
 {
-    $anahtar = str_split($anahtar);
-    $bolen = count($anahtar);
-    $girdi = str_split($girdi);
-    $girdi = array_reverse($girdi);
-    $anahtar = array_flip($anahtar);
-    $i = 0;
-    while ($i < count($girdi)) {
-        /** kalanları belirle */
-        $kalan = $anahtar[$girdi[$i]];
-        $taban = pow($bolen, $i);
-        /** kalana karşılık gelen değeri çıktıya işle */
-        $bolunen = $kalan * $taban;
-        $cikti = $cikti+$bolunen;
-        $i++;
+    public $anahtar = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+    public function encode($girdi)
+    {
+        $anahtar = $this->anahtar;
+        $anahtar = str_split($anahtar);
+        $bolunen = $girdi;
+        $bolen = count($anahtar);
+        $kalanlar = [];
+        if ($bolunen == 0) {
+            array_push($kalanlar, $bolunen);
+        } else {
+            while ($bolunen > 0) {
+                $kalan = $bolunen % $bolen;
+                $bolum = floor($bolunen / $bolen);
+                array_push($kalanlar, $kalan);
+                $bolunen = $bolum;
+            }
+        }
+        $i = count($kalanlar) - 1;
+        while ($i >= 0) {
+            $degerA = $anahtar[$kalanlar[$i]];
+            $i--;
+            (empty($cikti)) ? $cikti = $degerA : $cikti = $cikti . $degerA;
+        }
+        return $cikti;
     }
-    return $cikti;
+
+    public function decode($girdi)
+    {
+        $anahtar = $this->anahtar;
+        $anahtar = str_split($anahtar);
+        $anahtar = array_flip($anahtar);
+        $bolen = count($anahtar);
+        $girdi = str_split($girdi);
+        $girdi = array_reverse($girdi);
+        $i = 0;
+        while ($i < count($girdi)) {
+            $kalan = $anahtar[$girdi[$i]];
+            $taban = pow($bolen, $i);
+            $bolunen = $kalan * $taban;
+            (empty($cikti)) ? $cikti = $bolunen : $cikti = $cikti + $bolunen;
+            $i++;
+        }
+        return $cikti;
+    }
 }
 
 function isMobile()
@@ -117,7 +147,8 @@ function sonuclariYaz()
 
 function koddanIcerikGetir($girdi)
 {
-    $no = mod62_decode($girdi);
+    $mod62 = new Mod62();
+    $no = $mod62->decode($girdi);
     global $vt;
     $veri = $vt->query("SELECT * FROM secimler WHERE time='" . $no . "'");
     $sorgu = $veri->fetch(PDO::FETCH_ASSOC);
