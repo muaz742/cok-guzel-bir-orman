@@ -93,6 +93,7 @@
 - son yapılan geliştirme ile ilk ekrandaki 'ORMANA GİR' butonunun çalışmadığı görüldü. 'control.php' içerisinde ilgili koşul güncellenerek onarım yapıldı - yapıldı - 20190709-145426-muaz
 - hızlı sonuç gösterim ekranına qrcode eklendi - yapıldı - 20190709-145714-muaz
 - mod62 fonksiyonu güncellendi - yapıldı - 20190711-165824-muaz
+- mod62 fonksiyonu yeni sınıfı ile güncellendi - yapıldı - 20190715-174738-muaz
 
 # YAPILIYORLAR
 
