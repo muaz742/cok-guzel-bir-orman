@@ -83,6 +83,7 @@ function isle(aksiyon, veri) {
 
 /** fonksiyonları tanımla */
 function mEkranYaz(veri) {
+    guncelleProgress(veri.ekranNo);
     mButonlukKaldir();
     mButonlukEkle();
     mYazEkranNo(veri.ekranNo);
@@ -199,4 +200,28 @@ const copyToClipboard = str => {
         document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
         document.getSelection().addRange(selected);   // Restore the original selection
     }
+}
+
+/** progress js fonksiyonu başlat */
+progressJs().start();
+progressJs().set(0);
+
+function guncelleProgress(ekranNo) {
+    // gelen değeri sayıya dönüştür
+    ekranNo = Number(ekranNo);
+
+    /** toplam ekran miktarını tanımla
+     * toplam 30 ekran var
+     * seçim sürecinde kullanıcı bunun en fazla 28 ini görebiliyor
+     */
+    var ekranMiktari = 28;
+
+    // oran hesapla
+    var oran = 100/ekranMiktari;
+
+    // yüzde hesapla
+    var yuzde = Math.ceil(ekranNo*oran);
+
+    // yüzdeyi işlem barına işle
+    progressJs().set(yuzde);
 }

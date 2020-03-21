@@ -212,6 +212,7 @@ $ekran = ('<!DOCTYPE html>
     <link rel="stylesheet" href="' . $yol . 'assets/theme/css/style.css">
     <link rel="stylesheet" href="' . $yol . 'assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="' . $yol . 'assets/progressjs/progressjs.min.css">
 </head>
 <body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -328,6 +329,7 @@ $ekran = ('<!DOCTYPE html>
 <script src="' . $yol . 'assets/theme/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="' . $yol . 'assets/qrcode/qrcode.js"></script>
+<script src="' . $yol . 'assets/progressjs/progress.min.js"></script>
 
 <script src="http://orman.muaz712.com/index.js?v=' . time() . '"></script>
 </body>
