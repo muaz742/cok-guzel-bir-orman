@@ -1,3 +1,16 @@
+function mesajBtnFikrimVar(){
+    alert("\"new issue\" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin");
+}
+function mesajBtnCokYakinda(){
+    var r = confirm("Orman GitHub üzerinde geliştirilmeye devam ediyor. Proje sayfasını ziyeret etmek ister misin?");
+    if (r == true) {
+        window.location = "http://www.google.com.tr/";
+    }
+}
+
+function blabla(){
+    alert("bla bla bla");
+}
 /** seçim fonksiyonu tanımla */
 function secim(ekranNo, secim) {
     /** ekran kodu ve seçimi veriye tanımla */
