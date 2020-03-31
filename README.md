@@ -1,6 +1,6 @@
 # Çok Güzel Bir Orman / "gh-page" Dalı
 kullanıcının cevaplarına göre çıktı veren deneysel kişilik testi uygulaması<br>
-[orman.muaz712.com](http://orman.muaz712.com)<br>
+[muaz742.github.io/cok-guzel-bir-orman](https://muaz742.github.io/cok-guzel-bir-orman/)<br>
 **Mevcut projenin GitHub Page altyapısı üzerinde çalışacak biçimde geliştirildiği proje dalı.**
 
 <table>
