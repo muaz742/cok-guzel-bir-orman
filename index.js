@@ -4,7 +4,7 @@ function mesajBtnFikrimVar(){
 function mesajBtnCokYakinda(){
     var r = confirm("Orman GitHub üzerinde geliştirilmeye devam ediyor. Proje sayfasını ziyeret etmek ister misin?");
     if (r == true) {
-        window.location = "http://www.google.com.tr/";
+        window.open('https://github.com/muaz742/cok-guzel-bir-orman/tree/gh-pages', '_blank');
     }
 }
 
