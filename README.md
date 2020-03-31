@@ -1,8 +1,7 @@
-<!-- eğer eklenen içerik yeni bir başlık içeriyorsa, başlıklar tablosuna tanımlanmalı-->
-
-# Çok Güzel Bir Orman
+# Çok Güzel Bir Orman / "gh-page" Dalı
 kullanıcının cevaplarına göre çıktı veren deneysel kişilik testi uygulaması<br>
-[orman.muaz712.com](http://orman.muaz712.com)
+[orman.muaz712.com](http://orman.muaz712.com)<br>
+**Mevcut projenin GitHub Page altyapısı üzerinde çalışacak biçimde geliştirildiği proje dalı.**
 
 <table>
   <tr>
