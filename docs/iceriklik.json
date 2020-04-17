@@ -1,5 +1,19 @@
 {
   "ekran": {
+    "_comment": "ekran içerikleri",
+    "_sablon": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "",
+          "sonuc-duru": "",
+          "sonuc-icyertugay": ""
+        }
+      },
+      "temsil": "",
+      "degeri": ""
+    },
     "0": {
       "baslik": "ORMANA HOŞGELDİN",
       "yazi": "ORMANDA DOLAŞIRKEN KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA <br>HAZIR MISIN?",
@@ -35,7 +49,7 @@
       "yazi": "ÇOK GÜZEL BİR ORMANDASIN",
       "secenekler": {
         "0": {
-          "yazi":"YÜRÜMEYE DEVAM ET"
+          "yazi": "YÜRÜMEYE DEVAM ET"
         }
       }
     },
@@ -44,39 +58,59 @@
       "yazi": "AĞAÇLAR SIK MI SEYREK Mİ?",
       "secenekler": {
         "0": {
-          "yazi": "SIK"
+          "yazi": "SIK",
+          "sonuc-duru": "Ağaçları sık görmen çevrende çok arkadaşının gösterir.",
+          "sonuc-icyertugay": "Tam arkadaş canlısısın. Yeni arkadaşlıklar kurmayı seviyorsun. Konserde alanı hınca hınç dolmuş pop sanatçısı gibisin. Kalabalığı seviyorsun. Kalabalığın içinde olmaktan haz alıyorsun."
         },
         "1": {
-          "yazi": "SEYREK"
+          "yazi": "SEYREK",
+          "sonuc-duru": "Ağaçları seyrek görmen çevrende az arkadaşının gösterir.",
+          "sonuc-icyertugay": "Kalabalıktan kaçıyorsun. Dost canlısı değilsin. Bir iki tane olsun az olsun istiyorsun. Kalabalıktan ziyade seni anlayan bir arkadaş olsun yeterde artar."
         }
-      }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "miktarı"
     },
     "3": {
       "baslik": "AĞAÇLARI SEYRET",
       "yazi": "AĞAÇ BOYLARI NASIL?",
       "secenekler": {
         "0": {
-          "yazi": "UZUN"
+          "yazi": "UZUN",
+          "sonuc-duru": "Ağaç boylarının uzun olmasu arkadaşlıklarının uzun olduğunu gösterir.",
+          "sonuc-icyertugay": "Uzun süreli arkadaşlıkların var. Her şeyin yenisi, dostun eskisi diyorsun. Arkadaşlığa önem veriyorsun. Sağlam arkadaşlıkların var."
         },
         "1": {
-          "yazi": "KISA"
+          "yazi": "KISA",
+          "sonuc-duru": "Ağaç boylarının kısa olmasu arkadaşlıklarının kısa olduğunu gösterir.",
+          "sonuc-icyertugay": "Arkadaşlarına karşı mesafelisin. Ne kadar iyi de olsalar araya hep bir mesafe koyuyorsun. Prensiplerin var ve kimse onlardan üstün değil."
         }
-      }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "ömrü"
     },
     "4": {
       "baslik": "YUKARI BAK",
       "yazi": "GÖKYÜZÜNÜ GÖREBİLİYOR MUSUN?",
       "secenekler": {
         "0": {
-          "yazi": "APAÇIK GÖREBİLİYORUM"
+          "yazi": "APAÇIK GÖREBİLİYORUM",
+          "sonuc-duru": "Bu arkadaşlık bağlarının zayıf,",
+          "sonuc-icyertugay": "Tavsiye almayı sevmiyorsun. Arkadaşlarının tavsiyesini kulak ardı ediyorsun. Söylenen şeyleri gözünle görmeden inanmıyorsun. Etki altında kalmıyorsun."
         },
         "1": {
-          "yazi": "AĞAÇLARIN ARASINDAN GÖREBİLİYORUM"
+          "yazi": "AĞAÇLARIN ARASINDAN GÖREBİLİYORUM",
+          "sonuc-duru": "Bu arkadaşlık bağlarının iyi,",
+          "sonuc-icyertugay": "Arkadaş tavsiyelerini önemsiyorsun. Bir şeyi yorumlarken veya bir olayı sonuca bağlamaya çalışırken onların tavsiyelerinde faydalanıyorsun."
         },
         "2": {
-          "yazi": "AĞAÇLAR O KADAR GÜR Kİ GÖREMİYORUM"
+          "yazi": "AĞAÇLAR O KADAR GÜR Kİ GÖREMİYORUM",
+          "sonuc-duru": "Bu arkadaşlık bağlarının güçlü,",
+          "sonuc-icyertugay": "Kendi başına karar vermekte zorlanıyorsun. Hatta çoğu zaman karar bile veremiyorsun. Sürekli arkadaşlarında tavsiye alma mecburiyeti hissediyorsun. Fazla etkileniyorsun."
         }
-      }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "bağı"
     },
     "5": {
       "baslik": "",
@@ -92,192 +126,294 @@
       "yazi": "KARŞINA ÇIKAN HAYVAN HANGİSİYDİ?",
       "secenekler": {
         "0": {
-          "yazi": "KURT"
+          "yazi": "KURT",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kurt gördün ve bu senin kurt olduğunu gösterir.",
+          "sonuc-icyertugay": "Asil bir insansın. Boyun eğmez. En zor zamanlarda bile taviz vermiyorsun. Dostluğa ve sadakate önem veriyorsun."
         },
         "1": {
-          "yazi": "TAVŞAN"
+          "yazi": "TAVŞAN",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen tavşan gördün ve bu senin tavşan olduğunu gösterir.",
+          "sonuc-icyertugay": "Oldukça sempatiksin. Deli, dolu ve zarif. Özel hayatın çok hareketli. Cinselliğe önem veriyorsun."
         },
         "2": {
-          "yazi": "KEDİ"
+          "yazi": "KEDİ",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kedi gördün ve bu senin kedi olduğunu gösterir.",
+          "sonuc-icyertugay": "Uysal bir insansın. Suyuna giden herkesle anlaşabiliyorsun. Ama tersini kimse görmek istemez. En güzel yanın umursamazlığın. Hak ettiğin değeri vermeyen herkesi hayatından çıkarıyorsun. Çorap çıkarır gibi."
         },
         "3": {
-          "yazi": "ASLAN"
+          "yazi": "ASLAN",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen aslan gördün ve bu senin aslan olduğunu gösterir.",
+          "sonuc-icyertugay": "Gücünü yalnızlığından alıyorsun. Gücünün farkındasın. Dürüst, cesur, korkusuzsun. Lafını esirgemiyorsun. Yalnızsın çünkü tek kafa dengin kendinsin. Yalnızsın ama herkesin arkadaş olmak isteyeceği birisin."
         },
         "4": {
-          "yazi": "BOĞA"
+          "yazi": "BOĞA",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen boğa gördün ve bu senin boğa olduğunu gösterir.",
+          "sonuc-icyertugay": "Dirayetli bir insansın. Zorluklar yıldıramaz seni. Zorluk yoktur. Ayağa kalkmayan sen vardır. Cüssen gibi kocaman bir kalbin var. Her ne kadar göstermesen de oldukça uysalsın. Yeter ki önerilen şey mantıklı olsun."
         },
         "5": {
-          "yazi": "KUZU"
+          "yazi": "KUZU",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kuzu gördün ve bu senin kuzu olduğunu gösterir.",
+          "sonuc-icyertugay": "Sempatik ve sevimli oluşunu korkaklık olarak algılıyorlar. Uysallığını suiistimal edenlerin fırtınanın göbeğinde olmanın ne demek olduğunu anlamaları uzun sürmez. Aptalmış gibi yapmayı seviyorsun. Kendini akıllı zanneden aptalları izlemek zevkli sonuçta."
         },
         "6": {
-          "yazi": "HİPOPOTAM"
+          "yazi": "HİPOPOTAM",
+          "sonuc-duru": "Gördüğün hayvan senin karakterini yansıtıyor. Sen hipopotam gördün ve bu senin hipopotam olduğunu gösterir.",
+          "sonuc-icyertugay": ""
         }
-      }
+      },
+      "temsil": "karakter",
+      "degeri": "yapısı"
     },
     "7": {
       "baslik": "ONA BAK VE SÖYLE",
       "yazi": "BU HAYVANA BAKTIĞINDA NASIL HİSSETTİRİYOR?",
       "secenekler": {
         "0": {
-          "yazi": "İYİ"
+          "yazi": "İYİ",
+          "sonuc-duru": "Ve onu görmek sana iyi hissettirdi. Bu kendini sevdiğini gösterir.",
+          "sonuc-icyertugay": "Kendinle yüzleşmeyi seviyorsun. Korkmuyorsun. Evet bu benim. Benim bu. Seni mükemmel kılan şey bu. Eksiklik veya fazlalıklarını biliyorsun."
         },
         "1": {
-          "yazi": "KÖTÜ"
+          "yazi": "KÖTÜ",
+          "sonuc-duru": "Ve onu görmek sana kötü hissettirdi. Bu kendinle sorun yaşadığını gösterir.",
+          "sonuc-icyertugay": "Kendinden kaçıyorsun. Yüzleşmekten çekiniyorsun. Eleştirilmeyi kaldıramıyorsun. Kendine haksızlık etmemelisin ama kendinle yüzleşmekten de kaçmamalısın."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Ve onu görmek sana normal hissettirdi. Bu kendinin farkında olduğunu gösterir.",
+          "sonuc-icyertugay": "Kendinle yüzleşmekten korkmuyorsun. Ama hani aynaya çok bakmasam veya eleştirilmesem daha iyi olur diyorsun."
         }
-      }
+      },
+      "temsil": "karakter",
+      "degeri": "benimseme"
     },
     "8": {
       "baslik": "YOLUNA DEVAM EDİYORSUN",
       "yazi": "KARŞINA BEYAZ BİR KAPI ÇIKTI<br>BU KAPININ BOYUTU NE KADAR?",
       "secenekler": {
         "0": {
-          "yazi": "BÜYÜK"
+          "yazi": "BÜYÜK",
+          "sonuc-duru": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı büyük görmen, umutlarının büyük olduğunu gösterir.",
+          "sonuc-icyertugay": "Şu umudundan dünyaya da versen daha yaşanılabilir bir yer olurdu. Her şeye rağmen ümitlisin. Bir dünya barışının olabileceğinden bile ümitlisin."
         },
         "1": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı normal görmen, umutlarının normal olduğunu gösterir.",
+          "sonuc-icyertugay": "Ümitlisin ama gerçekleri ve koşulları göz ardı etmeyecek kadar da mantıklı. Kesinlikle bir hayalperest değilsin ama biraz hayal etmekten de bir şey olmaz diyorsun."
         },
         "2": {
-          "yazi": "KÜÇÜK"
+          "yazi": "KÜÇÜK",
+          "sonuc-duru": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı küçük görmen, umutlarının küçük olduğunu gösterir.",
+          "sonuc-icyertugay": "Bu kadar ümitsiz olman zamanında ümit ettiğin şeylerin sana koca bir nanik yapmış olmasından olsa gerek. Amerika’nın demokrasi getirmesini bekleme **. Ama sürprizleri de yadsıma."
         }
-      }
+      },
+      "temsil": "umut",
+      "degeri": "miktarı"
     },
     "9": {
       "baslik": "KAPIYA BAK VE SÖYLE",
       "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
       "secenekler": {
         "0": {
-          "yazi": "İYİ"
+          "yazi": "İYİ",
+          "sonuc-duru": "Umuda karşı iyi hislere sahipsin.",
+          "sonuc-icyertugay": "İyi veya kötü, güzel veya çirkin kararlısın. İkilemde kalmıyorsun. En kötü karar bile kararsızlıktan iyidir diyorsun. Ümit etmekten de vazgeçmiyorsun."
         },
         "1": {
-          "yazi": "KÖTÜ"
+          "yazi": "KÖTÜ",
+          "sonuc-duru": "Umuda karşı kötü hislere sahipsin.",
+          "sonuc-icyertugay": "Gerçekten yapmak istediğin ile hissettiğin şey hep çelişiyor. Kararsızsın. Nasıl davranacağını bilmiyorsun. Ümit etmenin saçma olduğunu düşünmek dışında."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Umuda karşı normal hislere sahipsin.",
+          "sonuc-icyertugay": "O kadar olgunsun ki herşeye büyük bir olgunlukla yaklaşıyorsun."
         }
-      }
+      },
+      "temsil": "umut",
+      "degeri": "his"
     },
     "10": {
       "baslik": "",
       "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
       "secenekler": {
         "0": {
-          "yazi": "EVET"
+          "yazi": "EVET",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istedin. Bu da umuda açık olduğunu gösterir.",
+          "sonuc-icyertugay": "Yeni şeyler görmek, öğrenmek seni cezbediyor. Bu sende dinmeyen bir susuzluk gibi. Meraklısın. Ve yeni şeylere açsın. Sonsuz bir umudun var. Hiç kurumayacak bir nehir gibi."
         },
         "1": {
-          "yazi": "HAYIR"
+          "yazi": "HAYIR",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istemedin. Bu da umuda kapalı olduğunu gösterir.",
+          "sonuc-icyertugay": "Rasyonelsin. Hem çilekten muz tadı almaya çalışmak saçmalık. Ümit etmek, boş beklentilere kapılmak istemiyorsun. Beklentiyi az tutmak başa çıkmaları durumunda acıyı hafifletir. Hem ormandaki bir kapının önünde ne varsa arkasında da o vardır."
         }
-      }
+      },
+      "temsil": "umut",
+      "degeri": "tutum"
     },
     "11": {
       "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
       "yazi": "BU SEFER KARŞINA KIRMIZI BİR KAPI ÇIKIYOR<br>BU KAPININ BOYUTU NE KADAR?",
       "secenekler": {
         "0": {
-          "yazi": "BÜYÜK"
+          "yazi": "BÜYÜK",
+          "sonuc-duru": "Kırmızı kapı aşk kapısıydı. Kapıyı büyük görmen, aşkın senin için değerinin büyük olduğunu gösterir.",
+          "sonuc-icyertugay": "Eros’un dünyadaki varisisin. Sen tam bir aşk insanısın. Tutkulu ve duygusalsın. Her şeyi tutkuyla yapıyorsun. Sevmeyi de nefret etmeyi de. Tutku senin ölçütün."
         },
         "1": {
-          "yazi": "KÜÇÜK"
+          "yazi": "KÜÇÜK",
+          "sonuc-duru": "Kırmızı kapı aşk kapısıydı. Kapıyı küçük görmen, aşkın senin için değerinin küçük olduğunu gösterir.",
+          "sonuc-icyertugay": "Eros’un “fail” i sen olmalısın. Duygusallığın mantığı körelttiğini düşünüyorsun. Duygusallık mantığın düşmanı. Özel hayatında (sevgili, arkadaş) ilişkilerinde mantık senin ölçütün."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Kırmızı kapı aşk kapısıydı. Kapıyı normal görmen, aşkın senin için değerinin normal olduğunu gösterir.",
+          "sonuc-icyertugay": "Mantığı duygularınla, duygularını mantıkla destekliyorsun. İkisi de tek başlarına hata yaptırır diye düşünüyorsun. Düzeni, standartları olan uçlarda yaşamayan bir insansın."
         }
-      }
+      },
+      "temsil": "aşk",
+      "degeri": "miktarı"
     },
     "12": {
       "baslik": "KAPIYA BAKTIĞINDA",
       "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
       "secenekler": {
         "0": {
-          "yazi": "İYİ"
+          "yazi": "İYİ",
+          "sonuc-duru": "Aşka karşı iyi hislere sahipsin.",
+          "sonuc-icyertugay": "Romeo da kim senin yanında? (sonun onun gibi olmasın) Aşktan yana şanslısın. Sevmeyi istiyorsun. Yaptığın en iyi şey güzel sevmek. Senin gibisini bulmak zor bu zamanda."
         },
         "1": {
-          "yazi": "KÖTÜ"
+          "yazi": "KÖTÜ",
+          "sonuc-duru": "Aşka karşı kötü hislere sahipsin.",
+          "sonuc-icyertugay": "Hep olmadık insanlar çıkmış karşına. Ya yanlış insanı doğru sevmişsin, yada doğru insanı yanlış sevmişsin. Bıktırmışlar seni."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Aşka karşı normal hislere sahipsin.",
+          "sonuc-icyertugay": "Her şeyi olduğu gibi, aşkı da sevmeyi de olgunlukla karşılıyorsun. Olması gereken oldu bitmesi gerektiğinde de bitti diyorsun."
         }
-      }
+      },
+      "temsil": "aşk",
+      "degeri": "his"
     },
     "13": {
       "baslik": "",
       "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
       "secenekler": {
         "0": {
-          "yazi": "EVET"
+          "yazi": "EVET",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istedin. Bu da aşka açık olduğunu gösterir.",
+          "sonuc-icyertugay": "Aşk tutkun dünya döndükçe baki kalacak. Sen sevmeyi seviyorsun. Tutkuyla. Hiçbir şey seni tutkuyla sevmekten alıkoyamaz. Sevmeyi bildikten sonra sevilecek birini bulmak kolay. Senin tarafından sevilmek ayrıcalık."
         },
         "1": {
-          "yazi": "HAYIR"
+          "yazi": "HAYIR",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istemedin. Bu da aşka kapalı olduğunu gösterir.",
+          "sonuc-icyertugay": "Hepsinin sonu Romeo gibi olacak diyorsun. Juliet’ten başka kız mı yoktu? Kapattık dükkanı diyorsun. Çok kırmışlar seni. Hatta paramparça etmişler."
         }
-      }
+      },
+      "temsil": "aşk",
+      "degeri": "tutum"
     },
     "14": {
       "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
       "yazi": "BU SEFER DE SİYAH BİR KAPI ÇIKIYOR KARŞINA<br>KAPININ BOYUTU NE KADAR?",
       "secenekler": {
         "0": {
-          "yazi": "BÜYÜK"
+          "yazi": "BÜYÜK",
+          "sonuc-duru": "Siyah kapı ölüm kapısıydı. Kapıyı büyük görmen ölümün senin için ne kadar büyük olduğunu gösteriyor.",
+          "sonuc-icyertugay": "Ölüm hayatının her anında. Onu düşünmediğin anlar pek az. Hatta çoğu zaman seni karamsarlığa itiyor."
         },
         "1": {
-          "yazi": "KÜÇÜK"
+          "yazi": "KÜÇÜK",
+          "sonuc-duru": "Siyah kapı ölüm kapısıydı. Kapıyı küçük görmen ölümün senin için ne kadar küçük olduğunu gösteriyor.",
+          "sonuc-icyertugay": "Ölüm mü? Daha değil. Yapacak bir sürü şey var. Bir sürü planın var. Ve bunların arasında ölüm yok."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Siyah kapı ölüm kapısıydı. Kapıyı normal görmen ölümün senin için ne kadar normal olduğunu gösteriyor.",
+          "sonuc-icyertugay": "Her canlı ölümü tadacaktır. Ama şimdiden durup kendi yasını tutmanın bir anlamı yok."
         }
-      }
+      },
+      "temsil": "ölüm",
+      "degeri": "miktarı"
     },
     "15": {
       "baslik": "KAPIYA BAKTIĞINDA",
       "yazi": "SANA NASIL HİSSETTİRİYOR?",
       "secenekler": {
         "0": {
-          "yazi": "İYİ"
+          "yazi": "İYİ",
+          "sonuc-duru": "Ölüme karşı iyi hislere sahipsin.",
+          "sonuc-icyertugay": "Hayatı tam manasıyla olmasada yaşadığını düşünüyorsun. Öleceğini inkar etmeden, yapmak istediği şeyleri yaparak, buradaki sorumlulukları yerine getirdikten sonra ölümün kaçınılmaz son olduğunu düşünüyorsun. Ona göre yaşadın ve yaşıyorsun."
         },
         "1": {
-          "yazi": "KÖTÜ"
+          "yazi": "KÖTÜ",
+          "sonuc-duru": "Ölüme karşı kötü hislere sahipsin.",
+          "sonuc-icyertugay": "İçinde henüz bir sürü şeyi yarım bırakmışlığın tedirginliği var. Ölümden korkmuyorsun. İşlerini erteliyorsun. İlişkilerini. Bu yüzden 100 yaşına da gelsen her ölüm senin için erken ölüm olacak."
         },
         "2": {
-          "yazi": "NORMAL"
+          "yazi": "NORMAL",
+          "sonuc-duru": "Ölüme karşı normal hislere sahipsin.",
+          "sonuc-icyertugay": "Ölümü kabulleniyor ama gölgesinde yaşayamıyorsun. Hem bugün ölecekmiş gibi hem de hiç ölmeyecekmiş gibi yaşıyorsun."
         }
-      }
+      },
+      "temsil": "ölüm",
+      "degeri": "his"
     },
     "16": {
       "baslik": "",
       "yazi": "BU KAPIDAN İÇERİ GEÇMEK İSTİYOR MUSUN?",
       "secenekler": {
         "0": {
-          "yazi": "EVET"
+          "yazi": "EVET",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istedin. Bu da senin ölümden korkmadığını gösterir.",
+          "sonuc-icyertugay": "Sorumluluk duygun yüksek. Üzerine düşen her sorumluluğu yerine getirmeyi başarıyorsun. Yaşamının da sorumluluğu bir gün ölmek ve sen sorumluluk sahibisin."
         },
         "1": {
-          "yazi": "HAYIR"
+          "yazi": "HAYIR",
+          "sonuc-duru": "Ve sen bu kapıdan geçmek istemedin Bu da senin ölümden korktuğunu gösterir.",
+          "sonuc-icyertugay": "Hey bir dakika yeni geldik ya! Sorumluluk sahibi değilsin. Sorumluluktan kaçıyorsun. Ciddi ilişkilerden kaçtın, evlilikten, işlerinin sorumluluğundan. Ama ölüm nihai son, sıkıysa kaç."
         }
-      }
+      },
+      "temsil": "ölüm",
+      "degeri": "tutum"
     },
     "17": {
       "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
       "yazi": "KARŞINA BİR KUTU ÇIKIYOR",
       "secenekler": {
         "0": {
-          "yazi": "KUTUYU AÇ"
+          "yazi": "KUTUYU AÇ",
+          "sonuc-duru": "Sen kutuyu açmayı seçtin. Bu senin geçmişine ilgili olduğunu gösterir.",
+          "sonuc-icyertugay": "Geçmişinden kaçmıyor, onunla yüzleşme cesareti gösteriyorsun. Ondan ders çıkarıyorsun. Aynı hataları yapmak istemiyorsun."
         },
         "1": {
-          "yazi": "YÜRÜMEYE DEVAM ET"
+          "yazi": "YÜRÜMEYE DEVAM ET",
+          "sonuc-duru": "Kutuyu açmadan yürümeye devam etmeyi seçtin. Bu senin geçmişe ilgili olmadığını gösterir.",
+          "sonuc-icyertugay": "Geçmişin hayal kırıklıkları ve pişmanlıkla dolu. Ve en iyi yolu ondan kaçmakta buluyorsun."
         }
-      }
+      },
+      "temsil": "anılar",
+      "degeri": "ilgi"
     },
     "18": {
       "baslik": "KUTUNUN KAPAĞINI AÇIYORSUN",
       "yazi": "VE KUTUNUN İÇİNDEN KIRIK EŞYALAR ÇIKIYOR<br>YOLUNA DEVAM ETMELİSİN<br>BU EŞYALARI YANINDA GÖTÜRMEK İSTİYOR MUSUN?",
       "secenekler": {
         "0": {
-          "yazi": "EVET"
+          "yazi": "EVET",
+          "sonuc-duru": "Sen bu parçaları yanında götürmeyi seçtin. Yani senin geçmişteki anıların vazgeçilmezin.",
+          "sonuc-icyertugay": "Gereksiz anıları taşıyorsun. Pişmanlıklarını. Pişmanlıklarının gölgesinde yaşıyorsun. Seni üzdüğünü bildiğin halde bunları kendine yük etmekten geri durmuyorsun. Mazoşistsin."
         },
         "1": {
-          "yazi": "HAYIR"
+          "yazi": "HAYIR",
+          "sonuc-duru": "Sen bu parçaları yanında götürmek istemedin. Yani senin için geçmişteki anıların geçmişte kaldığıyla güzel.",
+          "sonuc-icyertugay": "Yaşandı ve bitti. İyi yada kötü. Yeni şeyler söylemek yeni şeyler yaşamak istiyorsun. Geçmişi kendine köstek yapmıyorsun. En azından güzel bir gelecek için anıları rafa kaldırıyorsun. Senin hayatında geçmişin pişmanlıklarına YER YOK."
         }
-      }
+      },
+      "temsil": "anılar",
+      "degeri": "tutum"
     },
     "19": {
       "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
