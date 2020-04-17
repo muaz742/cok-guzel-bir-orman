@@ -1,0 +1,406 @@
+{
+  "ekran": {
+    "0": {
+      "baslik": "ORMANA HOŞGELDİN",
+      "yazi": "ORMANDA DOLAŞIRKEN KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA <br>HAZIR MISIN?",
+      "secenekler": {
+        "0": {
+          "yazi": "ORMANA GİR",
+          "sonuc": "0"
+        },
+        "10": {
+          "yazi": "ORMANDAN ÇIK"
+        },
+        "11": {
+          "yazi": "BAŞA DÖN"
+        },
+        "12": {
+          "yazi": "FİKRİM VAR !"
+        },
+        "13": {
+          "yazi": "PAYLAŞ"
+        },
+        "14": {
+          "_comment": "logo yazı",
+          "yazi": ""
+        },
+        "15": {
+          "_comment": "logo resim",
+          "yazi": ""
+        }
+      }
+    },
+    "1": {
+      "baslik": "HAYAL ET",
+      "yazi": "ÇOK GÜZEL BİR ORMANDASIN",
+      "secenekler": {
+        "0": {
+          "yazi":"YÜRÜMEYE DEVAM ET"
+        }
+      }
+    },
+    "2": {
+      "baslik": "ETRAFINA BAK",
+      "yazi": "AĞAÇLAR SIK MI SEYREK Mİ?",
+      "secenekler": {
+        "0": {
+          "yazi": "SIK"
+        },
+        "1": {
+          "yazi": "SEYREK"
+        }
+      }
+    },
+    "3": {
+      "baslik": "AĞAÇLARI SEYRET",
+      "yazi": "AĞAÇ BOYLARI NASIL?",
+      "secenekler": {
+        "0": {
+          "yazi": "UZUN"
+        },
+        "1": {
+          "yazi": "KISA"
+        }
+      }
+    },
+    "4": {
+      "baslik": "YUKARI BAK",
+      "yazi": "GÖKYÜZÜNÜ GÖREBİLİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "APAÇIK GÖREBİLİYORUM"
+        },
+        "1": {
+          "yazi": "AĞAÇLARIN ARASINDAN GÖREBİLİYORUM"
+        },
+        "2": {
+          "yazi": "AĞAÇLAR O KADAR GÜR Kİ GÖREMİYORUM"
+        }
+      }
+    },
+    "5": {
+      "baslik": "",
+      "yazi": "BU GÜZEL ORMANI SEYRETMENİN KEYİFLİ OLDUĞUNU BİLİYORUM AMA DAHA YOLUMUZ VAR",
+      "secenekler": {
+        "0": {
+          "yazi": "YÜRÜMEYE DEVAM ET"
+        }
+      }
+    },
+    "6": {
+      "baslik": "ÖNÜNE BİR HAYVAN ÇIKTI",
+      "yazi": "KARŞINA ÇIKAN HAYVAN HANGİSİYDİ?",
+      "secenekler": {
+        "0": {
+          "yazi": "KURT"
+        },
+        "1": {
+          "yazi": "TAVŞAN"
+        },
+        "2": {
+          "yazi": "KEDİ"
+        },
+        "3": {
+          "yazi": "ASLAN"
+        },
+        "4": {
+          "yazi": "BOĞA"
+        },
+        "5": {
+          "yazi": "KUZU"
+        },
+        "6": {
+          "yazi": "HİPOPOTAM"
+        }
+      }
+    },
+    "7": {
+      "baslik": "ONA BAK VE SÖYLE",
+      "yazi": "BU HAYVANA BAKTIĞINDA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ"
+        },
+        "1": {
+          "yazi": "KÖTÜ"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "8": {
+      "baslik": "YOLUNA DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BEYAZ BİR KAPI ÇIKTI<br>BU KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK"
+        },
+        "1": {
+          "yazi": "NORMAL"
+        },
+        "2": {
+          "yazi": "KÜÇÜK"
+        }
+      }
+    },
+    "9": {
+      "baslik": "KAPIYA BAK VE SÖYLE",
+      "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ"
+        },
+        "1": {
+          "yazi": "KÖTÜ"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "10": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET"
+        },
+        "1": {
+          "yazi": "HAYIR"
+        }
+      }
+    },
+    "11": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "BU SEFER KARŞINA KIRMIZI BİR KAPI ÇIKIYOR<br>BU KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK"
+        },
+        "1": {
+          "yazi": "KÜÇÜK"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "12": {
+      "baslik": "KAPIYA BAKTIĞINDA",
+      "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ"
+        },
+        "1": {
+          "yazi": "KÖTÜ"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "13": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET"
+        },
+        "1": {
+          "yazi": "HAYIR"
+        }
+      }
+    },
+    "14": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "BU SEFER DE SİYAH BİR KAPI ÇIKIYOR KARŞINA<br>KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK"
+        },
+        "1": {
+          "yazi": "KÜÇÜK"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "15": {
+      "baslik": "KAPIYA BAKTIĞINDA",
+      "yazi": "SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ"
+        },
+        "1": {
+          "yazi": "KÖTÜ"
+        },
+        "2": {
+          "yazi": "NORMAL"
+        }
+      }
+    },
+    "16": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GEÇMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET"
+        },
+        "1": {
+          "yazi": "HAYIR"
+        }
+      }
+    },
+    "17": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BİR KUTU ÇIKIYOR",
+      "secenekler": {
+        "0": {
+          "yazi": "KUTUYU AÇ"
+        },
+        "1": {
+          "yazi": "YÜRÜMEYE DEVAM ET"
+        }
+      }
+    },
+    "18": {
+      "baslik": "KUTUNUN KAPAĞINI AÇIYORSUN",
+      "yazi": "VE KUTUNUN İÇİNDEN KIRIK EŞYALAR ÇIKIYOR<br>YOLUNA DEVAM ETMELİSİN<br>BU EŞYALARI YANINDA GÖTÜRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET"
+        },
+        "1": {
+          "yazi": "HAYIR"
+        }
+      }
+    },
+    "19": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BİR BİLGE ÇIKIYOR<br>VE SANA SELAM VERİYOR",
+      "secenekler": {
+        "0": {
+          "yazi": "BİLGENİN YANINA GİT"
+        }
+      }
+    },
+    "20": {
+      "baslik": "",
+      "yazi": "<i>Merhaba. Bana bu ormanın bilgesi derler<br>ama bildiklerim benden değil bu ulu çınardan gelir.<br>Eğer dinlersen ulu çınarın sana söylemek istediği bir kaç şey var.</i>",
+      "secenekler": {
+        "0": {
+          "yazi": "BİLGEYİ DİNLE"
+        },
+        "1": {
+          "yazi": "ALLAH VERSİN, BENİM ACELEM VAR"
+        }
+      }
+    },
+    "21": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "22": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "23": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "24": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "25": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "26": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "27": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "28": {
+      "baslik": "",
+      "yazi": "<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.",
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ"
+        },
+        "1": {
+          "yazi": "GÜLÜMSE VE GİT :)"
+        }
+      }
+    },
+    "29": {
+      "baslik": "YENİ BİR MACERADA GÖRÜŞMEK ÜZERE",
+      "yazi": "DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.",
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ"
+        },
+        "1": {
+          "yazi": "GÜLÜMSE VE GİT :)"
+        },
+        "2": {
+          "yazi": "SADECE GİT"
+        }
+      }
+    },
+    "30": {
+      "baslik": "ORMANDAN",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ"
+        },
+        "1": {
+          "yazi": "BAŞA DÖN"
+        }
+      }
+    }
+  }
+}
