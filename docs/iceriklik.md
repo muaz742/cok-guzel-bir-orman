@@ -483,7 +483,7 @@ Seçim ile sonuç arasındaki ilişkiyi net ifade eden sonuç tanımları.
 |**tugaydan gelen**|Hep olmadık insanlar çıkmış karşına. Ya yanlış insanı doğru sevmişsin, yada doğru insanı yanlış sevmişsin. Bıktırmışlar seni.|
 |**öneri**|*önerilen geliştirmeyi buraya yazabilirsin*|
 
-|ekran : seçim|12:3|
+|ekran : seçim|12:2|
 |---|---|
 |**başlık**|KAPIYA BAKTIĞINDA|
 |**yazı**|BU KAPI SANA NASIL HİSSETTİRİYOR?|
