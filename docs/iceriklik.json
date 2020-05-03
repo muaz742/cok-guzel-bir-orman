@@ -8,7 +8,13 @@
         "0": {
           "yazi": "",
           "sonuc-duru": "",
-          "sonuc-icyertugay": ""
+          "sonuc-icyertugay": "",
+          "aksion": {
+            "0": {
+              "tip": 0,
+              "veri": 0
+            }
+          }
         }
       },
       "temsil": "",
@@ -19,28 +25,63 @@
       "yazi": "ORMANDA DOLAŞIRKEN KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA <br>HAZIR MISIN?",
       "secenekler": {
         "0": {
-          "yazi": "ORMANA GİR",
-          "sonuc": "0"
+          "yazi": "ORMANA GİR"
         },
         "10": {
-          "yazi": "ORMANDAN ÇIK"
+          "yazi": "ORMANDAN ÇIK",
+          "aksiyon": {
+            "0": {
+              "tip": 1,
+              "veri": "url~https://www.youtube.com/watch?v=aqJciupunWQ|target:_blank"
+            }
+          }
         },
         "11": {
-          "yazi": "BAŞA DÖN"
+          "yazi": "BAŞA DÖN",
+          "aksiyon": {
+            "0": {
+              "tip": 2,
+              "veri": "url~/index.php"
+            }
+          }
         },
         "12": {
-          "yazi": "FİKRİM VAR !"
+          "yazi": "FİKRİM VAR !",
+          "aksiyon": {
+            "0": {
+              "tip": 1,
+              "veri": "url~https://github.com/muaz742/cok-guzel-bir-orman/issues|mesaj~'\"new issue\" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin'"
+            }
+          }
         },
         "13": {
-          "yazi": "PAYLAŞ"
+          "yazi": "PAYLAŞ",
+          "aksiyon": {
+            "0": {
+              "tip": 5,
+              "veri": "url~http://orman.muaz712.com|baslik~\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+            }
+          }
         },
         "14": {
           "_comment": "logo yazı",
-          "yazi": ""
+          "yazi": "",
+          "aksiyon": {
+            "0": {
+              "tip": 2,
+              "veri": "url~/index.php"
+            }
+          }
         },
         "15": {
           "_comment": "logo resim",
-          "yazi": ""
+          "yazi": "",
+          "tip": {
+            "0": {
+              "tip": 4,
+              "veri": "url~/index.php"
+            }
+          }
         }
       }
     },
