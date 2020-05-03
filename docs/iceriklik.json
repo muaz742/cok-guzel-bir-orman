@@ -48,13 +48,13 @@
             "5": {
               "tip": 5,
               "veri": {
-                "baslik" : "",
+                "baslik": "",
                 "url": "",
                 "log": "sw alert"
               }
             },
             "6": {
-              "tip":6,
+              "tip": 6,
               "veri": {
                 "tip": "success",
                 "mesaj": "",
@@ -80,8 +80,7 @@
             "0": {
               "tip": 1,
               "veri": {
-                "url": "https://www.youtube.com/watch?v=aqJciupunWQ",
-                "target": "_blank"
+                "url": "https://www.youtube.com/watch?v=aqJciupunWQ"
               }
             }
           }
