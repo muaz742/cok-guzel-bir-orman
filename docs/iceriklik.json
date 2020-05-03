@@ -12,7 +12,54 @@
           "aksion": {
             "0": {
               "tip": 0,
-              "veri": 0
+              "veri": {
+                "log": 0
+              }
+            },
+            "1": {
+              "tip": 1,
+              "veri": {
+                "mesaj": "",
+                "url": "",
+                "log": "yönlendir - yeni sekmede"
+              }
+            },
+            "2": {
+              "tip": 2,
+              "veri": {
+                "mesaj": "",
+                "url": "",
+                "log": "yönlendir - ekranda"
+              }
+            },
+            "3": {
+              "tip": 3,
+              "veri": {
+                "log": "ekran güncelle"
+              }
+            },
+            "4": {
+              "tip": 4,
+              "veri": {
+                "mesaj": "",
+                "log": "alert"
+              }
+            },
+            "5": {
+              "tip": 5,
+              "veri": {
+                "baslik" : "",
+                "url": "",
+                "log": "sw alert"
+              }
+            },
+            "6": {
+              "tip":6,
+              "veri": {
+                "tip": "success",
+                "mesaj": "",
+                "log": "sw toast"
+              }
             }
           }
         }
