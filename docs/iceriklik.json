@@ -32,7 +32,10 @@
           "aksiyon": {
             "0": {
               "tip": 1,
-              "veri": "url~https://www.youtube.com/watch?v=aqJciupunWQ|target:_blank"
+              "veri": {
+                "url": "https://www.youtube.com/watch?v=aqJciupunWQ",
+                "target": "_blank"
+              }
             }
           }
         },
@@ -41,7 +44,9 @@
           "aksiyon": {
             "0": {
               "tip": 2,
-              "veri": "url~/index.php"
+              "veri": {
+                "url": "/index.php"
+              }
             }
           }
         },
@@ -50,7 +55,10 @@
           "aksiyon": {
             "0": {
               "tip": 1,
-              "veri": "url~https://github.com/muaz742/cok-guzel-bir-orman/issues|mesaj~'\"new issue\" butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin'"
+              "veri": {
+                "url": "https://github.com/muaz742/cok-guzel-bir-orman/issues",
+                "mesaj": "'new issue' butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin"
+              }
             }
           }
         },
@@ -59,7 +67,10 @@
           "aksiyon": {
             "0": {
               "tip": 5,
-              "veri": "url~http://orman.muaz712.com|baslik~\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+              "veri": {
+                "url": "http://orman.muaz712.com",
+                "baslik": "\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+              }
             }
           }
         },
@@ -69,17 +80,21 @@
           "aksiyon": {
             "0": {
               "tip": 2,
-              "veri": "url~/index.php"
+              "veri": {
+                "url": "/index.php"
+              }
             }
           }
         },
         "15": {
           "_comment": "logo resim",
           "yazi": "",
-          "tip": {
+          "aksiyon": {
             "0": {
-              "tip": 4,
-              "veri": "url~/index.php"
+              "tip": 2,
+              "veri": {
+                "url": "/index.php"
+              }
             }
           }
         }
