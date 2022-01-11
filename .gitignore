@@ -102,3 +102,4 @@ fabric.properties
 
 .idea/
 .ftpquota
+*.DS_Store
