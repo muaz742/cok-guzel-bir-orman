@@ -126,7 +126,7 @@
                 </p>
                 <div class="mbr-section-btn"
                      id="mButonluk">
-                    <a class="btn btn-md btn-primary display-4 butonamk"
+                    <a class="btn btn-md btn-primary display-4"
                        id="mBtn0"
                        onclick="mesajBtnCokYakinda()">
                         ÇOK YAKINDA
@@ -185,5 +185,12 @@
 <script src="assets/progressjs/progress.min.js"></script>
 
 <script src="index.js"></script>
+<script src="orman.js"></script>
+<script>
+    var orman = new Orman()
+    orman.icerikEkle('/docs/iceriklik.json')
+    orman.calistir()
+</script>
+
 </body>
 </html>
