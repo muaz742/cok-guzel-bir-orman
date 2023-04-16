@@ -84,6 +84,7 @@ class Mod62
     }
 }
 
+/** BAŞLANGIÇ - birleştirilen fonksiyonlar */
 function sonucYazAgac()
 {
     global $sonuc;
@@ -185,6 +186,114 @@ function sonuclariYaz()
         sonucGetir(17, 1) . "<br>" . $parcaYazi;
 }
 
+function sonucYaz($tip = 0, $kisim = 'tumu')
+{
+    global $sonuc;
+
+    switch ($kisim) {
+        case 'tumu':
+            // 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+            if ($_SESSION['secimler'][17] == 0) {
+                $parcaYazi = sonucGetir(18, 1);
+            } else {
+                $parcaYazi = " ";
+            }
+            $sonuc['veri']['yazi'] =
+                sonucGetir(2, 1) . sonucGetir(3, 1) . sonucGetir(4, 1) . "<br>" .
+                sonucGetir(6, 1) . sonucGetir(7, 1) . "<br>" .
+                sonucGetir(8, 1) . sonucGetir(9, 1) . sonucGetir(10, 1) . "<br>" .
+                sonucGetir(11, 1) . sonucGetir(12, 1) . sonucGetir(13, 1) . "<br>" .
+                sonucGetir(14, 1) . sonucGetir(15, 1) . sonucGetir(16, 1) . "<br>" .
+                sonucGetir(17, 1) . "<br>" . $parcaYazi;
+            break;
+        case 'agac':
+            // 2, 3, 4
+            if (secimVarMi(2) && secimVarMi(3) && secimVarMi(4)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(2, 1) . sonucGetir(3, 1) . sonucGetir(4, 1);
+            } else {
+                $sonuc['yazi'] = "ağaç seçimleri eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        case 'hayvan':
+            // 6, 7
+            if (secimVarMi(6) && secimVarMi(7)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(6, 1) . sonucGetir(7, 1);
+                break;
+            } else {
+                $sonuc['yazi'] = "hayvan seçimleri eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+        case 'beyazKapi':
+            // 8, 9, 10
+            if (secimVarMi(8) && secimVarMi(9) && secimVarMi(10)) {
+
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(8, 1) . sonucGetir(9, 1) . sonucGetir(10, 1);
+            } else {
+                $sonuc['yazi'] = "beyaz kapı seçimleri eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        case 'kirmiziKapi':
+            // 11, 12, 13
+            if (secimVarMi(11) && secimVarMi(12) && secimVarMi(13)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(11, 1) . sonucGetir(12, 1) . sonucGetir(13, 1);
+            } else {
+                $sonuc['yazi'] = "kırmızı seçimleri eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        case 'siyahKapi':
+            // 14, 15, 16
+            if (secimVarMi(14) && secimVarMi(15) && secimVarMi(16)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(14, 1) . sonucGetir(15, 1) . sonucGetir(16, 1);
+            } else {
+                $sonuc['yazi'] = "ağaç seçimleri eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        case 'kutu':
+            // 17
+            if (secimVarMi(17)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(17, 1);
+            } else {
+                $sonuc['yazi'] = "kutu seçimi eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        case 'parca':
+            // 18
+            if (secimVarMi(18)) {
+                $sonuc['veri']['baslik'] = ' ';
+                $sonuc['veri']['yazi'] = sonucGetir(18, 1);
+            } else {
+                $sonuc['yazi'] = "parça seçimi eksik";
+                echo json_encode($sonuc, JSON_PRETTY_PRINT);
+                exit;
+            }
+            break;
+        default:
+            echo 'sonuc kısmı algılama hatası';
+    }
+
+
+    //** ağaç sonuçları */
+}
+
+/** SON - birleştirilen fonksiyonlar */
+
 function icerigiSonucaTanimla($ekranNo)
 {
     global $vt;
@@ -199,6 +308,15 @@ function icerigiSonucaTanimla($ekranNo)
 	foreach ($veri as $a){
     	$sonuc['veri']['butonluk'][$a['secimNo']]=$a['secimYazi'];
 	}
+}
+
+function secimVarMi($ekranNo)
+{
+    if (isset($_SESSION['secimler'][$ekranNo])) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 function secimleriSifirla()

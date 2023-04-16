@@ -303,7 +303,7 @@ $ekran = ('<!DOCTYPE html>
     <div class="container">
         <div class="media-container-row align-center mbr-white">
             <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">© COPYRIGHT ' . date(Y) . ' <a
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">COPYRIGHT © ' . date(Y) . ' <a
                         href="http://www.muaz712.com" class="text-white" target="_blank">MUAZ712.COM</a>- TÜM HAKLARI
                     SAKLIDIR</p>
             </div>
@@ -331,7 +331,7 @@ $ekran = ('<!DOCTYPE html>
 <script src="' . $yol . 'assets/qrcode/qrcode.js"></script>
 <script src="' . $yol . 'assets/progressjs/progress.min.js"></script>
 
-<script src="http://orman.muaz712.com/index.js?v=' . time() . '"></script>
+<script src="https://orman.muaz712.com/index.js?v=' . time() . '"></script>
 </body>
 </html>');
 
