@@ -80,7 +80,7 @@ export const { secimiKaydet, ekranNoKaydet, secimleriKaydet } =
 export default icerikSlice.reducer;
 
 export const fetchIcerik = createAsyncThunk("icerik/fetchIcerik", async () => {
-  const response = await axios.get(window.location.origin+"/iceriklik.json");
+  const response = await axios.get(window.location.origin + "/iceriklik.json");
   return response.data;
 });
 
@@ -125,7 +125,7 @@ export const selectIcerik = createSelector(
   (icerik) => icerik
 );
 
-export const getKayitliSecimKodu= createSelector(
-    (state) => state.icerik.kayitliSecimKodu,
-    (kayitliSecimKodu) => kayitliSecimKodu
-    );
+export const getKayitliSecimKodu = createSelector(
+  (state) => state.icerik.kayitliSecimKodu,
+  (kayitliSecimKodu) => kayitliSecimKodu
+);

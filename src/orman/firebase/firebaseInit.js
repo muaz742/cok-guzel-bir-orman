@@ -34,4 +34,15 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 export default firebaseInit;
 
-export { app, analytics, db, doc, setDoc, getDocs, getDoc, collection, query, where };
+export {
+  app,
+  analytics,
+  db,
+  doc,
+  setDoc,
+  getDocs,
+  getDoc,
+  collection,
+  query,
+  where,
+};

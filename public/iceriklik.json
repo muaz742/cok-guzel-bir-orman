@@ -729,7 +729,7 @@
         "1": {
           "yazi": "HOŞÇAKAL :)",
           "aksiyon": {
-            "0":{
+            "0": {
               "tip": 6,
               "veri": {
                 "tip": "info",
@@ -741,7 +741,7 @@
         "2": {
           "yazi": "SADECE GİT",
           "aksiyon": {
-            "0":{
+            "0": {
               "tip": 6,
               "veri": {
                 "yazi": "Peki."
