@@ -1,0 +1,862 @@
+{
+  "_info_ekran": {
+    "_comment": "ekran içerikleri",
+    "_sablon": {
+      "_tip_options": {
+        "0": "soru",
+        "1": "bilgi",
+        "2": "sonuc"
+      },
+      "tip": 0,
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "zipla": {
+            "kosul": {
+              "ekran": 3,
+              "secim": 1
+            },
+            "hedef": "8"
+          },
+          "yazi": "",
+          "sonucDuru": "",
+          "sonucIcyerTugay": "",
+          "aksion": {
+            "0": {
+              "tip": 0,
+              "veri": {
+                "log": 0
+              }
+            },
+            "1": {
+              "tip": 1,
+              "veri": {
+                "mesaj": "",
+                "url": "",
+                "log": "yönlendir - yeni sekmede"
+              }
+            },
+            "2": {
+              "tip": 2,
+              "veri": {
+                "mesaj": "",
+                "url": "",
+                "log": "yönlendir - ekranda"
+              }
+            },
+            "3": {
+              "tip": 3,
+              "veri": {
+                "log": "ekran güncelle"
+              }
+            },
+            "4": {
+              "tip": 4,
+              "veri": {
+                "mesaj": "",
+                "log": "alert"
+              }
+            },
+            "5": {
+              "tip": 5,
+              "veri": {
+                "baslik": "",
+                "url": "",
+                "log": "sw alert"
+              }
+            },
+            "6": {
+              "tip": 6,
+              "veri": {
+                "tip": "success",
+                "mesaj": "",
+                "log": "sw toast"
+              }
+            }
+          }
+        }
+      },
+      "temsil": "",
+      "degeri": ""
+    }
+  },
+  "ekran": {
+    "0": {
+      "baslik": "ORMANA HOŞGELDİN",
+      "yazi": "ORMANDA DOLAŞIRKEN <br> KENDİNİ KEŞFEDEBİLECEĞİN BİR MACERAYA <br> HAZIR MISIN?",
+      "secenekler": {
+        "0": {
+          "yazi": "ORMANA GİR"
+        }
+      }
+    },
+    "1": {
+      "baslik": "HAYÂL ET",
+      "yazi": "ÇOK GÜZEL BİR ORMANDASIN",
+      "secenekler": {
+        "0": {
+          "yazi": "YÜRÜMEYE DEVAM ET"
+        }
+      }
+    },
+    "2": {
+      "baslik": "ETRAFINA BAK",
+      "yazi": "AĞAÇLAR SIK MI SEYREK Mİ?",
+      "secenekler": {
+        "0": {
+          "yazi": "SIK",
+          "sonuc": {
+            "0": "Ağaçları sık görmen çevrende çok arkadaşının gösterir.",
+            "1": "Tam arkadaş canlısısın. Yeni arkadaşlıklar kurmayı seviyorsun. Konserde alanı hınca hınç dolmuş pop sanatçısı gibisin. Kalabalığı seviyorsun. Kalabalığın içinde olmaktan haz alıyorsun."
+          }
+        },
+        "1": {
+          "yazi": "SEYREK",
+          "sonuc": {
+            "0": "Ağaçları seyrek görmen çevrende az arkadaşının gösterir.",
+            "1": "Kalabalıktan kaçıyorsun. Dost canlısı değilsin. Bir iki tane olsun az olsun istiyorsun. Kalabalıktan ziyade seni anlayan bir arkadaş olsun yeterde artar."
+          }
+        }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "miktarı"
+    },
+    "3": {
+      "baslik": "AĞAÇLARI SEYRET",
+      "yazi": "AĞAÇ BOYLARI NASIL?",
+      "secenekler": {
+        "0": {
+          "yazi": "UZUN",
+          "sonuc": {
+            "0": "Ağaç boylarının uzun olmasu arkadaşlıklarının uzun olduğunu gösterir.",
+            "1": "Uzun süreli arkadaşlıkların var. Her şeyin yenisi, dostun eskisi diyorsun. Arkadaşlığa önem veriyorsun. Sağlam arkadaşlıkların var."
+          }
+        },
+        "1": {
+          "yazi": "KISA",
+          "sonuc": {
+            "0": "Ağaç boylarının kısa olmasu arkadaşlıklarının kısa olduğunu gösterir.",
+            "1": "Arkadaşlarına karşı mesafelisin. Ne kadar iyi de olsalar araya hep bir mesafe koyuyorsun. Prensiplerin var ve kimse onlardan üstün değil."
+          }
+        }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "ömrü"
+    },
+    "4": {
+      "baslik": "YUKARI BAK",
+      "yazi": "GÖKYÜZÜNÜ GÖREBİLİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "APAÇIK GÖREBİLİYORUM",
+          "sonuc": {
+            "0": "Bu arkadaşlık bağlarının zayıf,",
+            "1": "Tavsiye almayı sevmiyorsun. Arkadaşlarının tavsiyesini kulak ardı ediyorsun. Söylenen şeyleri gözünle görmeden inanmıyorsun. Etki altında kalmıyorsun."
+          }
+        },
+        "1": {
+          "yazi": "AĞAÇLARIN ARASINDAN GÖREBİLİYORUM",
+          "sonuc": {
+            "0": "Bu arkadaşlık bağlarının iyi,",
+            "1": "Arkadaş tavsiyelerini önemsiyorsun. Bir şeyi yorumlarken veya bir olayı sonuca bağlamaya çalışırken onların tavsiyelerinde faydalanıyorsun."
+          }
+        },
+        "2": {
+          "yazi": "AĞAÇLAR O KADAR GÜR Kİ GÖREMİYORUM",
+          "sonuc": {
+            "0": "Bu arkadaşlık bağlarının güçlü,",
+            "1": "Kendi başına karar vermekte zorlanıyorsun. Hatta çoğu zaman karar bile veremiyorsun. Sürekli arkadaşlarında tavsiye alma mecburiyeti hissediyorsun. Fazla etkileniyorsun."
+          }
+        }
+      },
+      "temsil": "arkadaşlık",
+      "degeri": "bağı"
+    },
+    "5": {
+      "baslik": "",
+      "yazi": "BU GÜZEL ORMANI SEYRETMENİN KEYİFLİ OLDUĞUNU BİLİYORUM AMA DAHA YOLUMUZ VAR",
+      "secenekler": {
+        "0": {
+          "yazi": "YÜRÜMEYE DEVAM ET"
+        }
+      }
+    },
+    "6": {
+      "baslik": "ÖNÜNE BİR HAYVAN ÇIKTI",
+      "yazi": "KARŞINA ÇIKAN HAYVAN HANGİSİYDİ?",
+      "secenekler": {
+        "0": {
+          "yazi": "KURT",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kurt gördün ve bu senin kurt olduğunu gösterir.",
+            "1": "Asil bir insansın. Boyun eğmez. En zor zamanlarda bile taviz vermiyorsun. Dostluğa ve sadakate önem veriyorsun."
+          }
+        },
+        "1": {
+          "yazi": "TAVŞAN",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen tavşan gördün ve bu senin tavşan olduğunu gösterir.",
+            "1": "Oldukça sempatiksin. Deli, dolu ve zarif. Özel hayatın çok hareketli. Cinselliğe önem veriyorsun."
+          }
+        },
+        "2": {
+          "yazi": "KEDİ",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kedi gördün ve bu senin kedi olduğunu gösterir.",
+            "1": "Uysal bir insansın. Suyuna giden herkesle anlaşabiliyorsun. Ama tersini kimse görmek istemez. En güzel yanın umursamazlığın. Hak ettiğin değeri vermeyen herkesi hayatından çıkarıyorsun. Çorap çıkarır gibi."
+          }
+        },
+        "3": {
+          "yazi": "ASLAN",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen aslan gördün ve bu senin aslan olduğunu gösterir.",
+            "1": "Gücünü yalnızlığından alıyorsun. Gücünün farkındasın. Dürüst, cesur, korkusuzsun. Lafını esirgemiyorsun. Yalnızsın çünkü tek kafa dengin kendinsin. Yalnızsın ama herkesin arkadaş olmak isteyeceği birisin."
+          }
+        },
+        "4": {
+          "yazi": "BOĞA",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen boğa gördün ve bu senin boğa olduğunu gösterir.",
+            "1": "Dirayetli bir insansın. Zorluklar yıldıramaz seni. Zorluk yoktur. Ayağa kalkmayan sen vardır. Cüssen gibi kocaman bir kalbin var. Her ne kadar göstermesen de oldukça uysalsın. Yeter ki önerilen şey mantıklı olsun."
+          }
+        },
+        "5": {
+          "yazi": "KUZU",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen kuzu gördün ve bu senin kuzu olduğunu gösterir.",
+            "1": "Sempatik ve sevimli oluşunu korkaklık olarak algılıyorlar. Uysallığını suiistimal edenlerin fırtınanın göbeğinde olmanın ne demek olduğunu anlamaları uzun sürmez. Aptalmış gibi yapmayı seviyorsun. Kendini akıllı zanneden aptalları izlemek zevkli sonuçta."
+          }
+        },
+        "6": {
+          "yazi": "HİPOPOTAM",
+          "sonuc": {
+            "0": "Gördüğün hayvan senin karakterini yansıtıyor. Sen hipopotam gördün ve bu senin hipopotam olduğunu gösterir.",
+            "1": "Sosyal birisin ve arkadaş grubunun bir parçası olmak seni huzurlu hissettiriyor. Tercih etmek istemezsen bile rekabetçisin. Bu hayatta kalmak için ihtiyaç duyduğun bir şey. Hayatındaki risk durumlarında hırçınlaşabiliyor çevrene zarar verebiliyorsun. Ailene ve çevrene karşı bağlı ve koruyucusun. Bağlılık hissinle hareket ettiğinde onları korumak için agresif olabiliyorsun."
+          }
+        }
+      },
+      "temsil": "karakter",
+      "degeri": "yapısı"
+    },
+    "7": {
+      "baslik": "ONA BAK VE SÖYLE",
+      "yazi": "BU HAYVANA BAKTIĞINDA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ",
+          "sonuc": {
+            "0": "Ve onu görmek sana iyi hissettirdi. Bu kendini sevdiğini gösterir.",
+            "1": "Kendinle yüzleşmeyi seviyorsun. Korkmuyorsun. Evet bu benim. Benim bu. Seni mükemmel kılan şey bu. Eksiklik veya fazlalıklarını biliyorsun."
+          }
+        },
+        "1": {
+          "yazi": "KÖTÜ",
+          "sonuc": {
+            "0": "Ve onu görmek sana kötü hissettirdi. Bu kendinle sorun yaşadığını gösterir.",
+            "1": "Kendinden kaçıyorsun. Yüzleşmekten çekiniyorsun. Eleştirilmeyi kaldıramıyorsun. Kendine haksızlık etmemelisin ama kendinle yüzleşmekten de kaçmamalısın."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Ve onu görmek sana normal hissettirdi. Bu kendinin farkında olduğunu gösterir.",
+            "1": "Kendinle yüzleşmekten korkmuyorsun. Ama hani aynaya çok bakmasam veya eleştirilmesem daha iyi olur diyorsun."
+          }
+        }
+      },
+      "temsil": "karakter",
+      "degeri": "benimseme"
+    },
+    "8": {
+      "baslik": "YOLUNA DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BEYAZ BİR KAPI ÇIKTI<br>BU KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK",
+          "sonuc": {
+            "0": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı büyük görmen, umutlarının büyük olduğunu gösterir.",
+            "1": "Şu umudundan dünyaya da versen daha yaşanılabilir bir yer olurdu. Her şeye rağmen ümitlisin. Bir dünya barışının olabileceğinden bile ümitlisin."
+          }
+        },
+        "1": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı normal görmen, umutlarının normal olduğunu gösterir.",
+            "1": "Ümitlisin ama gerçekleri ve koşulları göz ardı etmeyecek kadar da mantıklı. Kesinlikle bir hayalperest değilsin ama biraz hayal etmekten de bir şey olmaz diyorsun."
+          }
+        },
+        "2": {
+          "yazi": "KÜÇÜK",
+          "sonuc": {
+            "0": "Karşına çıkan beyaz kapı umut kapısıydı. Kapıyı küçük görmen, umutlarının küçük olduğunu gösterir.",
+            "1": "Bu kadar ümitsiz olman zamanında ümit ettiğin şeylerin sana koca bir nanik yapmış olmasından olsa gerek. Amerika’nın demokrasi getirmesini bekleme **. Ama sürprizleri de yadsıma."
+          }
+        }
+      },
+      "temsil": "umut",
+      "degeri": "miktarı"
+    },
+    "9": {
+      "baslik": "KAPIYA BAK VE SÖYLE",
+      "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ",
+          "sonuc": {
+            "0": "Umuda karşı iyi hislere sahipsin.",
+            "1": "İyi veya kötü, güzel veya çirkin kararlısın. İkilemde kalmıyorsun. En kötü karar bile kararsızlıktan iyidir diyorsun. Ümit etmekten de vazgeçmiyorsun."
+          }
+        },
+        "1": {
+          "yazi": "KÖTÜ",
+          "sonuc": {
+            "0": "Umuda karşı kötü hislere sahipsin.",
+            "1": "Gerçekten yapmak istediğin ile hissettiğin şey hep çelişiyor. Kararsızsın. Nasıl davranacağını bilmiyorsun. Ümit etmenin saçma olduğunu düşünmek dışında."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Umuda karşı normal hislere sahipsin.",
+            "1": "O kadar olgunsun ki herşeye büyük bir olgunlukla yaklaşıyorsun."
+          }
+        }
+      },
+      "temsil": "umut",
+      "degeri": "his"
+    },
+    "10": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istedin. Bu da umuda açık olduğunu gösterir.",
+            "1": "Yeni şeyler görmek, öğrenmek seni cezbediyor. Bu sende dinmeyen bir susuzluk gibi. Meraklısın. Ve yeni şeylere açsın. Sonsuz bir umudun var. Hiç kurumayacak bir nehir gibi."
+          }
+        },
+        "1": {
+          "yazi": "HAYIR",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istemedin. Bu da umuda kapalı olduğunu gösterir.",
+            "1": "Rasyonelsin. Hem çilekten muz tadı almaya çalışmak saçmalık. Ümit etmek, boş beklentilere kapılmak istemiyorsun. Beklentiyi az tutmak başa çıkmaları durumunda acıyı hafifletir. Hem ormandaki bir kapının önünde ne varsa arkasında da o vardır."
+          }
+        }
+      },
+      "temsil": "umut",
+      "degeri": "tutum"
+    },
+    "11": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "BU SEFER KARŞINA KIRMIZI BİR KAPI ÇIKIYOR<br>BU KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK",
+          "sonuc": {
+            "0": "Kırmızı kapı aşk kapısıydı. Kapıyı büyük görmen, aşkın senin için değerinin büyük olduğunu gösterir.",
+            "1": "Eros’un dünyadaki varisisin. Sen tam bir aşk insanısın. Tutkulu ve duygusalsın. Her şeyi tutkuyla yapıyorsun. Sevmeyi de nefret etmeyi de. Tutku senin ölçütün."
+          }
+        },
+        "1": {
+          "yazi": "KÜÇÜK",
+          "sonuc": {
+            "0": "Kırmızı kapı aşk kapısıydı. Kapıyı küçük görmen, aşkın senin için değerinin küçük olduğunu gösterir.",
+            "1": "Eros’un “fail” i sen olmalısın. Duygusallığın mantığı körelttiğini düşünüyorsun. Duygusallık mantığın düşmanı. Özel hayatında (sevgili, arkadaş) ilişkilerinde mantık senin ölçütün."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Kırmızı kapı aşk kapısıydı. Kapıyı normal görmen, aşkın senin için değerinin normal olduğunu gösterir.",
+            "1": "Mantığı duygularınla, duygularını mantıkla destekliyorsun. İkisi de tek başlarına hata yaptırır diye düşünüyorsun. Düzeni, standartları olan uçlarda yaşamayan bir insansın."
+          }
+        }
+      },
+      "temsil": "aşk",
+      "degeri": "miktarı"
+    },
+    "12": {
+      "baslik": "KAPIYA BAKTIĞINDA",
+      "yazi": "BU KAPI SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ",
+          "sonuc": {
+            "0": "Aşka karşı iyi hislere sahipsin.",
+            "1": "Romeo da kim senin yanında? (sonun onun gibi olmasın) Aşktan yana şanslısın. Sevmeyi istiyorsun. Yaptığın en iyi şey güzel sevmek. Senin gibisini bulmak zor bu zamanda."
+          }
+        },
+        "1": {
+          "yazi": "KÖTÜ",
+          "sonuc": {
+            "0": "Aşka karşı kötü hislere sahipsin.",
+            "1": "Hep olmadık insanlar çıkmış karşına. Ya yanlış insanı doğru sevmişsin, yada doğru insanı yanlış sevmişsin. Bıktırmışlar seni."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Aşka karşı normal hislere sahipsin.",
+            "1": "Her şeyi olduğu gibi, aşkı da sevmeyi de olgunlukla karşılıyorsun. Olması gereken oldu bitmesi gerektiğinde de bitti diyorsun."
+          }
+        }
+      },
+      "temsil": "aşk",
+      "degeri": "his"
+    },
+    "13": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GİRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istedin. Bu da aşka açık olduğunu gösterir.",
+            "1": "Aşk tutkun dünya döndükçe baki kalacak. Sen sevmeyi seviyorsun. Tutkuyla. Hiçbir şey seni tutkuyla sevmekten alıkoyamaz. Sevmeyi bildikten sonra sevilecek birini bulmak kolay. Senin tarafından sevilmek ayrıcalık."
+          }
+        },
+        "1": {
+          "yazi": "HAYIR",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istemedin. Bu da aşka kapalı olduğunu gösterir.",
+            "1": "Hepsinin sonu Romeo gibi olacak diyorsun. Juliet’ten başka kız mı yoktu? Kapattık dükkanı diyorsun. Çok kırmışlar seni. Hatta paramparça etmişler."
+          }
+        }
+      },
+      "temsil": "aşk",
+      "degeri": "tutum"
+    },
+    "14": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "BU SEFER DE SİYAH BİR KAPI ÇIKIYOR KARŞINA<br>KAPININ BOYUTU NE KADAR?",
+      "secenekler": {
+        "0": {
+          "yazi": "BÜYÜK",
+          "sonuc": {
+            "0": "Siyah kapı ölüm kapısıydı. Kapıyı büyük görmen ölümün senin için ne kadar büyük olduğunu gösteriyor.",
+            "1": "Ölüm hayatının her anında. Onu düşünmediğin anlar pek az. Hatta çoğu zaman seni karamsarlığa itiyor."
+          }
+        },
+        "1": {
+          "yazi": "KÜÇÜK",
+          "sonuc": {
+            "0": "Siyah kapı ölüm kapısıydı. Kapıyı küçük görmen ölümün senin için ne kadar küçük olduğunu gösteriyor.",
+            "1": "Ölüm mü? Daha değil. Yapacak bir sürü şey var. Bir sürü planın var. Ve bunların arasında ölüm yok."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Siyah kapı ölüm kapısıydı. Kapıyı normal görmen ölümün senin için ne kadar normal olduğunu gösteriyor.",
+            "1": "Her canlı ölümü tadacaktır. Ama şimdiden durup kendi yasını tutmanın bir anlamı yok."
+          }
+        }
+      },
+      "temsil": "ölüm",
+      "degeri": "miktarı"
+    },
+    "15": {
+      "baslik": "KAPIYA BAKTIĞINDA",
+      "yazi": "SANA NASIL HİSSETTİRİYOR?",
+      "secenekler": {
+        "0": {
+          "yazi": "İYİ",
+          "sonuc": {
+            "0": "Ölüme karşı iyi hislere sahipsin.",
+            "1": "Hayatı tam manasıyla olmasada yaşadığını düşünüyorsun. Öleceğini inkar etmeden, yapmak istediği şeyleri yaparak, buradaki sorumlulukları yerine getirdikten sonra ölümün kaçınılmaz son olduğunu düşünüyorsun. Ona göre yaşadın ve yaşıyorsun."
+          }
+        },
+        "1": {
+          "yazi": "KÖTÜ",
+          "sonuc": {
+            "0": "Ölüme karşı kötü hislere sahipsin.",
+            "1": "İçinde henüz bir sürü şeyi yarım bırakmışlığın tedirginliği var. Ölümden korkmuyorsun. İşlerini erteliyorsun. İlişkilerini. Bu yüzden 100 yaşına da gelsen her ölüm senin için erken ölüm olacak."
+          }
+        },
+        "2": {
+          "yazi": "NORMAL",
+          "sonuc": {
+            "0": "Ölüme karşı iyi hislere sahipsin.",
+            "1": "Ölümü kabulleniyor ama gölgesinde yaşayamıyorsun. Hem bugün ölecekmiş gibi hem de hiç ölmeyecekmiş gibi yaşıyorsun."
+          }
+        }
+      },
+      "temsil": "ölüm",
+      "degeri": "his"
+    },
+    "16": {
+      "baslik": "",
+      "yazi": "BU KAPIDAN İÇERİ GEÇMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istemedin Bu da senin ölümden korktuğunu gösterir.",
+            "1": "Sorumluluk duygun yüksek. Üzerine düşen her sorumluluğu yerine getirmeyi başarıyorsun. Yaşamının da sorumluluğu bir gün ölmek ve sen sorumluluk sahibisin."
+          }
+        },
+        "1": {
+          "yazi": "HAYIR",
+          "sonuc": {
+            "0": "Ve sen bu kapıdan geçmek istemedin Bu da senin ölümden korktuğunu gösterir.",
+            "1": "Hey bir dakika yeni geldik ya! Sorumluluk sahibi değilsin. Sorumluluktan kaçıyorsun. Ciddi ilişkilerden kaçtın, evlilikten, işlerinin sorumluluğundan. Ama ölüm nihai son, sıkıysa kaç."
+          }
+        }
+      },
+      "temsil": "ölüm",
+      "degeri": "tutum"
+    },
+    "17": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BİR KUTU ÇIKIYOR",
+      "secenekler": {
+        "0": {
+          "yazi": "KUTUYU AÇ",
+          "sonuc": {
+            "0": "Sen kutuyu açmayı seçtin. Bu senin geçmişine ilgili olduğunu gösterir.",
+            "1": "Geçmişinden kaçmıyor, onunla yüzleşme cesareti gösteriyorsun. Ondan ders çıkarıyorsun. Aynı hataları yapmak istemiyorsun."
+          }
+        },
+        "1": {
+          "zipla": {
+            "hedef": 19
+          },
+          "yazi": "YÜRÜMEYE DEVAM ET",
+          "sonuc": {
+            "0": "Kutuyu açmadan yürümeye devam etmeyi seçtin. Bu senin geçmişe ilgili olmadığını gösterir.",
+            "1": "Geçmişin hayal kırıklıkları ve pişmanlıkla dolu. Ve en iyi yolu ondan kaçmakta buluyorsun."
+          }
+        }
+      },
+      "temsil": "anılar",
+      "degeri": "ilgi"
+    },
+    "18": {
+      "baslik": "KUTUNUN KAPAĞINI AÇIYORSUN",
+      "yazi": "VE KUTUNUN İÇİNDEN KIRIK EŞYALAR ÇIKIYOR<br>YOLUNA DEVAM ETMELİSİN<br>BU EŞYALARI YANINDA GÖTÜRMEK İSTİYOR MUSUN?",
+      "secenekler": {
+        "0": {
+          "yazi": "EVET",
+          "sonuc": {
+            "0": "Sen bu parçaları yanında götürmeyi seçtin. Yani senin geçmişteki anıların vazgeçilmezin.",
+            "1": "Gereksiz anıları taşıyorsun. Pişmanlıklarını. Pişmanlıklarının gölgesinde yaşıyorsun. Seni üzdüğünü bildiğin halde bunları kendine yük etmekten geri durmuyorsun. Mazoşistsin."
+          }
+        },
+        "1": {
+          "yazi": "HAYIR",
+          "sonuc": {
+            "0": "Sen bu parçaları yanında götürmek istemedin. Yani senin için geçmişteki anıların geçmişte kaldığıyla güzel.",
+            "1": "Yaşandı ve bitti. İyi yada kötü. Yeni şeyler söylemek yeni şeyler yaşamak istiyorsun. Geçmişi kendine köstek yapmıyorsun. En azından güzel bir gelecek için anıları rafa kaldırıyorsun. Senin hayatında geçmişin pişmanlıklarına YER YOK."
+          }
+        }
+      },
+      "temsil": "anılar",
+      "degeri": "tutum",
+      "kosul": {
+        "17": 0
+      }
+    },
+    "19": {
+      "baslik": "YÜRÜMEYE DEVAM EDİYORSUN",
+      "yazi": "KARŞINA BİR BİLGE ÇIKIYOR<br>VE SANA SELAM VERİYOR",
+      "secenekler": {
+        "0": {
+          "yazi": "BİLGENİN YANINA GİT",
+          "secimiKaydet": true
+        }
+      }
+    },
+    "20": {
+      "baslik": "",
+      "yazi": "<i>Merhaba. Bana bu ormanın bilgesi derler<br>ama bildiklerim benden değil bu ulu çınardan gelir.<br>Eğer dinlersen ulu çınarın sana söylemek istediği bir kaç şey var.</i>",
+      "secenekler": {
+        "0": {
+          "yazi": "BİLGEYİ DİNLE"
+        },
+        "1": {
+          "yazi": "ALLAH VERSİN, BENİM ACELEM VAR",
+          "zipla": {
+            "hedef": 30
+          }
+        }
+      }
+    },
+    "21": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          2,
+          3,
+          4
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "22": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          6,
+          7
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "23": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          8,
+          9,
+          10
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "24": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          11,
+          12,
+          13
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "25": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          14,
+          15,
+          16
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "26": {
+      "baslik": "",
+      "yazi": {
+        "sonuc": [
+          17,
+          18
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET",
+          "zipla": {
+            "hedef": 28
+          }
+        }
+      }
+    },
+    "27": {
+      "baslik": "",
+      "yazi": "",
+      "secenekler": {
+        "0": {
+          "yazi": "DEVAM ET"
+        }
+      }
+    },
+    "28": {
+      "baslik": "",
+      "yazi": "<i>Ulu çınarın söylemek istedikleri bu kadardı. Burası çok güzel bir orman.<br>Umarım doğanın güzellikleri biraz olsun içini rahatlatmıştır.<br>Her neyse yolcu yolunda gerek. Kal sağlıcakla.</i> diyor bilge ve ağır ağır uzaklaşmaya başlıyor. Dilersen bu ufak maceranı arkadaşlarınla paylaşabilir veya bir tebessüm bırakıp gidebilirsin :) Hatta isetersen sadece gidebilisin de. Seçim senin.",
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ",
+          "aksiyon": {
+            "0": {
+              "tip": 5,
+              "veri": {
+                "url": "https://orman.muaz712.com",
+                "baslik": "\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+              }
+            }
+          },
+          "zipla": {
+            "hedef": 28
+          }
+        },
+        "1": {
+          "yazi": "GÜLÜMSE VE GİT :)"
+        }
+      }
+    },
+    "29": {
+      "baslik": "YENİ BİR MACERADA GÖRÜŞMEK ÜZERE",
+      "yazi": "DİLERSEN BU UFAK MACERANI ARKADAŞLARINLA PAYLAŞABİLİR<br>VEYA SADECE GÜLÜMSEYİP GİDEBİLİRSİN.<br>HATTA İSTERSEN SADECE GİDEBİLİRSİN DE. SEÇİM SENİN.",
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ",
+          "aksiyon": {
+            "0": {
+              "tip": 5,
+              "veri": {
+                "url": "https://orman.muaz712.com",
+                "baslik": "\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+              }
+            }
+          },
+          "zipla": {
+            "hedef": 29
+          }
+        },
+        "1": {
+          "yazi": "HOŞÇAKAL :)",
+          "aksiyon": {
+            "0": {
+              "tip": 6,
+              "veri": {
+                "tip": "info",
+                "yazi": "Görüşmek Üzere 🤗"
+              }
+            }
+          }
+        },
+        "2": {
+          "yazi": "SADECE GİT",
+          "aksiyon": {
+            "0": {
+              "tip": 6,
+              "veri": {
+                "yazi": "Peki."
+              }
+            }
+          }
+        }
+      }
+    },
+    "30": {
+      "baslik": "ORMANDAN",
+      "yazi": {
+        "sonuc": [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "secenekler": {
+        "0": {
+          "yazi": "MACERANI PAYLAŞ",
+          "aksiyon": {
+            "0": {
+              "tip": 5,
+              "veri": {
+                "url": "https://orman.muaz712.com",
+                "baslik": "\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+              }
+            }
+          },
+          "zipla": {
+            "hedef": 30
+          }
+        },
+        "1": {
+          "yazi": "BAŞA DÖN",
+          "aksiyon": {
+            "0": {
+              "tip": 2,
+              "veri": {
+                "url": "/"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "arayuz": {
+    "baslik": "ORMANA HOŞGELDİN",
+    "logo": {
+      "yazi": "WALK ON THE JUNGLE",
+      "resim": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjUuOTQ0IDI1Ljk0NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjUuOTQ0IDI1Ljk0NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojZmZmZmZmOyIgY3g9IjE0LjI2OCIgY3k9IjIuMzcyIiByPSIyLjM3MiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNmZmZmZmY7IiBkPSJNMTAuOTg3LDYuNDg5YzAuMDg4LTAuNjAyLDAuNTU1LTAuOTY0LDAuODk2LTAuODY5bDIuNDc1LDAuNjljMC4zNCwwLjA5NywwLjQ1NywwLjg4NywwLjM2MSwxLjIzDQoJCWwtMi4wMzksOC4zNzJjLTAuMSwwLjM0NC0wLjMwNSwwLjUxNC0wLjY0NiwwLjQxNmwtMS42NzItMC4zNjJjLTEuMzQ3LTEuMTA5LTEuMzM5LTIuMDc0LTEuMDYzLTMuNDA2TDEwLjk4Nyw2LjQ4OXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmOyIgZD0iTTguODY0LDE2LjEwOUw4LjQ0LDE5LjA3NGMwLDAtMS4wOTEsMi41OTEtMS44NDEsNC4xMTNjLTAuNTY3LDEuMTUzLTAuODM0LDEuOTg0LTAuNDQ0LDIuMTkyDQoJCWMwLjU5OCwwLjMxOCwxLjQwMi0wLjM5NSwyLjI0NC0xLjcwOGMxLjQxMi0yLjIwMiwyLjEzOS0zLjMwMywyLjQxMS0zLjgzOGwwLjQyNy0xLjM5OEMxMS4yMzcsMTguNDM2LDkuMTQsMTcuMDQ4LDguODY0LDE2LjEwOXoiDQoJCS8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZjsiIGQ9Ik0xNi4zNTgsMTcuMzM2bC0zLjMwMy0zLjI4Yy0wLjUyMS0wLjUyNS0xLjI5OS0wLjI3OC0xLjgyNiwwLjI0NA0KCQljLTAuNTI2LDAuNTE4LTEuNTU2LDEuMDA4LTEuMDM3LDEuNTM2bDQuMjAxLDMuNTM3bC0wLjQ2NSw0LjUzMmMtMC4wMzQsMS4xMTgsMC4wMzIsMS43NjYsMC43NDIsMS44NA0KCQljMC42NjMsMC4wNjksMC45NTUtMS4zMSwxLjAyNC0xLjY1OWMwLDAsMC44NDktNC4zNDEsMC45NTItNC45NTNDMTYuNzQ5LDE4LjUyLDE2LjgxMSwxNy43OTksMTYuMzU4LDE3LjMzNnoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmOyIgZD0iTTIwLjM1Miw3LjYxMWwtMi40OSwxLjE3MWwtMy4xMzctMi4yOWMtMC40OTgtMC4zNjEtMS4xOTctMC4yNDktMS41NTksMC4yNTINCgkJYy0wLjM2MSwwLjQ5OS0wLjI0OSwxLjE5NiwwLjI1MiwxLjU1OWwzLjM4MywyLjQ1YzAuMzE4LDAuMjI5LDAuODA3LDAuMzQ5LDEuMTY1LDAuMTk0YzAsMCwyLjMyMy0xLjQxMSwyLjk0Ni0xLjgxNw0KCQljMC42NTMtMC40MjgsMS4zMzYtMC45OSwxLjA4NC0xLjQ2MkMyMS42MzgsNi45OSwyMC45ODYsNy4zMDUsMjAuMzUyLDcuNjExeiIvPg0KCQ0KCQk8bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDoxLjE0MTg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjIwLjI2OCIgeTE9IjYuMzczIiB4Mj0iMjAuMjY4IiB5Mj0iMjUuMzczIi8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZjsiIGQ9Ik05LjgyMSw2LjM5MWMwLDAtMS40ODQsNC42MDYtMS43MDksNS4zMzhjLTAuMjI1LDAuNzMyLTEuMDEsMS4yNC0yLjExOSwwLjkwMg0KCQljLTEuMTA5LTAuMzM5LTIuMjYtMC44MDQtMi4wOC0yLjFDNC4xMSw5LjExOSw1LjQ0NCw3LjI0NCw2LjYwMSw2LjAzOEM3Ljc1OCw0LjgzMywxMC40LDQuNDE0LDkuODIxLDYuMzkxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=",
+      "href": "/"
+    },
+    "navbar": {
+      "10": {
+        "yazi": "ORMANDAN ÇIK",
+        "aksiyon": {
+          "0": {
+            "tip": 1,
+            "veri": {
+              "url": "https://www.youtube.com/watch?v=aqJciupunWQ"
+            }
+          }
+        }
+      },
+      "11": {
+        "yazi": "BAŞA DÖN",
+        "aksiyon": {
+          "0": {
+            "tip": 2,
+            "veri": {
+              "url": "/"
+            }
+          }
+        }
+      },
+      "12": {
+        "yazi": "FİKRİM VAR !",
+        "aksiyon": {
+          "0": {
+            "tip": 1,
+            "veri": {
+              "url": "https://github.com/muaz742/cok-guzel-bir-orman/issues/new?labels=documentation&title=Fikrim+Var%21&body=Merhaba%2C%0A%0A",
+              "mesaj": "'new issue' butonu ile yeni bir issue oluşturarak fikrini paylaşabilirsin"
+            }
+          }
+        }
+      },
+      "13": {
+        "yazi": "PAYLAŞ",
+        "aksiyon": {
+          "0": {
+            "tip": 5,
+            "veri": {
+              "url": "https://orman.muaz712.com",
+              "baslik": "\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF32\uD83C\uDF33\uD83C\uDF33\uD83C\uDF32<br><br>BİZ GİDERİZ ORMANA"
+            }
+          }
+        }
+      }
+    }
+  }
+}
